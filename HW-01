@@ -1,0 +1,136 @@
+
+=========================================
+CLASS 2 – PROBLEM SOLVING QUESTIONS
+Book: Sumita Arora Class 11 (Python)
+Chapter: Python Fundamentals
+=========================================
+
+🟢 BASIC LEVEL
+
+1. Write a program to add two numbers.
+
+2. Write a program to subtract two numbers.
+
+3. Write a program to multiply two numbers.
+
+4. Write a program to divide two numbers.
+
+5. Write a program to find the remainder when one number is divided by another.
+
+6. Write a program to find the quotient using floor division (//).
+
+7. Write a program to find the square of a number.
+
+8. Write a program to find the cube of a number.
+
+9. Write a program to calculate the area of a rectangle.
+
+10. Write a program to calculate the perimeter of a rectangle.
+
+11. Write a program to calculate the area of a square.
+
+12. Write a program to calculate the perimeter of a square.
+
+13. Write a program to calculate the area of a circle.
+
+14. Write a program to calculate the circumference of a circle.
+
+15. Write a program to calculate the area of a triangle.
+
+------------------------------------------------------------
+
+🟡 INTERMEDIATE LEVEL
+
+16. Write a program to calculate the total marks of three subjects.
+
+17. Write a program to calculate the average marks of three subjects.
+
+18. Write a program to calculate the total and average marks of five subjects.
+
+19. Write a program to convert hours into minutes.
+
+20. Write a program to convert minutes into seconds.
+
+21. Write a program to convert hours into seconds.
+
+22. Write a program to convert kilometres into metres.
+
+23. Write a program to convert metres into centimetres.
+
+24. Write a program to convert centimetres into metres.
+
+25. Write a program to convert rupees into paise.
+
+26. Write a program to convert paise into rupees.
+
+27. Write a program to calculate the total cost using quantity and price.
+
+28. Write a program to calculate the discount amount.
+
+29. Write a program to calculate the final bill after discount.
+
+30. Write a program to swap two variables using a third variable.
+
+------------------------------------------------------------
+
+🔴 ADVANCED LEVEL
+
+31. Write a program to calculate both the area and perimeter of a rectangle.
+
+32. Write a program to calculate both the area and circumference of a circle.
+
+33. Write a program to convert Celsius to Fahrenheit.
+
+34. Write a program to convert Fahrenheit to Celsius.
+
+35. Write a program to calculate Simple Interest.
+
+36. Write a program to calculate Gross Salary.
+
+37. Write a program to calculate the volume of a cuboid.
+
+38. Write a program to calculate the volume of a cube.
+
+39. Write a program to calculate average speed.
+
+40. Write a program to calculate the total amount for three products.
+
+41. Write a program to calculate an electricity bill using a fixed rate per unit.
+
+42. Write a program to calculate the total amount including GST.
+
+43. Write a program to calculate Body Mass Index (BMI).
+
+44. Write a program to convert days into hours, minutes and seconds.
+
+45. Write a program to calculate the percentage of marks obtained in five subjects.
+
+------------------------------------------------------------
+
+⭐ LOGIC BUILDER QUESTIONS
+
+46. A shopkeeper sells one pen for ₹15. A customer buys 12 pens. Find the total bill.
+
+47. A student scores marks in five subjects. Find the total, average and percentage.
+
+48. A farmer has a rectangular field. Find its area and perimeter.
+
+49. A cuboidal water tank has given dimensions. Find its volume.
+
+50. Convert a person's age from years into months and days.
+
+51. A train travels a certain distance in a given time. Find its average speed.
+
+52. Calculate the total salary after adding HRA and DA to the basic salary.
+
+53. A customer buys notebooks. Find the total amount after applying a discount.
+
+54. Find the total amount after adding GST to the product price.
+
+55. A customer purchases three different products. Find the total bill amount.
+
+=========================================
+TOTAL QUESTIONS = 55
+=========================================
+```
+
