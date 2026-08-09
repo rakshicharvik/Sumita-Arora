@@ -1,0 +1,184 @@
+1.Input a student's marks and display:
+   Distinction,First Class , Second Class , Pass , Fail 
+
+2.Input two numbers and display the greater number. If both are equal, display "Both are equal"
+
+3.Input a person's age and display whether the person is:
+   Child,Teenager,Adult
+
+4.Input three numbers and find the largest number.
+  
+5.Input three numbers and find the smallest number.
+
+6. Input three sides of a triangle and check whether they can form a valid triangle.
+      If the triangle is valid, determine whether it is:
+         Equilateral
+         Isosceles
+         Scalene
+
+7.Input a student's marks in English, Maths and Computer Science.
+   Calculate the average and display:
+       A → average ≥ 80
+       B → average ≥ 60
+       C → average ≥ 50
+       D → average ≥ 40
+       Fail → otherwise  
+
+8.Input a number and check whether it is:
+     divisible by 2 and 3
+     divisible only by 2
+     divisible only by 3
+     divisible by neither
+
+9.Predict the Output:
+
+a = 10
+b = 20
+c = 30
+if a < b:
+    if b < c:
+        print(a, b, c)
+    else:
+        print(c, b, a)
+else:
+    print(b, a, c)
+
+
+10.Find the Error and Correct it:
+
+marks = int(input("Enter marks: "))
+if marks >= 90:
+print("A")
+elif marks >= 75:
+print("B")
+elif marks >= 50:
+print("C")
+else:
+print("D")
+
+
+11. What is wrong with this logic?
+
+marks = 85
+if marks >= 40:
+    print("Pass")
+elif marks >= 75:
+    print("Distinction")
+else:
+    print("Fail")
+
+
+12. Predict the output
+
+a = 17
+b = 5
+
+print(a // b)
+print(a % b)
+print(a + b * 2)
+
+
+13. Predict the output
+
+x = 10
+y = 20
+
+print(x > y)
+print(x < y)
+print(x == y)
+print(x != y)
+
+
+14. Find the error
+
+n = int(input("Enter number: "))
+
+if n % 2 = 0:
+    print("Even")
+else:
+    print("Odd")
+
+
+15. Find the logical error
+
+The program should print the greater number.
+
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+
+if a > b:
+    print("b is greater")
+else:
+    print("a is greater")
+
+
+
+16. Predict the output
+
+x = 15
+
+if x % 5 == 0:
+    print("A")
+else:
+    print("B")
+
+
+17. Complete the condition
+
+Check whether a number is between 10 and 50 inclusive.
+
+
+n = int(input("Enter number: "))
+
+if __________________:
+    print("Within range")
+else:
+    print("Outside range")
+
+
+18. Find the logical error
+
+The program should print `"Divisible by both"` only when the number is divisible by **2 and 3**.
+
+
+n = int(input("Enter number: "))
+
+if n % 2 == 0 or n % 3 == 0:
+    print("Divisible by both")
+else:
+    print("Not divisible by both")
+
+
+19. Predict the output
+
+marks = 72
+
+if marks >= 90:
+    print("A")
+elif marks >= 60:
+    print("B")
+else:
+    print("C")
+
+
+20. Write the condition
+
+A student passes if marks are **35 or more AND 100 or less**.
+
+marks = int(input("Enter marks: "))
+
+if __________________:
+    print("Pass")
+else:
+    print("Fail")
+
+
+21. Critical programming problem
+
+Write a program to input a three-digit number and determine whether its last digit is even or odd.
+
+Example:
+Input: 246
+Output: Last digit is even
+
+
