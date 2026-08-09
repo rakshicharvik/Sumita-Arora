@@ -1,0 +1,85 @@
+Nested if — Homework
+
+1. Electricity Bill -> Input the number of units consumed.
+
+First check whether the units are valid (not negative). If valid, calculate the electricity bill:
+
+* Up to 100 units → ₹2 per unit
+* 101–200 units → ₹3 per unit for units above 100
+* Above 200 units → ₹5 per unit for units above 200
+
+Display the total bill.
+
+
+2. ATM Withdrawal
+Input:
+* Account balance
+* Withdrawal amount
+* PIN
+
+First check whether the PIN is correct (`1234`).
+
+If the PIN is correct:
+
+* Check whether the withdrawal amount is positive.
+* If positive, check whether sufficient balance is available.
+
+Display the appropriate message.
+
+
+3. Employee Bonus
+Input:
+* Years of experience
+* Monthly salary
+
+First check whether experience is at least 2 years.
+
+If yes:
+
+* Salary ≥ ₹50,000 → 20% bonus
+* Salary ≥ ₹30,000 → 15% bonus
+* Otherwise → 10% bonus
+
+If experience is less than 2 years, display "Not eligible for bonus".
+
+Calculate and display the bonus amount.
+
+
+4. Online Exam Eligibility
+Input:
+* Age
+* Attendance percentage
+* Internal marks
+
+A student is eligible only if:
+
+* Age ≥ 17
+* Attendance ≥ 75%
+
+If both conditions are satisfied, check the internal marks:
+
+* Marks ≥ 40 → "Eligible for Exam"
+* Marks < 40 → "Internal marks insufficient"
+
+Otherwise, display "Not Eligible".
+
+
+5. Shopping Discount — Challenge
+Input:
+* Purchase amount
+* Membership status (Y or N)
+
+First check whether the purchase amount is valid.
+
+If the customer is a member:
+
+* Amount ≥ ₹10,000 → 20% discount
+* Amount ≥ ₹5,000 → 15% discount
+* Otherwise → 10% discount
+
+If the customer is not a member:
+
+* Amount ≥ ₹10,000 → 10% discount
+* Otherwise → 5% discount
+
+Calculate and display the discount amount and final amount.
