@@ -1,0 +1,73 @@
+Product of digits.
+
+Count even digits.
+
+Count odd digits.
+
+Count zeros.
+
+Count digits greater than 5.
+
+Count digits less than 5.
+
+Count digits equal to 5.
+
+Find the sum of even digits.
+
+Find the sum of odd digits.
+
+Find the product of even digits.
+
+Find the product of odd digits.
+
+Find the difference between sum of even and odd digits.
+
+Find the average of digits.
+
+Find the second smallest digit.
+
+Find the largest even digit.
+
+Find the smallest even digit.
+
+Find the largest odd digit.
+
+Find the smallest odd digit.
+
+Check whether a number contains a repeated digit.
+
+Check whether all digits are different.
+
+Check whether a number contains a particular digit.
+
+Find frequency of every digit from 0 to 9.
+
+Find the most frequently occurring digit.
+
+Find the least frequently occurring digit.
+
+Find the number of distinct digits.
+
+Find the sum of first and last digit.
+
+Find the difference between first and last digit.
+
+Swap first and last digit.
+
+Remove first digit.
+
+Remove last digit.
+
+Find the number formed after reversing the digits.
+
+Check whether first digit equals last digit.
+
+Check whether first digit is greater than last digit.
+
+Check whether digits are in ascending order.
+
+Check whether digits are in descending order.
+
+
+
+ 
