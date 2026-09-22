@@ -1,0 +1,302 @@
+Zero → Production-Ready AI Engineer: 12-Month Roadmap
+Who this is for: a Support Engineer (telecom / charging systems) with intermediate Python, basic GenAI, a full-time job and an MCA, aiming to interview as an AI / Applied AI / Full-Stack AI / Forward-Deployed Engineer in ~12 months at the level of a strong 2-year candidate.
+
+Budget: 18–20 hrs/week ≈ 1,000 hours for the year. Weekly split: ~4h theory · ~6h coding practice (incl. DSA) · ~8h project · ~2h review/interview.
+
+Mentor's framing before we start
+
+Three things I'm going to hold you to:
+
+Everything ships. No stage ends with "I understand it". It ends with a running thing, a test suite, and a README you could defend in an interview.
+One product, three projects. Your three portfolio projects are three layers of the same product: an AI-Powered Telecom Support Operations Platform built on synthetic data. Project 1 is the core platform, Project 2 adds the knowledge assistant, Project 3 adds the agentic layer. This gives you one coherent story ("I built the thing I wished I had at work") instead of three unrelated demos, and every hour compounds.
+The list gets cut. Your original list has ~80 technologies. You will go deep on ~12, get working knowledge of ~15, and only be conversant about the rest. That is what a strong 2-year engineer actually looks like.
+Security rule (non-negotiable): nothing from your employer or its client appears in your portfolio. No real logs, tickets, node names, schemas, vendor-specific internals, screenshots, or customer data. You describe your domain generically ("online charging / billing support for a telecom operator") and build with synthetic data you generate yourself. Every repo gets a SYNTHETIC_DATA.md stating this. If in doubt, leave it out.
+
+Part 1 — The Priority Skill Hierarchy
+DEEP (must be able to build, debug, and explain from a whiteboard)
+Skill	Why it's deep
+Python (professional)	Every project, every interview, every AI framework is Python.
+FastAPI + Pydantic	Your API layer for all three projects.
+PostgreSQL + SQL	Asked in almost every backend/AI interview; also your vector store (pgvector).
+Docker (+ Compose)	You cannot say "deployed" without it.
+Git/GitHub workflow	PRs, branches, CI. Non-negotiable hygiene.
+Testing (pytest)	Separates a 2-year engineer from a tutorial-follower.
+LLM application engineering	Structured outputs, tool calling, context management, cost/latency, failure modes.
+RAG end to end	Ingest → chunk → embed → retrieve → rerank → generate → cite → evaluate.
+AI evaluation	The single most-asked topic in AI Engineer interviews in 2026.
+System design (AI-flavoured)	Requirements → architecture → trade-offs, for 7 canonical systems.
+DSA core patterns	Arrays, hashing, two pointers, sliding window, stack, binary search, BFS/DFS, basic DP.
+Debugging & observability	Logs, traces, metrics for both HTTP and LLM calls.
+WORKING KNOWLEDGE (can use productively, can explain trade-offs)
+React + TypeScript · SQLAlchemy 2.0 + Alembic · Auth (JWT, OAuth2 flows, RBAC) · Async Python · Redis (cache + queue) · Background jobs (Celery/arq) · LangGraph · MCP (build a server, connect a client) · pgvector (one vector DB, deeply) · One cloud provider (AWS or Fly.io/Railway for deploys + S3 + a managed Postgres) · GitHub Actions CI/CD · OpenTelemetry basics / Langfuse-style LLM tracing · scikit-learn (regression, classification, trees, GBMs, anomaly detection) · Pandas/NumPy · Statistics for evaluation (means, variance, confidence, A/B intuition) · AI security (prompt injection, tool misuse, data exfiltration, least privilege) · Prompt engineering (as an engineering discipline, not tricks)
+
+AWARENESS (can talk about it for 5 minutes; do not build with it this year)
+Java/Spring Boot/Spring AI (you already know Java; keep it as a "yes, I can" answer, not a study track) · Transformer math beyond the intuition level · PyTorch · Fine-tuning · Kubernetes · Microservices decomposition · WebSockets · Multi-agent frameworks · Multiple vector DBs · Graph databases · Kafka
+
+Skills to NOT waste time on this year
+Deep Spring Boot / Spring AI. Your Java is a bonus line on the resume, not a target.
+Kubernetes. Docker Compose + one managed platform is enough for a 2-year AI Engineer.
+Fine-tuning or training models. You're an applications engineer.
+LeetCode Hard. 150–200 well-understood Easy/Medium problems beats 50 Hards.
+Comparing 6 vector databases. Learn pgvector deeply; read the docs of one other.
+Chasing new agent frameworks weekly. LangGraph + raw SDK tool calling is enough.
+Streamlit-only demos. They don't demonstrate engineering.
+Prompt "tricks". Prompts are config; evaluation is engineering.
+Part 2 — The Complete 12-Month Roadmap
+Each month has: focus, deliverable, DSA block, competency gate, and capstone. Months 1 is broken into weeks in Part 3; each later month gets its week-by-week breakdown when you reach it (ask me at the start of each month, with your gate results).
+
+Phase A — Professional Backend Engineer (Months 1–4)
+Month 1 — Professional Python + SQL + FastAPI foundations
+
+Learn: Python the way a team uses it (packaging, typing, dataclasses, exceptions, logging, pytest, generators, decorators, context managers), Git workflow, SQL basics, FastAPI + Pydantic v2 + SQLAlchemy 2.0 + Alembic, Postgres in Docker.
+Deliverable: Project 1 v0.1 — Ticket & Alert API with migrations, tests, Compose, synthetic data seeder. (Full spec in Part 4.)
+DSA: Arrays, strings, hash maps, sets (16–18 problems).
+Capstone: Part 5.
+Month 2 — Production FastAPI + PostgreSQL depth
+
+Learn: Repository/service layering, dependency injection properly, custom exception handling + RFC-7807-style error responses, request/response validation edge cases, JWT auth + refresh tokens + RBAC, middleware (request IDs, timing), pagination/filtering/sorting, OpenAPI hygiene. SQL: joins, aggregations, subqueries, CTEs, window functions, indexes, EXPLAIN ANALYZE, transactions and isolation levels, constraints, normalization.
+Deliverable: Project 1 v0.5 — auth, roles (agent / senior / admin), ticket lifecycle with state machine, full-text search on tickets, audit log table, 80%+ test coverage on services.
+DSA: Two pointers, sliding window, prefix sums, stack (16 problems).
+Gate: Given a slow query on a 1M-row synthetic tickets table, make it fast using EXPLAIN + an index, and explain why. Debug a broken auth flow I hand you.
+Capstone: "Cold whiteboard": design the ticket + alert + user schema from scratch, then implement the search endpoint with filters and pagination, no references, in 3 hours.
+Month 3 — Background jobs, caching, React + TypeScript
+
+Learn: Redis (caching patterns, TTLs, invalidation), a task queue (arq or Celery), idempotency, retries with backoff, scheduled jobs. Async FastAPI correctly (when async helps, when it hurts). React + TS essentials: components, hooks, data fetching (TanStack Query), forms, routing, auth-aware UI, a dashboard with charts.
+Deliverable: Project 1 v0.9 — dashboard (ticket volume, alert trends, SLA breaches), background job that ingests synthetic alert streams and detects threshold breaches, cached aggregates, email/webhook notification stub.
+DSA: Queue, linked list, binary search (16 problems).
+Gate: Build a "rate-limited notification dispatcher" worker with retries and dead-letter handling, no tutorial.
+Capstone: Deliberately break your own system three ways (kill Redis, corrupt a job payload, overload the API) and write the incident report with fixes.
+Month 4 — Ship it: Docker, cloud, CI/CD, observability
+
+Learn: Multi-stage Dockerfiles, Compose for dev vs. prod, environment/secrets management, GitHub Actions (lint → test → build → deploy), one cloud platform deploy (managed Postgres + Redis + container), structured JSON logging, health checks, basic metrics (Prometheus-style or platform-native), error tracking.
+Deliverable: Project 1 v1.0 deployed and public, with README architecture diagram, ADRs (architecture decision records), demo credentials, synthetic data statement.
+DSA: Recursion, trees, BST (16 problems).
+Gate: Fresh machine → clone → docker compose up → working app in under 5 minutes. CI green. Explain every line of your Dockerfile.
+Capstone: Phase A Final: in one weekend, build a small unrelated CRUD service (e.g. "on-call roster manager") from zero to deployed with tests and CI, without looking anything up except official docs. If this takes more than 12 hours, Phase A isn't done.
+Phase B — LLM Application Engineer (Months 5–7)
+Month 5 — LLM fundamentals + structured outputs + tool calling
+
+Learn: Tokens, tokenizers, context windows, attention/transformer intuition (enough to explain why context is quadratic and why position matters), sampling/temperature/top-p, embeddings as geometry, why LLMs hallucinate. Engineering: structured outputs with Pydantic schemas, tool calling loops by hand (no framework), retries and validation, prompt versioning, cost + latency measurement, streaming. Build your own tiny eval harness (dataset → run → score → report).
+Deliverable: Project 1 gains AI ticket classification (category, priority, sentiment via structured output) with an eval set of 200 synthetic tickets, precision/recall per class, and a cost-per-ticket number. Start Project 2 repo: document ingestion pipeline skeleton.
+DSA: Heap, backtracking (16 problems).
+Gate: Implement a tool-calling agent loop in raw Python (no LangChain) that answers "which tickets breached SLA yesterday?" by calling your own API. Explain every message in the transcript.
+Capstone: Write the eval report for your classifier as if for a manager: what it gets wrong, why, what you'd change.
+Month 6 — RAG: ingestion → retrieval
+
+Learn: Parsing (PDF, markdown, HTML), cleaning, chunking strategies (fixed, recursive, semantic, structural) and their trade-offs, embedding models and dimensions, pgvector indexing (HNSW vs IVFFlat), hybrid search (BM25 + vector), metadata filtering, reranking (cross-encoder), context construction and citation mapping, retrieval evaluation (recall@k, MRR).
+Deliverable: Project 2 v0.5 — ingest a synthetic corpus (runbooks, KB articles, past incident post-mortems you write yourself or adapt from public telecom docs), hybrid retrieval with filters (system, severity, date), reranking, a retrieval eval set with 100 questions and recall@k tracked across chunking experiments.
+DSA: Graphs, BFS/DFS (16 problems).
+Gate: Given a new document type, add it to the pipeline in under an hour. Show me a chunking experiment table with numbers.
+Capstone: A/B two chunking strategies and two retrieval strategies; write up which won and why, with graphs.
+Month 7 — RAG: generation, citations, evaluation, hallucination control, ship
+
+Learn: Grounded generation prompts, citation formats and verification, answer-faithfulness and answer-relevance evals (LLM-as-judge with calibration against human labels), refusal when evidence is weak, conversation memory for follow-ups, query rewriting, caching embeddings and answers, cost/latency dashboards, guardrails for prompt injection via documents, auth-scoped retrieval (users only retrieve docs they're allowed to see).
+Deliverable: Project 2 v1.0 deployed — chat UI with citations that link to source spans, per-answer faithfulness score, monitoring dashboard (latency p50/p95, tokens, cost, retrieval hit rate), eval suite runnable in CI.
+DSA: Topological sort, union-find (12 problems) + review.
+Gate: I inject an instruction into one of your documents. Your system must not follow it, and you must show me the trace.
+Capstone: Phase B Final: "RAG on a new domain in a day": take a public dataset (e.g. a government policy PDF set), stand up an evaluated, cited RAG system by end of day. Write the trade-offs you'd change with a week.
+Phase C — ML for AI Engineers + Agentic Systems (Months 8–10)
+Month 8 — Applied ML on telecom signals
+
+Learn: Statistics and probability for engineers (distributions, mean/variance, percentiles, confidence intervals, correlation vs causation, base rates), NumPy/Pandas fluency, sklearn pipeline: train/val/test, cross-validation, over/underfitting, regression, classification, trees, random forest, gradient boosting, metrics (precision/recall/F1/ROC-AUC/calibration), feature engineering, model interpretation (feature importance, SHAP intuition), anomaly detection (z-score, isolation forest, seasonal decomposition, simple forecasting residuals).
+Deliverable: Project 1 gains ML anomaly detection on synthetic traffic/KPI time series (call attempts, success rates, latency), replacing the threshold detector, with a comparison of the two approaches and a model card.
+DSA: Dynamic programming basics (16 problems).
+Gate: Given a new synthetic KPI dataset, produce a validated anomaly detector with an honest metrics report in one sitting.
+Capstone: Explain to a non-ML manager why your detector's false positives went up after a holiday and what you did.
+Month 9 — Agents, state, LangGraph
+
+Learn: The spectrum (chatbot → LLM app → RAG app → tool-using LLM → agent → multi-agent), agent loops, tool selection, planning vs reacting, state as a first-class object, short/long-term memory, routing, human-in-the-loop interrupts, checkpointing/resumability, failure handling (tool errors, loops, budget limits), agent evaluation (task success, trajectory scoring, cost per task).
+Deliverable: Project 3 v0.5 — Incident Assistant agent: given an alert, it pulls related tickets (Project 1 API), retrieves runbooks (Project 2), summarizes, proposes root cause and actions, and stops for human approval before any "action" tool (all actions are simulated). Built in LangGraph with persisted state.
+DSA: Mixed review, intermediate problems (16).
+Gate: Kill the process mid-run; the agent must resume from its checkpoint. Show the trajectory trace.
+Capstone: Write the agent eval set (30 incidents with expected actions) and report task success rate.
+Month 10 — MCP, agent security, observability, production
+
+Learn: MCP architecture (host/client/server, tools, resources, prompts, transports stdio/HTTP, auth), building an MCP server that exposes your Ops Platform tools, connecting your agent and a desktop client to it, when MCP is useful vs. plain function calling. Security: least-privilege tools, allow-lists, input/output validation, prompt injection via tool results, secrets handling, audit logging of every tool call, rate/budget limits. Observability: traces per run, token/cost per step, alerting on failures.
+Deliverable: Project 3 v1.0 deployed — MCP server + LangGraph agent + approval UI + audit log + tracing dashboard + security write-up.
+DSA: Mock-interview-style timed sets (2 × 45 min per week).
+Gate: Red-team your own agent for an hour with me; every finding gets a fix and a test.
+Capstone: Phase C Final: record a 10-minute architecture walkthrough video of Project 3 as if presenting to a customer's engineering team (forward-deployed muscle).
+Phase D — System Design, Positioning, Interviews (Months 11–12)
+Month 11 — System design + portfolio polish + applications begin
+
+Learn: The 7 canonical designs (AI support assistant, enterprise RAG platform, agent platform, telecom monitoring platform, notification/alerting system, document processing system, AI ticket classification) each through: requirements → architecture → APIs → data → caching → queues → scaling → security → observability → failure → AI risks → cost → latency → trade-offs. One design per 2–3 days, written and diagrammed. Spring Boot refresh: one weekend, one small REST service, so the resume line is honest.
+Deliverable: Resume v1, LinkedIn rewritten, GitHub profile README, three project READMEs with diagrams and "what I'd do differently". Start applying (10–15 targeted applications/week).
+DSA: Timed mocks; revisit weak patterns.
+Gate: Whiteboard any of the 7 designs cold in 40 minutes with trade-offs.
+Month 12 — Interview sprint + Final Challenge
+
+Weekly: 2 DSA mocks, 1 system design mock, 1 project deep-dive mock, behavioral prep (STAR stories from support work), SQL drills, Python/FastAPI rapid-fire.
+Final AI Engineer Challenge (one week, ~20 hours): A new business brief arrives: "A mid-size ISP wants an AI assistant that watches network alerts, correlates them with customer complaints, drafts incident summaries with cited runbook steps, and proposes remediation for engineer approval. Deliver a design doc, working prototype, eval report, security review, and a 15-minute presentation." You must use Python, FastAPI, PostgreSQL (+pgvector), React, Docker, cloud deploy, an ML anomaly signal, LLM structured outputs, RAG with citations, a LangGraph agent with human approval, an MCP tool server, an eval suite, and observability. If you can do this, you are the engineer you set out to become.
+DSA curriculum summary (~180 problems)
+Month	Topics	Core patterns
+1	Arrays, strings, hash maps, sets	Frequency counting, complement lookup, in-place manipulation
+2	Two pointers, sliding window, prefix sums, stack	Shrinking/expanding windows, monotonic stack, range sums
+3	Queue, linked list, binary search	Fast/slow pointers, reversal, search on answer space
+4	Recursion, trees, BST	Traversals, height/depth, validate BST, LCA
+5	Heap, backtracking	Top-k, k-way merge, subsets/permutations/pruning
+6	Graphs, BFS/DFS	Grid islands, shortest path unweighted, cycle detection
+7	Topological sort, union-find	Course schedule, connected components
+8	DP basics	1-D (climbing stairs, house robber), 2-D grids, knapsack intuition, LCS
+9–12	Mixed review and timed mocks	—
+Rule: 3–4 problems/week, each solved, then re-explained aloud, then complexity written down. Re-solve every problem you got wrong two weeks later. Use the NeetCode 150 list as the problem source.
+
+Part 3 — The First 30 Days in Detail
+Daily routine (weekdays, ~2.5h)
+20 min: DSA (one problem, or finish yesterday's)
+60–90 min: the day's block (theory Mon/Tue, coding Wed/Thu, project Fri)
+15 min: log what you built and one thing you don't understand yet (keep a LEARNING_LOG.md in your repo)
+Weekend (~7–8h total)
+Saturday 4h: project
+Sunday 3–4h: project + review + one DSA re-solve + read one piece of official documentation end to end
+Week 1 — Python like a professional + Git
+Learn (theory ~4h): project layout (src/ layout, pyproject.toml), uv or venv + pip, type hints (Optional, list[str], TypedDict, Protocol), dataclasses, exception design (custom hierarchies, raise ... from, never bare except), logging (loggers, handlers, formatters, why not print), pytest (fixtures, parametrize, tmp_path), Git branching, meaningful commits, PRs to yourself.
+
+Concepts to understand deeply: mutability and aliasing; when to use a dataclass vs dict vs Pydantic model; exception vs error code; why logging config lives at the entry point only.
+
+Coding exercises:
+
+ticketparse — a CLI that reads a JSONL file of synthetic tickets, validates each record, logs bad rows with reasons, and writes clean output. Typed, tested, packaged, installable with pip install -e ..
+Write 5 custom exceptions for a fake payments module and a function that translates them into user-facing messages.
+DSA (4): Two Sum, Valid Anagram, Contains Duplicate, Group Anagrams.
+
+Real-world task: Read the Python logging HOWTO and the pytest "Getting Started" and "Fixtures" pages fully. Set up ruff and mypy in your repo; get to zero warnings.
+
+Common mistakes: giant single-file scripts; from x import *; catching Exception and moving on; committing venv/; using print for anything not user-facing.
+
+Resources: Python official tutorial (chapters 8–10), logging HOWTO, pytest docs, Fluent Python ch. 1–5 (skim), Pro Git ch. 2–3.
+
+Checklist: [ ] ticketparse passes 10+ tests [ ] ruff + mypy clean [ ] you can explain raise ... from [ ] 4 DSA solved and re-explained aloud
+
+Week 2 — Deeper Python + SQL foundations
+Learn: OOP the Python way (composition over inheritance, __repr__, @property, ABCs and Protocol), iterators/generators (yield, lazy pipelines), decorators (with functools.wraps; write a @retry and a @timed), context managers (with, contextlib), JSON/file handling, pathlib, comprehensions vs loops. SQL: SELECT, WHERE, ORDER BY, LIMIT, JOIN (inner/left), GROUP BY/HAVING, basic aggregates, CREATE TABLE, primary/foreign keys, NOT NULL, UNIQUE, CHECK.
+
+Concepts to understand deeply: why generators matter for large log files; what a decorator actually does to the function object; how a foreign key protects data; the difference between WHERE and HAVING.
+
+Coding exercises:
+
+Generator pipeline: stream a 1-GB synthetic log file (generate it) and compute error rates per hour without loading it into memory.
+@retry(times=3, backoff=2.0) decorator with tests using a fake clock.
+Design (on paper, then SQL) tables for: users, tickets, ticket_comments, alerts. Load synthetic rows with a Python script using psycopg.
+pgexercises.com: complete "Basic" and "Joins and Subqueries".
+DSA (4): Top K Frequent Elements, Product of Array Except Self, Valid Palindrome, Longest Substring Without Repeating Characters (intro to sliding window).
+
+Real-world task: run Postgres in Docker (docker run postgres:16), connect with psql, create your schema, write 10 questions your support team asks weekly ("tickets open > 48h by severity") as SQL queries.
+
+Common mistakes: inheritance for code reuse; decorators that lose the function name; storing JSON blobs when you should have columns; no foreign keys "for flexibility".
+
+Resources: Python docs on generators/functools/contextlib; PostgreSQL tutorial (ch. 2–3); pgexercises.com; Architecture Patterns with Python (cosmicpython.com, free) ch. 1–2.
+
+Checklist: [ ] log pipeline handles 1 GB in constant memory [ ] @retry tested [ ] 4-table schema with constraints loads without errors [ ] 10 SQL queries saved in repo
+
+Week 3 — FastAPI + Pydantic v2 + SQLAlchemy 2.0 + Alembic
+Learn: HTTP (methods, status codes, idempotency, headers), REST resource design, FastAPI routing, path/query/body params, Pydantic v2 models (BaseModel, validators, model_config, separate request/response schemas), dependency injection (Depends, DB session per request), SQLAlchemy 2.0 ORM (declarative models, relationships, select() style, sessions), Alembic migrations (autogenerate, review, apply), settings via pydantic-settings + .env.
+
+Concepts to understand deeply: why request and response schemas differ; what a session/transaction boundary is and where it should live; why migrations are code; what DI buys you in testing.
+
+Coding exercises (this is Project 1 v0.1 starting):
+
+POST/GET/PATCH /tickets, GET /tickets?status=&severity=&page= with proper 404/422 handling.
+POST /alerts and GET /alerts with a relationship to tickets (an alert can be linked to a ticket).
+Alembic migration history from empty DB to current schema.
+Seeder CLI: python -m app.seed --tickets 5000 --alerts 20000 generating realistic synthetic data with Faker.
+DSA (4): Valid Parentheses, Best Time to Buy and Sell Stock, Merge Intervals, 3Sum (two pointers).
+
+Real-world task: read the FastAPI docs sections "Dependencies", "SQL Databases", "Handling Errors", and "Bigger Applications" fully. Read SQLAlchemy 2.0 "ORM Quick Start" and the Unified Tutorial's session section.
+
+Common mistakes: returning ORM objects directly; one global session; PATCH that requires all fields; skipping Alembic and using create_all; logic in route handlers.
+
+Resources: FastAPI docs, Pydantic v2 docs, SQLAlchemy 2.0 docs, Alembic tutorial, MDN HTTP overview.
+
+Checklist: [ ] all endpoints in OpenAPI docs with examples [ ] migrations run clean from empty DB [ ] seeder produces 5k tickets in < 30s [ ] you can draw request → dependency → session → repository → DB
+
+Week 4 — Testing, Docker Compose, layering, first CI
+Learn: Test pyramid for APIs (unit tests for services, integration tests with a real test Postgres via Compose or testcontainers, TestClient/httpx.AsyncClient), factories for test data, separating routers / services / repositories / schemas / models, structured JSON logging with request IDs (middleware), health endpoint, Dockerfile for the API, Compose with api + db, GitHub Actions running lint + tests on every push.
+
+Concepts to understand deeply: what to mock and what never to mock (don't mock your DB in integration tests); why a request ID exists; what happens in each layer of a multi-stage Docker build; why CI fails fast.
+
+Coding exercises:
+
+25+ tests: service unit tests, endpoint integration tests, a migration smoke test.
+Middleware that adds X-Request-ID, logs method/path/status/duration as JSON.
+docker compose up brings up API + Postgres, runs migrations, seeds data.
+GitHub Actions workflow: ruff → mypy → pytest with a Postgres service container.
+DSA (4): Binary Search, Reverse Linked List, Maximum Subarray, Min Stack.
+
+Real-world task: Write the README: problem statement (generic telecom support), architecture diagram (Mermaid), how to run, decisions and trade-offs, SYNTHETIC_DATA.md.
+
+Common mistakes: tests that depend on order; SQLite in tests but Postgres in prod; secrets in the image; latest tags; no .dockerignore.
+
+Resources: FastAPI "Testing" docs; Docker "Multi-stage builds" and Compose docs; GitHub Actions "Quickstart" + "Using service containers"; 12-factor app (config, logs sections).
+
+Checklist: [ ] CI green badge in README [ ] fresh clone runs in < 5 min [ ] logs are JSON with request IDs [ ] 25+ tests, integration tests use real Postgres
+
+Month 1 interview questions (practice answering aloud, 2 min each)
+What's the difference between a list, tuple, set and dict, and when would each be wrong?
+Explain a generator and give a case where it saved memory in your project.
+How does a decorator work? Why functools.wraps?
+What does raise X from Y do and why does it matter in an API?
+What's the difference between a PUT and PATCH? What status code for validation failure and why?
+Walk me through what happens when a request hits your GET /tickets endpoint.
+Why do you use migrations instead of create_all()?
+What's a foreign key protecting you from? What's the cost of an index?
+How do you test code that touches the database?
+What's in your Dockerfile and why is it multi-stage?
+Part 4 — First Project Milestone: Support Ops Platform v0.1 (end of Month 1)
+Repo: telecom-support-ops-platform (public). Domain: a fictional operator "NorthStar Telecom". All data synthetic.
+
+Scope of v0.1
+
+Entities: users (no auth yet, just records), tickets (id, title, description, category, severity, status, created_by, assigned_to, created_at, updated_at, resolved_at), ticket_comments, alerts (id, source_system, metric, value, threshold, severity, fired_at, ticket_id nullable).
+Endpoints: full ticket CRUD + filtering + pagination; alert create/list/link-to-ticket; GET /health; GET /stats/summary (counts by status/severity, done in SQL with GROUP BY).
+Infra: Postgres 16 in Compose, Alembic migrations, seeder CLI, JSON logging with request IDs, 25+ tests, GitHub Actions CI, README with Mermaid diagram.
+Explicitly not in v0.1: auth, React, background jobs, AI. Those are Months 2–5. Resist adding them.
+
+Definition of done: a stranger can clone it, run one command, hit /docs, filter tickets, and read your README to understand every decision. You can explain every file.
+
+Part 5 — Competency Gate: pass this before Month 2
+Do these in one sitting (~4 hours), no Google, no AI assistants, official docs only, and record yourself explaining afterwards.
+
+Build without tutorials (90 min): a new tiny FastAPI service oncall-roster with one table (shifts: engineer, start, end), POST/GET /shifts, a filter by date range, Pydantic validation that end > start, an Alembic migration, 5 tests including one integration test against Postgres, running in Compose. Ship it with a Dockerfile.
+Explain on a whiteboard (15 min): draw the request lifecycle in Project 1 from HTTP → middleware → router → dependency → service → repository → SQLAlchemy session → Postgres → response, and where a transaction begins and ends.
+Debug a broken API (30 min): I will give you a branch of your own repo with 3 injected bugs (a session leak, a wrong status code, a broken migration). Find and fix all three with tests that would have caught them.
+SQL (30 min): on your seeded data, write: tickets per severity per week for the last 8 weeks; the 10 longest-open tickets with their latest comment; alerts that fired without a linked ticket, grouped by source system. Then add one index that measurably helps one of them and show EXPLAIN ANALYZE before/after.
+Python (30 min): write a generator that streams JSONL, a @retry decorator with exponential backoff, and a context manager that times a block and logs it; all with type hints and tests.
+DSA (30 min): solve two unseen Easy/Medium problems from Month 1 topics and state complexity.
+Levels
+
+Beginner: needed references for basic FastAPI/SQLAlchemy syntax; tests missing.
+Competent: finished 1–5 with docs only; one or two gaps.
+Production-ready: everything works, tested, logged, containerized, explainable.
+Interview-ready: all of the above plus you answered the 10 Month-1 questions aloud in under 2 minutes each with a concrete example from your code.
+You move to Month 2 at Competent or above. If you're at Beginner, spend one more week on the weakest area, then retake. This isn't punishment; every later month stacks on this one.
+
+Part 6 — Career Positioning (start now, refine in Month 11)
+Your story, one sentence: "I spent two years keeping a telecom charging platform running for real customers; I learned what breaks, what's repetitive, and what engineers actually need. Then I built the platform I wished we'd had, and taught it to think."
+
+The progression you'll be able to prove: Support Engineer (understands incidents, SLAs, runbooks, escalation, on-call reality) → Automation (seeder, parsers, job workers in Project 1) → Backend Engineering (Project 1 v1.0) → AI/GenAI Applications (classification, RAG in Project 2) → AI Engineer (evaluated, monitored, secured agent in Project 3) → Applied / Forward-Deployed (Final Challenge: brief → design → build → present).
+
+How to find problems worth automating (do this at work, keep it in a private notebook, never in public repos): each week, note one task that is repetitive, rule-based or knowledge-lookup-heavy, and error-prone under time pressure. Ask: what input, what decision, what output, who approves? That template is the exact spec for a tool, a job, a RAG query, or an agent step. Your projects reimplement those patterns on synthetic data, never the real thing.
+
+GitHub strategy: three repos (Project 1, 2, 3) plus a synthetic-telecom-data package they all share. Every repo: badges, architecture diagram, "decisions and trade-offs", "what I'd do differently", eval results where relevant, 1–2 minute demo GIF. Commit history shows real work, not one giant "initial commit".
+
+Resume strategy (Month 11): lead with a 3-line summary using the sentence above; projects section before experience; each project = problem → architecture → measurable result (e.g. "faithfulness 0.91 on 200-question eval, p95 latency 2.1s, $0.004/query"). Support role bullets reframed as outcomes ("reduced repeat escalations by scripting X" is fine if true and non-confidential; otherwise describe skills, not specifics).
+
+Application strategy (Months 11–12): 10–15 targeted roles/week; prioritize companies building AI products for enterprises/telecom/support, mid-size firms with "Applied AI" or "Forward Deployed" titles, and AI-forward consultancies; referrals through LinkedIn posts about your project learnings (one post every two weeks from Month 5, technical and specific, no fluff).
+
+Part 7 — Monthly Milestone Tracker
+Month	Deliverable	Gate passed	Capstone done	DSA total
+1	P1 v0.1 API + tests + Compose + CI	[ ]	[ ]	16
+2	P1 v0.5 auth/RBAC/search/audit	[ ]	[ ]	32
+3	P1 v0.9 dashboard + jobs + cache	[ ]	[ ]	48
+4	P1 v1.0 deployed	[ ]	[ ]	64
+5	AI ticket classifier + eval; P2 skeleton	[ ]	[ ]	80
+6	P2 v0.5 hybrid retrieval + retrieval evals	[ ]	[ ]	96
+7	P2 v1.0 deployed with citations + monitoring	[ ]	[ ]	108
+8	ML anomaly detection + model card	[ ]	[ ]	124
+9	P3 v0.5 LangGraph agent + approvals	[ ]	[ ]	140
+10	P3 v1.0 deployed + MCP + security review	[ ]	[ ]	156
+11	7 system designs; resume/LinkedIn; applying	[ ]	[ ]	170
+12	Final AI Engineer Challenge; interviews	[ ]	[ ]	180+
+What to send me at the end of Month 1
+Your repo link, your gate results (which level per task), your LEARNING_LOG.md, and the three things that felt hardest. I'll then give you Month 2 at the same week-by-week detail, calibrated to where you actually are rather than where the plan assumed you'd be.
