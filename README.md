@@ -1,617 +1,1391 @@
-PRIME AND FACTOR
-Check whether a number is prime or composite
-Print all composite numbers from 1 to N
-Print prime numbers between two limits
-Count prime numbers between two limits
-Find the sum of prime numbers from 1 to N
-Find the largest prime number smaller than N
-Check whether two numbers are co-prime
-Print the prime factors of a number
-Count the prime factors of a number
-Find the sum of prime factors of a number
-Find the product of prime factors of a number
-Print every number from 1 to N along with its prime factors
-Find the proper factors of a number
-Find the sum of proper factors of a number
 
-PERFECT NUMBER
-Check whether a number is a perfect number
-Print perfect numbers from 1 to N
-Count perfect numbers between two limits
-Print the first N perfect numbers
-Find the sum of perfect numbers in a given range
-Find the largest perfect number smaller than N
+TOPIC 1 — INTRODUCTION TO FUNCTIONS
+1.1 What is a Function?
+A function is a named block of Python statements that performs a particular task and can be executed whenever it is called.
+Example
+def welcome():
+    print("Welcome to Python")
+welcome()
+Understand the Program
+Part	Meaning
+def	Keyword used to define a function
+welcome	Function name
+()	Parentheses
+:	Beginning of function body
+print()	Statement inside function
+welcome()	Function call
 
 
 
-ARMSTRONG NUMBER
-Check whether a number is an Armstrong number
-Print Armstrong numbers from 1 to N
-Print all three-digit Armstrong numbers
-Print Armstrong numbers between two limits
-Count Armstrong numbers in a range
-Find the largest Armstrong number smaller than N
-Find the sum of Armstrong numbers in a range
+1.2 Advantages of Functions
+1. Code Reusability
+A function can be written once and called many times.
+2. Modularity
+A large program can be divided into smaller functions.
+3. Readability
+Functions make a program easier to understand.
+4. Easy Debugging
+Errors can be isolated to a particular function.
+5. Easy Maintenance
+Changes can be made in one function instead of changing repeated code.
+6. Avoids Repetition
+The same statements do not need to be written repeatedly.
 
-PALINDROME
-Check whether a number is a palindrome
-Reverse a number and compare it with the original number
-Print palindrome numbers from 1 to N
-Print palindrome numbers between two limits
-Count palindrome numbers in a range
-Find the largest palindrome smaller than N
-Find the sum of palindrome numbers in a range
+🎯 EXPECTED THEORY QUESTIONS
 
-STRONG NUMBER
-Check whether a number is a Strong number
-Print Strong numbers from 1 to N
-Print Strong numbers between two limits
-Count Strong numbers in a range
-Find the sum of Strong numbers in a range
-
-FACTORIAL
-Find the factorial of each digit of a number
-Find the sum of factorials of digits
-Find factorial of a number using for loop
-Find factorial of a number using while loop
-Print factorials from 1 to N
-Find the factorial of each digit of a number
-Find the sum of factorials of digits
-Find the sum 1! + 2! + 3! + ... + N!
-Find the product 1! × 2! × 3! × ... × N!
-Print factorials of all numbers between two limits
-Find the largest factorial less than a given number
-Find the sum of factorials of digits of every number from 1 to N
-
-FIBONACCI
-Print the first N Fibonacci terms
-Print Fibonacci numbers up to a given limit
-Generate Fibonacci series using for loop
-Generate Fibonacci series using while loop
-Find the Nth Fibonacci number
-Find the sum of the first N Fibonacci numbers
-Check whether a given number belongs to the Fibonacci series
-Print Fibonacci numbers between two limits
-Print even Fibonacci numbers
-Print odd Fibonacci numbers
-Count Fibonacci numbers up to N
-Find the largest Fibonacci number smaller than N
-
-SERIES
-Find the sum 1 + 2 + 3 + ... + N
-Find the sum 1² + 2² + 3² + ... + N²
-Find the sum 1³ + 2³ + 3³ + ... + N³
-Find the sum of the first N even numbers
-Find the sum of the first N odd numbers
-Find the sum of squares of even numbers
-Find the sum of squares of odd numbers
-Find the sum of cubes of even numbers
-Find the sum of cubes of odd numbers
-Print the series 1 4 7 10 ... 40
-Print the series 1 4 7 10 ... N
-Print the series 1 -4 7 -10 ... -40
-Print the series 2 5 8 11 ... N
-Print the series 5 10 15 20 ... N
-Print the series 3 6 9 12 ... N
-Print the series 10 8 6 4 2
-Print the first N terms of an arithmetic progression
-Find the sum of an arithmetic progression
-Print an arithmetic series with alternating signs
-Find the sum 1 + x + x² + x³ + ... + xⁿ
-Find the sum 1 - x + x² - x³ + ... + xⁿ
-Find the sum x + x² + x³ + ... + xⁿ
-Find the sum x - x² + x³ - x⁴ + ...
-Find the sum x + x²/2 + x³/3 + ... + xⁿ/n
-Find the sum x - x²/2 + x³/3 - ...
-Find the sum 1 + x/2 + x²/3 + x³/4 + ...
-Find the sum of a power series for a given number of terms
-Find the sum x/1 + x²/2 + x³/3 + ... + xⁿ/n
-Find the sum x/1 - x²/2 + x³/3 - ...
-Find the sum 1/1 + 1/2 + 1/3 + ... + 1/N
-Find the sum 2/9 - 5/13 + 8/17 ... for a given number of terms
-Find the sum 1/2 + 1/3 + 1/4 + ... + 1/N
-Find the sum of alternating fractions
-Find the sum of a series where numerator and denominator both increase by a fixed value
-Find the sum 1! + 2! + 3! + ... + N!
-Find the sum 1/1! + 1/2! + 1/3! + ... + 1/N!
-Find the sum x + x²/2! + x³/3! + ... + xⁿ/n!
-Find the sum x - x²/2! + x³/3! - ...
-Find the sum 1 + x/1! + x²/2! + ... + xⁿ/n!
-Find the sum 1 - x/1! + x²/2! - ...
-Find the sum x + x²/2! + x³/3! + ... for a fixed number of terms
-Find the sum of an alternating factorial series
-Find the sum of a factorial series using nested loops
+What is a function?
 
 
-
-PATTERN
-Print an increasing star pattern
-Print a decreasing star pattern
-Print a right aligned star pattern
-Print an inverted right aligned star pattern
-Print a pyramid star pattern
-Print an inverted pyramid star pattern
-Print a diamond star pattern
-Print an increasing number pattern
-Print a decreasing number pattern
-Print a repeated number pattern
-Print a reverse repeated number pattern
-Print a continuous number pattern
-Print a reverse continuous number pattern
-Print a number pattern with increasing starting numbers
-Print a number pattern with decreasing starting numbers
-Print an increasing alphabet pattern
-Print a decreasing alphabet pattern
-Print a repeated alphabet pattern
-Print a continuous alphabet pattern
-Print an inverted alphabet pattern
+Which keyword is used to define a function?
 
 
+What is the purpose of a function?
 
 
-PRACTICE PROBLEMS FOR EXAMINATIONS
-Print numbers having exactly two factors
-Print numbers whose sum of proper factors equals the number
-Print numbers whose sum of factorials of digits equals the number
-Print numbers that are both prime and palindrome
-Print numbers that are both Armstrong and palindrome
-Print numbers that are both perfect and palindrome
-Print the first N prime numbers
-Print the first N Fibonacci numbers
-Print the first N palindrome numbers
-Print the first N Armstrong numbers
-Print the first N perfect numbers
-Print the first N Strong numbers
-Find the largest prime below N
-Find the largest palindrome below N
-Find the largest Armstrong number below N
-Find the largest perfect number below N
-Find the largest Fibonacci number below N
-Find the sum of all primes in a range
-Find the sum of all perfect numbers in a range
-Find the sum of all Armstrong numbers in a range
-Find the sum of all palindrome numbers in a range
-Find the sum of all Strong numbers in a range
-Write a program to check whether a number is prime or composite
-Write a program to print all prime numbers between two limits
-Write a program to print the first N prime numbers
-Write a program to check whether a number is perfect
-Write a program to print perfect numbers from 1 to N
-Write a program to check whether a number is Armstrong
-Write a program to print Armstrong numbers from 1 to N
-Write a program to check whether a number is palindrome
-Write a program to print palindrome numbers from 1 to N
-Write a program to check whether a number is Strong
-Write a program to print Strong numbers from 1 to N
-Write a program to calculate factorial
-Write a program to calculate the sum of factorials from 1 to N
-Write a program to generate Fibonacci series
-Write a program to find the Nth Fibonacci number
-Write a program to check whether a number belongs to Fibonacci series
-Write a program to calculate the sum of a given series
-Write a program to calculate an alternating series
-Write a program to calculate a factorial based series
-Write a program to generate an increasing star pattern
-Write a program to generate a decreasing star pattern
-Write a program to generate a number pattern
-Write a program to generate a repeated number pattern
-Write a program to generate an alphabet pattern
-Write a program using nested loops to generate a given pattern
+State any two advantages of functions.
 
 
+Explain code reusability.
 
 
+Explain modularity.
 
 
+Explain any three advantages of using functions.
 
-Given a program, identify the purpose of the outer loop
-for i in range(1, 6):
-    for j in range(1, 6):
-        print("*", end=" ")
-    print()
-What is the purpose of the outer for loop in the above program?
-for i in range(1, 6):
-    for j in range(1, i + 1):
-        print(j, end=" ")
-    print()
-What does the outer loop control in the above program?
-for i in range(1, 5):
-    for j in range(1, 6):
-        print(j, end=" ")
-    print()
-How many rows does the outer loop generate in the above program?
-for i in range(5):
-    for j in range(5):
-        print(i, end=" ")
-    print()
-What is controlled by the outer loop in the above program?
-for i in range(1, 6):
-    for j in range(i):
-        print("*", end="")
-    print()
-What does the outer loop represent in the above pattern program?
 
-Given a program, identify the purpose of the inner loop
-for i in range(1, 6):
-    for j in range(1, i + 1):
-        print("*", end="")
-    print()
-What is the purpose of the inner loop?
-for i in range(1, 6):
-    for j in range(1, 6):
-        print(j, end=" ")
-    print()
-What does the inner loop control in the above program?
-for i in range(1, 6):
-    for j in range(i):
-        print(i, end=" ")
-    print()
-How many times does the inner loop execute for each value of i?
-for i in range(1, 5):
-    for j in range(1, i + 1):
-        print(j, end=" ")
-    print()
-What is the role of the inner loop in generating the pattern?
-for i in range(5):
-    for j in range(5):
-        print("*", end=" ")
-    print()
-What does the inner loop represent in this program?
+🔍 UNDERSTAND THE CODE
+def welcome():
+    print("Welcome to Python")
 
-Predict the output of a nested loop program
-What will be the output of the following program?
-for i in range(1, 4):
-    for j in range(1, 4):
-        print(j, end=" ")
-    print()
-What will be the output of the following program?
-for i in range(1, 4):
-    for j in range(1, i + 1):
-        print(j, end=" ")
-    print()
-What will be the output of the following program?
-for i in range(1, 5):
-    for j in range(i):
-        print(i, end=" ")
-    print()
-What will be the output of the following program?
-for i in range(1, 5):
-    for j in range(1, 5):
-        print(i, end=" ")
-    print()
-What will be the output of the following program?
-for i in range(1, 5):
-    for j in range(1, i + 1):
-        print("*", end="")
-    print()
-What will be the output of the following program?
-for i in range(5, 0, -1):
-    for j in range(i):
-        print("*", end="")
-    print()
-What will be the output of the following program?
-for i in range(1, 5):
-    for j in range(1, i + 1):
-        print(j, end="")
-    print()
-What will be the output of the following program?
-for i in range(1, 5):
-    for j in range(i, 0, -1):
-        print(j, end="")
-    print()
-What will be the output of the following program?
-for i in range(3):
-    for j in range(2):
-        print(i, j)
-What will be the output of the following program?
-for i in range(1, 4):
-    for j in range(1, 4):
-        print(i * j, end=" ")
-    print()
-What will be the output of the following program?
-for i in range(1, 6):
-    for j in range(1, i + 1):
-        print(j * 2, end=" ")
-    print()
-What will be the output of the following program?
-for i in range(1, 6):
-    for j in range(i):
-        print(chr(65 + j), end="")
-    print()
+welcome()
+Answer the following:
 
-Find and correct the error in a loop program
-Find the error and rewrite the corrected program.
-for i in range(1, 6)
-    print(i)
-Find the error and rewrite the corrected program.
-for i in range(1, 6):
-print(i)
-Find the error and rewrite the corrected program.
-for i in range(1, 6):
-    for j in range(1, i + 1)
-        print("*", end="")
-    print()
-Find the error and rewrite the corrected program.
-i = 1
-while i <= 5:
-    print(i)
-Find the error and rewrite the corrected program so that it prints numbers from 1 to 5.
-i = 1
-while i <= 5:
-    print(i)
-    i
-Find the error and rewrite the corrected program.
-for i in range(1, 6):
-    for j in range(1, i):
-        print(j, end=" ")
+What is the function name?
+
+
+Which line defines the function?
+
+
+Which line calls the function?
+
+
+What happens when welcome() is executed?
+
+
+What happens if the function call is removed?
+
+
+🧠 EXAM OUTPUT QUESTION
+def welcome():
+    print("Welcome")
+
+welcome()
+welcome()
+Question: What will be the output?
+
+🟦 TOPIC 2 — TYPES OF FUNCTIONS
+Python functions can be broadly classified into:
+1. Built-in Functions
+Functions already provided by Python.
+Examples:
 print()
-Find the error in the above pattern program and correct the indentation.
-Find the error in the following program and make it print a triangle of stars.
-for i in range(1, 6):
-    for j in range(1, i + 1):
-        print("*")
-Find the error in the following program and make it print numbers from 1 to 10.
-for i in range(1, 10):
-    print(i)
-Find the logical error in the following program.
-n = int(input("Enter n: "))
-sum = 0
+input()
+len()
+max()
+min()
+sum()
+type()
+2. Module Functions
+Functions provided by modules.
+Example:
+import math
 
-for i in range(1, n):
-    sum = sum + i
+math.sqrt(25)
+3. User-defined Functions
+Functions created by the programmer.
+Example:
+def square(n):
+    return n * n
 
-print(sum)
-The program should calculate 1 + 2 + 3 + ... + n. Correct it.
+🔑 QUICK DIFFERENCE
+Type	Created by	Example
+Built-in	Python	len()
+Module	Module/library	math.sqrt()
+User-defined	Programmer	square()
 
-Complete a partially written loop program
-Complete the program to print numbers from 1 to 10.
-for i in __________:
-    print(i)
-Complete the program to print even numbers from 2 to 20.
-for i in range(2, 21, ______):
-    print(i)
-Complete the program to print numbers from 10 to 1.
-for i in range(10, ______, -1):
-    print(i)
-Complete the program to calculate the sum of numbers from 1 to N.
-n = int(input("Enter N: "))
-sum = 0
+🎯 EXPECTED QUESTIONS
 
-for i in range(__________):
-    sum = sum + i
+What are built-in functions?
 
-print(sum)
-Complete the program to print a triangle of stars.
-for i in range(1, 6):
-    for j in range(__________):
-        print("*", end="")
-    print()
-Complete the program to print this pattern.
-1
-12
-123
-1234
-12345
-for i in range(1, 6):
-    for j in range(__________):
-        print(j, end="")
-    print()
-Complete the program to print this pattern.
-1
-22
-333
-4444
-55555
-for i in range(1, 6):
-    for j in range(__________):
-        print(__________, end="")
-    print()
-Complete the program to calculate factorial.
-n = int(input("Enter a number: "))
-fact = 1
 
-for i in range(__________):
-    fact = fact * i
+What are module functions?
 
-print(fact)
-Complete the program to generate Fibonacci series.
-n = int(input("Enter number of terms: "))
 
-a = 0
-b = 1
+What are user-defined functions?
 
-for i in range(__________):
-    print(a)
-    c = __________
-    a = __________
-    b = __________
-Complete the program to check whether a number is prime.
-n = int(input("Enter a number: "))
-count = 0
 
-for i in range(1, __________):
-    if n % i == 0:
-        count = count + 1
+Give two examples of built-in functions.
 
-if count == __________:
-    print("Prime")
-else:
-    print("Composite")
 
-Determine the correct range for a given pattern
-What should replace the blank to generate the following pattern?
-*
-**
-***
-****
-*****
-for i in range(1, 6):
-    for j in range(__________):
-        print("*", end="")
-    print()
-What should replace the blank to generate the following pattern?
-*****
-****
-***
-**
-*
-for i in range(5, 0, -1):
-    for j in range(__________):
-        print("*", end="")
-    print()
-What should replace the blank?
-1
-12
-123
-1234
-12345
-for i in range(1, 6):
-    for j in range(__________):
-        print(j, end="")
-    print()
-What should replace the blank?
-12345
-1234
-123
-12
-1
-for i in range(5, 0, -1):
-    for j in range(__________):
-        print(j, end="")
-    print()
-What should replace the blank?
-1
-22
-333
-4444
-55555
-for i in range(1, 6):
-    for j in range(__________):
-        print(i, end="")
-    print()
-What should replace the blank to print even numbers from 2 to 20?
-for i in range(2, ________, 2):
-    print(i)
-What should replace the blank to print odd numbers from 1 to 19?
-for i in range(1, ________, 2):
-    print(i)
-What should replace the blank to print numbers from 10 down to 1?
-for i in range(10, ________, -1):
-    print(i)
+Give two examples of module functions.
 
-Determine how many times a loop executes
-How many times does the following loop execute?
-for i in range(5):
-    print(i)
-How many times does the following loop execute?
-for i in range(1, 6):
-    print(i)
-How many times does the following loop execute?
-for i in range(2, 11, 2):
-    print(i)
-How many times does the following loop execute?
-for i in range(10, 0, -1):
-    print(i)
-How many times does the inner loop execute for each value of i?
-for i in range(1, 6):
-    for j in range(1, i + 1):
-        print("*")
-How many times is * printed?
-for i in range(1, 6):
-    for j in range(1, i + 1):
-        print("*")
-How many times is * printed in total?
-for i in range(5):
-    for j in range(5):
-        print("*")
-How many times does the inner loop execute in total?
-for i in range(1, 4):
-    for j in range(1, 5):
-        print(j)
-How many times is the statement print(i, j) executed?
-for i in range(1, 5):
-    for j in range(1, 4):
-        print(i, j)
-How many times does the following loop execute?
-i = 1
 
-while i <= 10:
-    print(i)
-    i = i + 2
-How many times does the following loop execute?
-i = 20
+Differentiate between built-in and user-defined functions.
 
-while i >= 5:
-    print(i)
-    i = i - 3
-How many times is print("*") executed?
-for i in range(1, 6):
-    for j in range(i):
-        print("*")
 
-Explain why break is used in a given program
-What is the purpose of the break statement in the following program?
-for i in range(1, 11):
-    if i == 6:
-        break
-    print(i)
-What will be the output of the following program, and why does the loop stop?
-for i in range(1, 11):
-    if i == 5:
-        break
-    print(i)
-Why is break used in the following program?
-n = int(input("Enter a number: "))
+Differentiate between built-in and module functions.
 
-for i in range(2, n):
-    if n % i == 0:
-        print("Not Prime")
-        break
-else:
-    print("Prime")
-What happens when the break statement is executed inside the inner loop?
-for i in range(1, 4):
-    for j in range(1, 6):
-        if j == 3:
-            break
-        print(j, end=" ")
-    print()
-Modify the following program using break so that it stops when the user enters zero.
-while True:
-    n = int(input("Enter a number: "))
-    print(n)
-Write a program using break to search for the first factor of a number other than 1.
-Write a program using break to stop printing numbers when the value becomes greater than 50.
-Write a program using break to stop a loop when a negative number is entered.
 
-Explain why continue is used in a given program
-What is the purpose of the continue statement in the following program?
-for i in range(1, 11):
-    if i == 5:
-        continue
-    print(i)
-What will be the output of the following program?
-for i in range(1, 6):
-    if i == 3:
-        continue
-    print(i)
-Why is continue used in the following program?
-for i in range(1, 11):
-    if i % 2 == 0:
-        continue
-    print(i)
-What does the following program print?
-for i in range(1, 11):
-    if i % 2 != 0:
-        continue
-    print(i)
-How does continue affect the current iteration in the following program?
-for i in range(1, 6):
-    if i == 3:
-        continue
+🔍 IDENTIFY THE TYPE
+Identify the type of function:
+len("Python")
+math.sqrt(25)
+def add(a,b):
+    return a+b
+
+🟦 TOPIC 3 — FUNCTION DEFINITION AND FUNCTION CALL
+3.1 Function Definition
+A function is created using def.
+def hello():
+    print("Hello Student")
+This is called a function definition.
+
+3.2 Function Call
+A function is executed by calling its name.
+hello()
+This is called a function call.
+
+⭐ VERY IMPORTANT DIFFERENCE
+Function Definition	Function Call
+Creates the function	Executes the function
+Uses def	Uses function name
+Function body is written	Function body gets executed
+Example: def hello():	Example: hello()
+Remember:
+DEFINE = CREATE
+CALL = EXECUTE
+
+🎯 EXPECTED QUESTIONS
+
+What is a function definition?
+
+
+What is function calling?
+
+
+Differentiate between function definition and function call.
+
+
+Identify the function definition in a program.
+
+
+Identify the function call in a program.
+
+
+🧠 OUTPUT PRACTICE
+def fun():
     print("Hello")
-Write a program using continue to print only odd numbers from 1 to 20.
-Write a program using continue to print only even numbers from 1 to 20.
-Write a program using continue to skip multiples of 5 while printing numbers from 1 to 50.
-Write a program using continue to skip negative numbers from a sequence of input values.
-Write a program using continue to print all numbers from 1 to 20 except 10.
+
+fun()
+fun()
+Question: What will be the output?
+
+🟦 TOPIC 4 — PARAMETERS AND ARGUMENTS
+This is one of the most important concepts in Functions.
+4.1 Parameter
+A parameter is a variable written in the function definition that receives a value when the function is called.
+def square(n):
+    print(n*n)
+Here:
+n → Parameter
+
+4.2 Argument
+An argument is the actual value supplied during the function call.
+square(5)
+Here:
+5 → Argument
+
+⭐ PARAMETER vs ARGUMENT
+Parameter	Argument
+Appears in function definition	Appears in function call
+Acts as a variable	Actual value
+Example: n	Example: 5
+Easy Memory Trick
+Definition → Parameter
+Call → Argument
+
+4.3 Multiple Parameters
+def add(a,b):
+    print(a+b)
+
+add(10,20)
+Mapping:
+a → 10
+b → 20
+
+🎯 EXPECTED QUESTIONS
+
+Define parameter.
+
+
+Define argument.
+
+
+Differentiate parameter and argument.
+
+
+Identify parameters in a function.
+
+
+Identify arguments in a function call.
+
+
+Write a function with one parameter.
+
+
+Write a function with multiple parameters.
+
+
+🔍 EXAM PRACTICE
+def calculate(a,b):
+    return a+b
+
+calculate(10,20)
+Identify:
+
+Function name
+
+
+Parameters
+
+
+Arguments
+
+
+Return statement
+
+
+🟦 TOPIC 5 — POSITIONAL AND KEYWORD ARGUMENTS
+5.1 Positional Arguments
+Arguments are supplied according to their position.
+def student(name, age):
+    print(name, age)
+
+student("Ravi",17)
+Mapping:
+name → Ravi
+age  → 17
+
+5.2 Keyword Arguments
+Arguments are supplied using the parameter names.
+def student(name, age):
+    print(name, age)
+
+student(age=17, name="Ravi")
+
+⭐ IMPORTANT DIFFERENCE
+Positional	Keyword
+Based on position	Based on parameter name
+Order matters	Order can be changed
+student("Ravi",17)	student(age=17,name="Ravi")
+
+🎯 EXPECTED QUESTIONS
+
+What is a positional argument?
+
+
+What is a keyword argument?
+
+
+Differentiate positional and keyword arguments.
+
+
+Identify positional arguments.
+
+
+Identify keyword arguments.
+
+
+Predict output using positional arguments.
+
+
+Predict output using keyword arguments.
+
+
+🟦 TOPIC 6 — DEFAULT PARAMETERS
+6.1 Meaning
+A default parameter has a predefined value in the function definition.
+def greet(name="Student"):
+    print("Hello", name)
+Calling without an argument
+greet()
+Output:
+Hello Student
+Calling with an argument
+greet("Anu")
+Output:
+Hello Anu
+
+⭐ IMPORTANT RULE
+If the caller does not provide a value, Python uses the default value.
+
+6.2 Multiple Parameters
+def power(a,b=2):
+    print(a**b)
+
+power(5)
+power(5,3)
+Output:
+25
+125
+
+🎯 EXPECTED QUESTIONS
+
+What is a default parameter?
+
+
+Explain default parameter with an example.
+
+
+Predict output involving default parameters.
+
+
+Write a function using a default parameter.
+
+
+Find the error in a function definition involving default parameters.
+
+
+🚨 IMPORTANT ERROR QUESTION
+def findvalue(val1=1.1, val2, val3):
+    final = (val2+val3)/val1
+    print(final)
+Question
+Identify and correct the error.
+Concept Tested
+Non-default parameters cannot follow default parameters.
+Correct:
+def findvalue(val1, val2, val3=1.1):
+    final = (val2+val3)/val1
+    print(final)
+
+🟦 TOPIC 7 — STRING AS A PARAMETER
+A string can be passed as an argument to a function.
+Example 1 — Display String
+def greet(name):
+    print("Hello", name)
+
+greet("Anu")
+Here:
+name → parameter
+"Anu" → string argument
+
+Example 2 — Length
+def display_length(text):
+    print(len(text))
+
+display_length("Python")
+Output:
+6
+
+Example 3 — Uppercase
+def uppercase(text):
+    print(text.upper())
+
+uppercase("python")
+Output:
+PYTHON
+
+Example 4 — Count
+def count_a(text):
+    print(text.count("a"))
+
+count_a("banana")
+Output:
+3
+
+🎯 EXPECTED PROGRAMS
+
+Write a function to find the length of a string.
+
+
+Write a function to convert a string into uppercase.
+
+
+Write a function to count a character.
+
+
+Write a function that accepts a string.
+
+
+Predict output when a string is passed as an argument.
+
+
+🟦 TOPIC 8 — print() vs return
+This is a very important exam concept.
+Using print()
+def square(n):
+    print(n*n)
+
+square(5)
+Output:
+25
+The result is displayed.
+
+Using return
+def square(n):
+    return n*n
+
+x = square(5)
+Now:
+x = 25
+The value can be stored and used later.
+
+⭐ IMPORTANT DIFFERENCE
+print()	return
+Displays value	Sends value back
+Mainly for displaying	Can be stored and reused
+Does not provide a usable returned value	Returns a value to caller
+
+Returned Value Can Be Used
+x = square(5)
+print(square(5))
+y = square(5) + 10
+if square(5) > 20:
+    print("Large")
+
+🎯 EXPECTED QUESTIONS
+
+Differentiate print() and return.
+
+
+What is the purpose of return?
+
+
+Write a function using return.
+
+
+Predict output of a function containing return.
+
+
+Explain why return is useful.
+
+
+🚨 ERROR FINDING
+def greet():
+    return "good morning"
+
+greet() = message
+Question
+Find and correct the error.
+Correct:
+message = greet()
+
+🟦 TOPIC 9 — MULTIPLE RETURN VALUES
+Python allows a function to return multiple values.
+def calculate(a,b):
+    return a+b, a-b
+
+x,y = calculate(10,5)
+
+print(x)
+print(y)
+Output:
+15
+5
+
+🔍 HOW DOES IT WORK?
+calculate(10,5)
+       ↓
+return 15, 5
+       ↓
+x = 15
+y = 5
+
+🎯 EXPECTED QUESTIONS
+
+What are multiple return values?
+
+
+Write a function returning two values.
+
+
+Predict output.
+
+
+Explain how returned values are assigned.
+
+Practice
+def operations(a,b):
+    return a+b, a-b, a*b
+
+x,y,z = operations(10,5)
+Answer:
+
+How many values are returned?
+
+
+How many variables receive them?
+
+
+What is x?
+
+
+What is y?
+
+
+What is z?
+
+
+🟦 TOPIC 10 — SCOPE OF VARIABLES
+10.1 Local Variable
+A variable created inside a function is generally local to that function.
+def test():
+    x = 10
+    print(x)
+
+test()
+
+10.2 Global Variable
+A variable defined outside a function is a global variable.
+x = 10
+
+def test():
+    print(x)
+
+test()
+
+⭐ LOCAL vs GLOBAL
+Local	Global
+Created inside function	Created outside function
+Scope is generally limited to function	Can be accessed from broader program scope
+Exists for the function's local scope	Available outside the function
+
+🔥 IMPORTANT OUTPUT QUESTION
+x = 10
+
+def test():
+    x = 20
+    print(x)
+
+test()
+print(x)
+Output:
+20
+10
+Why?
+The x inside the function is local. It does not change the global x.
+
+🎯 EXPECTED QUESTIONS
+
+What is a local variable?
+
+
+What is a global variable?
+
+
+Differentiate local and global variables.
+
+
+Predict output involving local/global variables.
+
+
+Explain scope of a variable.
+
+
+🟦 TOPIC 11 — global KEYWORD
+The global keyword allows a function to refer to and modify a global variable.
+x = 10
+
+def change():
+    global x
+    x = 20
+
+change()
+
+print(x)
+Output:
+20
+
+🎯 EXPECTED QUESTIONS
+
+What is the use of global?
+
+
+Explain global with an example.
+
+
+Predict output using global.
+
+
+Differentiate local and global variables with examples.
+
+
+🟦 TOPIC 12 — DOCSTRINGS
+Meaning
+A docstring is a string written inside a function to describe or document what the function does.
+def square(n):
+    """Returns the square of a number."""
+    return n*n
+The text:
+"""Returns the square of a number."""
+is the docstring.
+
+🎯 EXPECTED QUESTIONS
+
+What is a docstring?
+
+
+Why are docstrings used?
+
+
+Write a function containing a docstring.
+
+
+Identify the docstring in a given program.
+
+
+🟦 TOPIC 13 — FLOW OF EXECUTION
+Consider:
+def add(a,b):
+    c = a+b
+    return c
+
+x = 10
+y = 20
+z = add(x,y)
+
+print(z)
+Execution Flow
+Function definition encountered
+          ↓
+Function body is NOT executed yet
+          ↓
+x = 10
+          ↓
+y = 20
+          ↓
+add(x,y) is called
+          ↓
+a = 10
+b = 20
+          ↓
+c = 30
+          ↓
+return 30
+          ↓
+z = 30
+          ↓
+print(z)
+Output:
+30
+
+🎯 EXPECTED QUESTIONS
+
+Explain flow of execution.
+
+
+Trace execution of a function.
+
+
+Predict output.
+
+
+When does the function body execute?
+
+
+What happens when a function is called?
+
+
+🟦 TOPIC 14 — FUNCTION CALLING ANOTHER FUNCTION
+A function can call another function.
+def square(n):
+    return n*n
+
+def sum_square(a,b):
+    return square(a) + square(b)
+
+print(sum_square(3,4))
+Execution:
+sum_square(3,4)
+       ↓
+square(3) → 9
+       ↓
+square(4) → 16
+       ↓
+9 + 16
+       ↓
+25
+Output:
+25
+
+🎯 EXPECTED QUESTIONS
+
+What happens when one function calls another?
+
+
+Trace the execution.
+
+
+Predict the output.
+
+
+Write a function that calls another function.
+
+
+🟦 TOPIC 15 — FUNCTIONS + NUMBER PROGRAMS
+Previously learned number programs can now be converted into functions.
+Important Functions
+reverse(n)
+sum_digits(n)
+is_prime(n)
+is_palindrome(n)
+is_armstrong(n)
+is_perfect(n)
+is_even(n)
+is_odd(n)
+factorial(n)
+gcd(a,b)
+lcm(a,b)
+Example
+def is_even(n):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+
+🎯 EXPECTED PROGRAMS
+
+Reverse a number.
+
+
+Find sum of digits.
+
+
+Check prime.
+
+
+Check palindrome.
+
+
+Find GCD.
+
+
+Find LCM.
+
+
+Check even/odd.
+
+
+Find factorial.
+
+
+Check Armstrong number.
+
+
+Check perfect number.
+
+
+🟦 TOPIC 16 — FUNCTIONS + MODULES
+Math Module
+import math
+Important Functions
+math.sqrt()
+math.ceil()
+math.floor()
+math.pow()
+math.fabs()
+math.sin()
+math.cos()
+math.tan()
+Constants
+math.pi
+math.e
+
+Random Module
+import random
+Important functions:
+random.random()
+random.randint()
+random.randrange()
+
+Statistics Module
+import statistics
+Important functions:
+statistics.mean()
+statistics.median()
+statistics.mode()
+
+🎯 EXPECTED QUESTIONS
+
+Which module is used for random number generation?
+
+
+Which module provides sqrt()?
+
+
+Find the error when a required function has not been imported.
+
+
+Differentiate built-in and module functions.
+
+
+Write a program using random.randint().
+
+
+🟦 TOPIC 17 — FUNCTIONS + CONDITIONS
+Functions can contain:
+if
+elif
+else
+Example
+def check_number(n):
+    if n > 0:
+        print("Positive")
+    elif n < 0:
+        print("Negative")
+    else:
+        print("Zero")
+
+🎯 APPLICATION PROGRAMS
+Write functions to:
+
+Calculate discount.
+
+
+Calculate electricity bill.
+
+
+Determine grade.
+
+
+Check divisibility.
+
+
+Calculate ticket price.
+
+
+Determine eligibility.
+
+
+🟦 TOPIC 18 — FUNCTIONS + LOOPS
+Functions can contain loops.
+def print_numbers(n):
+    for i in range(1,n+1):
+        print(i)
+
+print_numbers(5)
+
+🎯 EXPECTED PROGRAMS
+
+Print numbers from 1 to n.
+
+
+Print even numbers.
+
+
+Print multiplication table.
+
+
+Find factorial.
+
+
+Print prime numbers in a range.
+
+
+Calculate sum of numbers.
+
+
+🟦 TOPIC 19 — MENU-DRIVEN PROGRAMS USING FUNCTIONS
+General Structure
+DISPLAY MENU
+     ↓
+GET USER CHOICE
+     ↓
+CALL APPROPRIATE FUNCTION
+     ↓
+DISPLAY RESULT
+
+🎯 APPLICATION
+Create a menu-driven program to:
+1. Check divisibility by 5
+2. Check divisibility by 7
+3. Check divisibility by both
+4. Check divisibility by neither
+5. Exit
+Use separate functions for the different operations.
+
+Another Application
+Create a function that accepts:
+name
+gender
+and displays:
+M → Mr.
+F → Ms.
+
+🟦 TOPIC 20 — FUNCTIONS + RANDOM
+Lucky Draw
+Token IDs:
+1 to 600
+Create a function that randomly selects winners.
+Concepts tested:
+Function
+   +
+Random module
+   +
+Random number generation
+   +
+Return
+
+🎯 PRACTICE
+
+Simulate a dice.
+
+
+Generate random number from 1 to 100.
+
+
+Select random token.
+
+
+Select two winners from a given range.
+
+
+🟦 TOPIC 21 — FUNCTIONS + STRINGS + FLOW CONTROL
+Important string methods:
+isalpha()
+isdigit()
+isupper()
+islower()
+
+🎯 CASE-BASED PROGRAM
+Accept characters one by one.
+For each character:
+             Character
+                 ↓
+           Is it alphabet?
+            /          \
+          Yes           No
+           ↓             ↓
+   Upper / Lower      Is it digit?
+                         /    \
+                       Yes     No
+                        ↓       ↓
+                    Even/Odd   Special
+If alphabet:
+
+Check uppercase/lowercase.
+
+
+Count uppercase.
+
+
+Count lowercase.
+
+If digit:
+
+Check even/odd.
+
+
+If odd → print square.
+
+
+If even → print square root.
+
+Otherwise:
+
+Identify arithmetic operator/special character.
+
+Finally:
+
+Display counts neatly.
+
+
+🟦 TOPIC 22 — FUNCTIONS + DICTIONARY
+Use:
+Dictionary
++
+for loop
++
+conditions
++
+functions
+Application
+Student marks are stored in a dictionary.
+Create separate functions to:
+
+Find students who passed with distinction.
+
+
+Find top two scorers.
+
+
+Find number of failed students.
+
+
+🔴 EXAM QUESTION PATTERNS
+Now your student should practise the chapter according to question type, not just topic.
+
+TYPE 1 — THEORY QUESTIONS
+
+What is a function?
+
+
+State any three advantages of functions.
+
+
+What are docstrings?
+
+
+Explain the use of global.
+
+
+What is a parameter?
+
+
+What is an argument?
+
+
+Differentiate parameter and argument.
+
+
+Differentiate local and global variables.
+
+
+Differentiate positional and keyword arguments.
+
+
+Differentiate keyword and default arguments.
+
+
+Explain multiple return values.
+
+
+TYPE 2 — DIFFERENTIATE
+These should receive special preparation.
+Concept 1	Concept 2
+Parameter	Argument
+Local variable	Global variable
+Positional argument	Keyword argument
+Keyword argument	Default parameter
+print()	return
+Built-in function	Module function
+Built-in function	User-defined function
+Function definition	Function call
+
+TYPE 3 — OUTPUT QUESTIONS
+Question 1
+def fun():
+    print("Hello")
+
+fun()
+fun()
+Question 2
+def add(a,b):
+    return a+b
+
+print(add(2,3))
+Question 3
+def test(x):
+    x = x + 10
+    return x
+
+a = 5
+b = test(a)
+
+print(a)
+print(b)
+Question 4
+def fun(a,b=5):
+    return a+b
+
+print(fun(10))
+print(fun(10,20))
+Question 5
+def square(n):
+    return n*n
+
+print(square(3)+square(4))
+Question 6
+def first():
+    return 10
+
+def second():
+    return first()+20
+
+print(second())
+Question 7
+x = 5
+
+def test():
+    x = 10
+    print(x)
+
+test()
+print(x)
+
+TYPE 4 — ERROR FINDING
+Question 1
+def create(text,freq):
+    for i in range(1,freq):
+        print(text)
+
+create(5)
+Find and correct the error.
+
+Question 2
+from math import sqrt, ceil
+
+def calc():
+    print(cos(0))
+
+calc()
+Find and correct the error.
+
+Question 3
+mynum = 9
+
+def add9():
+    mynum =+ 9
+    print(mynum)
+
+add9()
+Identify the error and explain the effect of =+.
+
+Question 4
+def findvalue(val1=1.1,val2,val3):
+    final = (val2+val3)/val1
+    print(final)
+Identify and correct the error.
+
+Question 5
+def greet():
+    return "good morning"
+
+greet() = message
+Identify and correct the error.
+
+TYPE 5 — WRITE A FUNCTION
+🟢 BASIC
+
+Square of a number.
+
+
+Cube of a number.
+
+
+Add two numbers.
+
+
+Check even/odd.
+
+
+Find string length.
+
+🟡 INTERMEDIATE
+
+Largest of three numbers.
+
+
+Check prime.
+
+
+Calculate factorial.
+
+
+Reverse a number.
+
+
+Sum of digits.
+
+
+Check palindrome.
+
+
+Convert string to uppercase.
+
+
+Use a default parameter.
+
+
+Return multiple values.
+
+🔴 APPLICATION LEVEL
+
+Shopping discount.
+
+
+Electricity bill.
+
+
+Grade calculation.
+
+
+Ticket price.
+
+
+Eligibility checking.
+
+
+Character classification.
+
+
+TYPE 6 — APPLICATION / CASE-BASED QUESTIONS
+🟩 CASE 1 — SHOPPING DISCOUNT
+XYZ store provides discounts according to shopping amount and membership.
+Write a program using a user-defined function that accepts the shopping amount and calculates:
+
+Discount
+
+
+Additional membership discount
+
+
+Net amount payable
+
+
+🟩 CASE 2 — DIVISIBILITY
+Create a menu-driven program using functions to check whether a number is divisible by:
+
+5
+
+
+7
+
+
+Both 5 and 7
+
+
+Neither
+
+
+🟩 CASE 3 — NAME AND GENDER
+Create a function accepting name and gender.
+Display:
+M → Mr. <name>
+F → Ms. <name>
+
+🟩 CASE 4 — LUCKY DRAW
+Token IDs range from 1 to 600.
+Create a function to randomly select two winners.
+
+🟩 CASE 5 — TRAFFIC LIGHT
+Create:
+trafficLight()
+and
+light()
+The light() function accepts:
+RED
+YELLOW
+GREEN
+and returns:
+RED → 0
+YELLOW → 1
+GREEN → 2
+Based on the returned value, display the appropriate message.
+
+🟩 CASE 6 — CHARACTER ANALYSIS
+Accept characters one by one and classify them as:
+Uppercase alphabet
+Lowercase alphabet
+Even digit
+Odd digit
+Arithmetic operator
+Other special character
+Use functions wherever possible.
+
+🟩 CASE 7 — STUDENT MARKS
+Student marks are stored in a dictionary.
+Create separate functions to:
+
+Find students who passed with distinction.
+
+
+Find top two scorers.
+
+
+Find failed students.
+
+
+📝 FUNCTIONS — HOMEWORK
+🟢 BASIC
+1.
+Write a function cube(n) that returns the cube of a number.
+2.
+Write a function is_even(n) that returns True if the number is even; otherwise returns False.
+3.
+Write a function greet(name) that accepts a student's name and displays:
+Hello <name>
+4.
+Write a function string_length(text) that accepts a string and returns its length.
+5.
+Write a function add(a,b) that accepts two numbers and returns their sum.
+
+🟡 INTERMEDIATE
+6.
+Write a function sum_digits(n) that returns the sum of digits.
+7.
+Write a function largest(a,b,c) that returns the largest of three numbers.
+8.
+Write a function:
+power(a,b=2)
+using a default parameter.
+9.
+Write a function is_palindrome(n) that returns True if the number is palindrome.
+10.
+Write a function calculate(a,b) that returns:
+
+Addition
+
+
+Subtraction
+
+
+Multiplication
+
+
+Division
+
+
+🔴 DIFFICULT / APPLICATION
+11.
+Write a function is_prime(n) that returns True if n is prime.
+Using this function, print all prime numbers from 1 to 100.
+12.
+Create a menu-driven program using separate functions to:
+
+Check even/odd
+
+
+Check prime
+
+
+Find factorial
+
+
+Find sum of digits
+
+13.
+Write a program using a user-defined function to calculate shopping discount based on purchase amount and membership status.
+14.
+Write a program using functions to simulate a traffic light.
+15.
+Write a program using functions to analyze characters entered by the user.
+Count:
+
+Uppercase letters
+
+
+Lowercase letters
+
+
+Even digits
+
+
+Odd digits
+
+
+Special characters
+
+
