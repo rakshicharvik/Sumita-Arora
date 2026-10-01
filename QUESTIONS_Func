@@ -1,0 +1,737 @@
+FUNCTIONS — COMPLETE UNIT TEST QUESTION BANK
+SECTION 1 — MCQ
+A. Multiple Choice Questions
+Q1. Which keyword is used to define a user-defined function in Python?
+a) function
+b) define
+c) def
+d) fun
+Q2. What is the output of the following?
+def display():
+    print("Python")
+
+display()
+a) display
+b) Python
+c) Error
+d) No output
+Q3. Which statement is used to send a value back from a function?
+a) print
+b) send
+c) return
+d) output
+Q4. Which of the following is a valid function definition?
+a)function add(a,b):
+b)def add(a,b):
+c)define add(a,b):
+d)def add(a,b)
+
+
+Q5. What type of value does the following function return?
+def check(n):
+    return n > 10
+a) Integer
+b) String
+c) Boolean
+d) Float
+B. Assertion and Reason
+Q6.
+Assertion (A): A function helps avoid repetition of code.
+Reason (R): A function can be called multiple times after it has been defined.
+a) Both A and R are true, and R is the correct explanation of A.
+b) Both A and R are true, but R is not the correct explanation of A.
+c) A is true but R is false.
+d) A is false but R is true.
+Q7.
+Assertion (A): Parameters are written in the function definition.
+Reason (R): Arguments are the actual values supplied when a function is called.
+a) Both A and R are true, and R is the correct explanation of A.
+b) Both A and R are true, but R is not the correct explanation of A.
+c) A is true but R is false.
+d) A is false but R is true.
+Q8.
+Assertion (A): A default parameter must be placed after a non-default parameter.
+Reason (R): Python does not allow a non-default parameter after a default parameter.
+a) Both A and R are true, and R is the correct explanation of A.
+b) Both A and R are true, but R is not the correct explanation of A.
+c) A is true but R is false.
+d) A is false but R is true.
+Q9.
+Assertion (A): A function can return more than one value.
+Reason (R): Python can return multiple values as a tuple.
+a) Both A and R are true, and R is the correct explanation of A.
+b) Both A and R are true, but R is not the correct explanation of A.
+c) A is true but R is false.
+d) A is false but R is true.
+Q10.
+Assertion (A): A local variable can normally be accessed outside the function in which it is created.
+Reason (R): A local variable has scope limited to its function.
+a) Both A and R are true, and R is the correct explanation of A.
+b) Both A and R are true, but R is not the correct explanation of A.
+c) A is true but R is false.
+d) A is false but R is true.
+C. Additional MCQs
+Q11. Which of the following is a built-in function?
+a) calculate()
+b) display()
+c) len()
+d) student()
+Q12. Which argument passes a value according to the position of the parameter?
+a) Keyword argument
+b) Positional argument
+c) Default argument
+d) Return argument
+Q13. Which statement correctly calls the function?
+def add(a,b):
+    return a+b
+a) add
+b) add()
+c) add(5,3)
+d) call add(5,3)
+Q14. What does return do?
+a) Displays a value only
+b) Terminates the program
+c) Sends a value back to the calling statement
+d) Defines a variable
+Q15. Which module provides mathematical functions such as sqrt()?
+a) random
+b) statistics
+c) math
+d) number
+Q16. Which module is used to generate random values?
+a) math
+b) random
+c) statistics
+d) numbers
+Q17. Which of the following is a valid default parameter?
+a) def fun(a=10,b):
+b) def fun(a,b=10):
+c) def fun(a=10,b=20,c):
+d) def fun(a=10,b,c=20):
+Q18. What is the output?
+def test():
+    return 25
+
+x = test()
+print(x)
+a) test
+b) 25
+c) None
+d) Error
+Q19. Which keyword is used to modify a global variable inside a function?
+a) global
+b) local
+c) extern
+d) public
+Q20. Which function can be used to find the largest value?
+a) large()
+b) maximum()
+c) max()
+d) largest()
+
+SECTION 2 — THEORY
+Q1. Define a function.
+Q2. What is a user-defined function?
+Q3. State any four advantages of using functions.
+Q4. What is meant by function definition?
+Q5. What is meant by function call?
+Q6. What are parameters?
+Q7. What are arguments?
+Q8. What is a return statement?
+Q9. What is a default parameter?
+Q10. What is a positional argument?
+Q11. What is a keyword argument?
+Q12. What is a local variable?
+Q13. What is a global variable?
+Q14. What is the purpose of the global keyword?
+Q15. What is a docstring?
+Q16. What is the difference between a built-in function and a user-defined function?
+Q17. What are modules? Give two examples of Python modules.
+Q18. What is the purpose of the return statement in a function?
+Q19. Can a function return more than one value? Explain with an example.
+Q20. Explain the flow of execution when a function is called.
+
+SECTION 3 — DIFFERENCE BETWEEN
+Q1. Differentiate between a parameter and an argument.
+Q2. Differentiate between positional arguments and keyword arguments.
+Q3. Differentiate between keyword arguments and default arguments.
+Q4. Differentiate between local variables and global variables.
+Q5. Differentiate between print() and return.
+Q6. Differentiate between built-in functions and user-defined functions.
+Q7. Differentiate between function definition and function call.
+Q8. Differentiate between void function and non-void function.
+Q9. Differentiate between positional parameter and keyword parameter.
+Q10. Differentiate between local scope and global scope.
+Q11. Differentiate between a function and a module.
+Q12. Differentiate between math module and random module.
+Q13. Differentiate between sum() and max().
+Q14. Differentiate between pow(x,y) and pow(x,y,z).
+Q15. Differentiate between sum(sequence) and sum(sequence, number).
+Q16. Differentiate between a parameter with a default value and a parameter without a default value.
+Q17. Differentiate between a function that displays a result and a function that returns a result.
+Q18. Differentiate between a local variable created inside a function and a global variable created outside a function.
+Q19. Differentiate between calling a function once and calling a function multiple times.
+Q20. Differentiate between a function returning one value and a function returning multiple values.
+
+SECTION 4 — OUTPUT PREDICTION
+Q1.
+def show():
+    print("Welcome")
+
+show()
+show()
+Predict the output.
+Q2.
+def add(a,b):
+    return a+b
+
+print(add(8,5))
+Q3.
+def square(n):
+    return n*n
+
+x = square(6)
+print(x)
+Q4.
+def display(name):
+    print("Hello", name)
+
+display("Anu")
+
+Q5.
+def calculate(a,b):
+    print(a+b)
+    return a*b
+
+x = calculate(4,3)
+print(x)
+Q6.
+def test(a=10):
+    print(a)
+
+test()
+test(25)
+Q7.
+def power(a,b=2):
+    return a**b
+
+print(power(5))
+print(power(5,3))
+Q8.
+def check(n):
+    return n%2 == 0
+
+print(check(12))
+print(check(15))
+
+Q9.
+def operation(a,b):
+    return a+b, a-b
+
+x,y = operation(10,4)
+
+print(x)
+print(y)
+Q10.
+def fun():
+    x = 20
+    print(x)
+
+fun()
+Q11.
+x = 50
+def display():
+    print(x)
+display()
+print(x)
+Q12.
+x = 10
+
+def change():
+    x = 20
+    print(x)
+
+change()
+print(x)
+Q13.
+def first():
+    print("First")
+    second()
+
+def second():
+    print("Second")
+
+first()
+Q14.
+def number(n):
+    if n > 0:
+        return "Positive"
+    else:
+        return "Non-positive"
+
+print(number(-5))
+Q15.
+def calculate(a,b=5):
+    return a*b
+
+print(calculate(4))
+print(calculate(4,3))
+Q16.
+def digits(n):
+    s = 0
+    while n > 0:
+        s += n%10
+        n //= 10
+    return s
+
+print(digits(245))
+Q17.
+def largest(a,b,c):
+    return max(a,b,c)
+
+print(largest(12,25,18))
+Q18.
+def result():
+    return 10,20,30
+
+a,b,c = result()
+print(a+b+c)
+Q19.
+def message():
+    print("Start")
+    return 100
+    print("End")
+
+print(message())
+Q20.
+def calculate(n):
+    if n%2 == 0:
+        return n*2
+    return n+1
+
+print(calculate(6))
+print(calculate(7))
+
+SECTION 5 — ERROR FINDING
+Q1. Identify and correct the error.
+def add(a,b):
+    return a+b
+
+print(add(5))
+Q2.
+def calculate(a=10,b):
+    return a+b
+Q3.
+def greet():
+    return "Good Morning"
+
+greet() = message
+Q4.
+from math import sqrt, ceil
+
+print(cos(0))
+Q5.
+def display(name):
+    print("Hello", name)
+
+display()
+Q6.
+def add(a,b):
+print(a+b)
+Q7.
+def square(n)
+    return n*n
+Q8.
+def check(n):
+    if n > 0
+        return True
+    else:
+        return False
+Q9.
+def calculate(a,b):
+    return a+b
+
+print(calculate)
+Q10.
+def multiply(a,b):
+    return a*b
+
+x = multiply(4)
+print(x)
+Q11.
+def test():
+    x = 20
+
+print(x)
+Q12.
+def add():
+    return 10
+
+x,y = add()
+print(x,y)
+Q13.
+def power(a,b=2,c):
+    return a**b
+Q14.
+def greet(name):
+    print("Hello", name)
+
+greet(name="Riya", "Student")
+Q15.
+def calculate(a,b):
+    print(a+b)
+
+x = calculate(4,5)
+print(x+10)
+Q16.
+x = 10
+
+def change():
+    global y
+    y = 20
+
+change()
+print(x)
+Q17.
+def check(n):
+    return n%2=0
+Q18.
+def findvalue(val1=1.1, val2, val3):
+    return val1+val2+val3
+Q19.
+def student(name,age):
+    print(name,age)
+
+student("Rahul", age)
+Q20.
+def divide(a,b):
+    return a/b
+
+print(divide(10,0))
+
+SECTION 6 — FRAMING EXPRESSIONS
+Write the corresponding Python expression for each mathematical expression.
+Q1. xnx^n
+Q2. Square of x
+Q3. Cube of x
+Q4. Square root of x
+Q5. a2+b2a^2+b^2
+Q6. 2ab2ab
+Q7. a+b2\frac{a+b}{2}
+Q8. x+y+z3\frac{x+y+z}{3}
+Q9. Area of a circle with radius r
+Q10. Circumference of a circle with radius r
+Q11. Simple Interest:
+P×R×T100\frac{P \times R \times T}{100}
+Q12. Total amount:
+P+P×R×T100P + \frac{P \times R \times T}{100}
+Q13. Area of a rectangle with length l and breadth b
+Q14. Perimeter of a rectangle with length l and breadth b
+Q15. Average of a, b, c, and d
+Q16. Cube root of x
+Q17. Distance between two points:
+(x2−x1)2+(y2−y1)2\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}
+Q18. Compound expression:
+(a+b)2(a+b)^2
+Q19. Expression for the remainder when n is divided by 5
+Q20. Expression to check whether n is even.
+
+SECTION 7 — VALID / INVALID
+Identify whether each function definition/call is VALID or INVALID. If invalid, state the reason.
+Q1.
+def add(a,b):
+    return a+b
+Q2.
+def add(a,b)
+    return a+b
+Q3.
+def display():
+    print("Hello")
+Q4.
+def calculate(a=10,b):
+    return a+b
+Q5.
+def calculate(a,b=10):
+    return a+b
+Q6.
+def greet(name):
+    print(name)
+
+greet("Anu")
+Q7.
+def greet(name):
+    print(name)
+
+greet()
+Q8.
+def add(a,b):
+    return a+b
+
+add(10,20)
+Q9.
+def add(a,b):
+    return a+b
+
+add(a=10,b=20)
+Q10.
+def add(a,b):
+    return a+b
+
+add(10,b=20)
+Q11.
+def add(a,b):
+    return a+b
+
+add(a=10,20)
+Q12.
+def power(a,b=2):
+    return a**b
+
+power(5)
+Q13.
+def power(a,b=2):
+    return a**b
+
+power()
+Q14.
+def calculate(a,b,c=5):
+    return a+b+c
+Q15.
+def calculate(a=5,b=10,c=15):
+    return a+b+c
+Q16.
+def operation(a,b):
+    return a+b,a-b
+
+x,y = operation(10,5)
+Q17.
+def operation(a,b):
+    return a+b,a-b
+
+x = operation(10,5)
+
+Q18.
+def check(n):
+    return n%2 == 0
+Q19.
+def display():
+    return
+
+display()
+Q20.
+def student(name,age):
+    print(name,age)
+
+student(age=16,name="Arun")
+
+SECTION 8 — EVALUATION OF EXPRESSIONS / HIERARCHY
+Evaluate the following expressions. Show the order in which the operations are performed.
+Q1.
+10 + 5 * 2
+Q2.
+(10 + 5) * 2
+Q3.
+20 - 8 / 2
+Q4.
+20 // 3 + 4
+Q5.
+2 ** 3 * 4
+Q6.
+10 + 20 / 5
+Q7.
+25 % 4 + 6
+Q8.
+3 + 4 * 2 ** 2
+Q9.
+(3 + 4) * 2 ** 2
+Q10.
+50 - 10 * 2 + 5
+Q11.
+100 / 5 * 2
+Q12.
+10 + 5 * 3 - 8
+Q13.
+2 ** 3 ** 2
+Q14.
+(2 ** 3) ** 2
+Q15.
+30 // 4 + 2 * 3
+Q16.
+5 + 10 % 3 * 4
+Q17.
+20 > 10 and 15 < 20
+Q18.
+10 > 5 or 20 < 10
+Q19.
+not(10 > 5)
+Q20.
+Evaluate and show the hierarchy of operations:
+5 + 3 * 2 ** 3 - 4 // 2
+
+SECTION 9 — PROGRAMMING
+Application-Based / Case-Based / Menu-Driven / Functions
+Q1. ONLINE SHOPPING BILL
+Write a Python program using a user-defined function to calculate the final amount of an online shopping order.
+The function should:
+Accept the shopping amount.
+Calculate discount according to the amount.
+Calculate an additional discount for premium members.
+Return the final payable amount.
+Display the original amount, discount and final amount.
+
+Q2. ELECTRICITY BILL
+Write a Python program using suitable user-defined functions to calculate an electricity bill based on the number of units consumed.
+The program should:
+Accept the number of units.
+Calculate the bill using slab-based charges.
+Use a separate function for bill calculation.
+Display the total bill.
+
+
+Q3. STUDENT GRADE CALCULATOR
+Write a Python program using functions to calculate the total marks, percentage and grade of a student.
+The program should:
+Accept marks of five subjects.
+Use a function to calculate total.
+Use another function to calculate percentage.
+Use another function to determine grade.
+Display the result.
+
+Q4. BUS TICKET FARE
+Write a Python program using functions to calculate bus ticket fare.
+The program should:
+Accept passenger age and distance travelled.
+Calculate the basic fare.
+Apply concession based on age.
+Return the final fare.
+Display the ticket details.
+
+Q5. EMPLOYEE BONUS
+Write a Python program using a user-defined function to calculate the annual bonus of an employee.
+The function should accept salary and years of service.
+Apply the following rules:
+Less than 2 years → No bonus
+2–5 years → 5% bonus
+More than 5 years → 10% bonus
+
+Display the salary, bonus and final amount.
+
+
+Q6. NUMBER PROPERTY MENU
+Write a menu-driven Python program using separate functions to perform the following operations on a number:
+Check whether the number is positive or negative.
+Check whether the number is even or odd.
+Check whether the number is prime.
+Check whether the number is a palindrome.
+Exit.
+Each operation must be performed using a separate function.
+
+
+Q7. DIGIT OPERATIONS MENU
+Write a menu-driven Python program using functions to perform:
+Sum of digits
+Product of digits
+Reverse of number
+Count number of digits
+Find largest digit
+Exit
+Each operation should be implemented using a separate function.
+
+
+
+
+Q8. MATHEMATICAL OPERATIONS MENU
+Create a menu-driven program using functions to perform:
+Addition
+Subtraction
+Multiplication
+Division
+Power
+Exit
+Use separate functions for each operation.
+
+Q9. STUDENT RESULT MENU
+Write a menu-driven program using functions to manage student marks.
+The menu should contain:
+Calculate total marks
+Calculate percentage
+Display grade
+Check pass/fail
+Exit
+Use separate functions for each operation.
+
+Q10. MOBILE NUMBER ANALYSIS
+Write a Python program using functions to analyse a mobile number entered by the user.
+The program should:
+Count the number of digits.
+Count even digits.
+Count odd digits.
+Find the largest digit.
+Find the sum of digits.
+Display all results using suitable functions.
+
+
+Q11. NUMBER RANGE ANALYSIS
+Write a Python program using functions that accepts two limits and displays:
+All even numbers.
+All odd numbers.
+All prime numbers.
+Sum of even numbers.
+Sum of odd numbers.
+Use separate functions for the required operations.
+
+
+Q12. PRIME NUMBER ANALYSIS
+Write a Python program using user-defined functions to:
+Check whether a number is prime.
+Display all prime numbers between two given limits.
+Count the number of prime numbers.
+Find the sum of all prime numbers in the range.
+
+Q13. DISCOUNT AND MEMBERSHIP SYSTEM
+A store provides discounts based on purchase amount.
+Write a Python program using functions to:
+Accept purchase amount.
+Calculate the normal discount.
+Accept membership status.
+Apply an additional membership discount.
+Calculate the final payable amount.
+Display the complete bill.
+
+Q14. LUCKY NUMBER DRAW
+A school is conducting a lucky-number draw using numbers from 1 to 500.
+Write a Python program using the random module and a user-defined function to:
+Generate two different winning numbers.
+Display both winners.
+Ensure that the same number is not selected twice.
+
+Q18. TRAFFIC CONTROL SYSTEM
+Write a Python program using functions to simulate a traffic signal.
+trafficSignal() to accept the signal colour and signalValue() which returns:
+0 for RED
+1 for YELLOW
+2 for GREEN
+Based on the returned value, display the appropriate traffic instruction.
+
+Q19. CUSTOMER BILL ANALYSIS
+A shop stores customer purchases in a dictionary.
+Write functions to:
+Calculate total purchase amount.
+Find the customer with the highest purchase.
+Find the customer with the lowest purchase.
+Count customers who purchased above a specified amount.
+Calculate average purchase amount.
+
+
+
+
+Q20. SCHOOL TRANSPORT MANAGEMENT
+A school maintains transport details using a dictionary containing student names and route numbers.
+Write functions to:
+Display students travelling on a given route.
+Count students using each route.
+Find the route having the maximum number of students.
+Search for a particular student.
+Display all transport details.
+
+Use suitable user-defined functions for each operation.
