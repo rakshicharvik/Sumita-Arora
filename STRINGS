@@ -1,0 +1,1347 @@
+TOPIC 1 — WHAT IS A STRING?  (“ “)
+A string is a sequence of characters enclosed within quotation marks.
+A string can contain:
+
+Alphabets
+Digits
+Special characters
+Symbols
+Spaces
+
+
+Examples
+"Python"
+'Computer Science'
+"12345"
+"Python123"
+"Hello@123"
+""
+Example
+name = "Python"
+Here:
+name     → variable
+"Python" → string
+Checking the data type
+name = "Python"
+
+print(type(name))
+Output:
+<class 'str'>
+
+TOPIC 2 — CREATING STRINGS
+Strings can be created using:
+Single quotes
+s = 'Python'
+Double quotes
+s = "Python"
+Triple quotes
+s = """Python Programming"""
+Triple quotes can also be used for multiline strings.
+message = """Welcome
+to
+Python"""
+
+TOPIC 3 — VALID AND INVALID STRING LITERALS
+Opening and closing quotation marks must match.
+Valid
+"Hello"
+'Hello'
+"Python Programming"
+'Python Programming'
+Invalid
+"Hello'
+'Hello"
+The opening quote and closing quote are different.
+EXAM QUESTION
+Which of the following are not valid strings?
+i) "Hello"
+ii) 'Hello'
+iii) "Hello'
+iv) 'Hello"
+Answer
+iii and iv
+
+TOPIC 4 — EMPTY STRING
+A string containing zero characters is called an empty string.
+s = ""
+Example:
+s = ""
+
+print(len(s))
+Output:
+0
+
+TOPIC 5 — LENGTH OF A STRING — len()
+The len() function returns the number of characters in a string.
+Syntax
+len(string)
+Example
+s = "Python"
+
+print(len(s))
+Output:
+6
+Important
+Spaces are also characters.
+s = "Hello World"
+
+print(len(s))
+Output:
+11
+Because:
+Hello = 5
+Space = 1
+World = 5
+
+Total = 11
+Important exam rule
+If:
+s = "Python"
+then:
+Length = 6
+Last positive index = 5
+Therefore:
+Last index = len(s) - 1
+
+TOPIC 6 — STRING INDEXING
+Indexing means accessing individual characters of a string using their position.
+Consider:
+s = "PYTHON"
+Positive indexing
+Character :  P   Y   T   H   O   N
+Index     :  0   1   2   3   4   5
+Therefore:
+print(s[0])
+Output:
+P
+print(s[3])
+Output:
+H
+
+TOPIC 7 — NEGATIVE INDEXING
+Python also allows indexing from the right side.
+Character :   P    Y    T    H    O    N
+Positive  :   0    1    2    3    4    5
+Negative  :  -6   -5   -4   -3   -2   -1
+Therefore:
+print(s[-1])
+Output:
+N
+print(s[-2])
+Output:
+O
+Important rule
+First character → s[0]
+Last character  → s[-1]
+
+TOPIC 8 — INDEX OUT OF RANGE
+Consider:
+s = "Python"
+Valid indexes:
+0 1 2 3 4 5
+This is invalid:
+print(s[6])
+It produces:
+IndexError 
+Remember
+For a string of length n:
+Positive indexes → 0 to n-1
+Negative indexes → -n to -1
+
+TOPIC 9 — STRINGS ARE IMMUTABLE
+Immutable means that an existing string cannot be changed character by character.
+Example:
+s = "Welcome"
+
+s[2] = "L"
+This produces:
+TypeError
+because strings are immutable.
+But this is valid
+s = "Welcome"
+
+s = "Hello"
+Why?
+Because the variable s is being assigned a new string.
+
+TOPIC 10 — STRING CONCATENATION
+Concatenation means joining two or more strings.
+Operator:
++
+Example
+s1 = "Hello"
+s2 = "World"
+
+print(s1 + s2)
+Output:
+HelloWorld
+To add a space:
+print(s1 + " " + s2)
+Output:
+Hello World
+Important
+This is invalid:
+print("Age: " + 17)
+because a string and integer cannot directly be concatenated.
+Use:
+print("Age: " + str(17))
+
+TOPIC 11 — STRING REPETITION
+The * operator can repeat a string.
+s = "Hi"
+
+print(s * 3)
+Output:
+HiHiHi
+Another example:
+print("*" * 5)
+Output:
+*****
+Exam question
+s1 = "spam"
+s2 = "ni!"
+
+print(3 * s1 + 2 * s2)
+Output:
+spamspamspamni!ni!
+
+TOPIC 12 — MEMBERSHIP OPERATORS
+Two membership operators are:
+in
+not in
+in
+s = "Computer"
+
+print("put" in s)
+Output:
+True
+not in
+print("xyz" not in s)
+Output:
+True
+Important
+Membership checks whether a character or substring exists in the string.
+
+TOPIC 13 — STRING COMPARISON
+Strings can be compared using:
+==
+!=
+<
+>
+<=
+>=
+Example:
+s1 = "Python"
+s2 = "Python"
+
+print(s1 == s2) 
+Output:
+True
+
+TOPIC 14 — STRING SLICING
+Slicing is used to extract a portion of a string.
+Syntax
+string[start : stop]
+The stop position is not included. 
+Example:
+s = "PYTHON"
+print(s[1:4])
+
+Indexes selected:
+1 → Y
+2 → T
+3 → H
+Output:
+YTH
+
+TOPIC 15 — BASIC SLICING FORMS
+Given:
+s = "PYTHON"
+From beginning
+s[:3]
+Output:
+PYT
+From an index to the end
+s[2:]
+Output:
+THON
+Entire string
+s[:]
+Output:
+PYTHON
+Last three characters
+s[-3:]
+Output:
+HON
+Everything except last character
+s[:-1]
+Output:    
+PYTHO
+
+TOPIC 16 — SLICING WITH STEP
+Syntax
+string[start : stop : step]
+Example:
+s = "PYTHON"
+Print(s[-1:-6:-2])
+print(s[0:6:2])
+Indexes:
+0 → P
+2 → T
+4 → O
+Output:
+PTO
+
+TOPIC 17 — REVERSE A STRING USING SLICING
+The following expression reverses a string:
+s[::-1]
+Example:
+s = "PYTHON"
+
+print(s[::-1])
+Output:
+NOHTYP
+Here:
+start = omitted
+stop  = omitted
+step  = -1
+
+TOPIC 18 — NEGATIVE STEP SLICING
+This is an important advanced examination area.
+
+
+
+Example:
+s = "COMPUTER"
+Consider:
+s[-1:-7:-2]
+The indexes visited are:
+-1 → -3 → -5
+The characters at those positions are then selected.
+Important rule
+When the step is negative:
+Movement is from right to left.
+
+TOPIC 19 — HOW TO SOLVE COMPLEX SLICING QUESTIONS
+For every complex slice:
+s[start:stop:step]
+follow these steps:
+Step 1
+Identify the starting index.
+Step 2
+Identify the stopping boundary.
+Step 3
+Identify the step.
+Step 4
+Determine the direction.
+Step 5
+Write the indexes actually visited.
+Step 6
+Convert indexes into characters.
+
+TOPIC 20 — STRING TRAVERSAL
+Traversal means visiting every character of a string one by one.
+Using for
+s = "PYTHON"
+
+for ch in s:
+    print(ch)
+Output:
+P
+Y
+T
+H
+O
+N
+
+TOPIC 21 — TRAVERSAL USING INDEX
+s = "PYTHON"
+
+for i in range(len(s)):
+    print(s[i])
+This uses:
+index → character
+
+TOPIC 22 — REVERSE TRAVERSAL
+s = "PYTHON"   
+
+for i in range(len(s)-1, -1, -1):   # (5,-1,-1)
+    print(s[i])
+Output:
+N
+O
+H
+T
+Y
+P
+
+TOPIC 23 — CASE CONVERSION METHODS
+upper()
+Converts letters to uppercase.
+s = "python"
+
+print(s.upper())
+Output:
+PYTHON
+
+lower()
+s = "PYTHON"
+
+print(s.lower())
+Output:
+python
+
+capitalize()
+Only the first character is converted to uppercase.
+s = "python programming"
+
+print(s.capitalize())
+Output:
+Python programming
+
+title()
+First character of each word becomes uppercase.
+s = "python programming"
+
+print(s.title())
+Output:
+Python Programming
+
+TOPIC 24 — count()
+Returns the number of occurrences of a substring.
+Syntax
+string.count(substring)
+Example:
+s = "banana"
+
+print(s.count("a"))
+Output:
+3
+Another:
+print(s.count("an"))
+Output:
+2
+
+TOPIC 25 — find()
+Returns the index of the first occurrence.
+s = "computer"
+
+print(s.find("put"))
+Output:
+3
+If the substring is not found:
+print(s.find("xyz"))
+Output:
+-1
+Important
+find() → -1 if not found
+
+TOPIC 26 — rfind()
+rfind() searches from the right side and returns the position of the last occurrence.
+Example:
+
+
+s = "New Ganga Nagar,New New Delhi"
+print(s.find("New"))
+print(s.rfind("New"))
+find() gives the first occurrence.
+rfind() gives the last occurrence.
+
+TOPIC 27 — index()
+index() returns the position of the first occurrence.
+s = "computer"
+
+print(s.index("put"))
+Output:
+3
+Important difference
+find()  → -1 if not found
+index() → ValueError if not found
+Example:
+s = "Python"
+
+print(s.index("Java"))
+Result:
+ValueError
+
+
+
+
+TOPIC 28 — find() WITH START AND END
+find() can also specify a search range.
+Syntax
+s.find(substring , start, end)
+Example:
+s = "COMPUTER"
+
+print(s.find("UT", 3, 10))
+The search starts at index 3 and ends before index 10.
+This is directly useful for questions such as the school's STR-13.
+
+TOPIC 29 — startswith()
+Checks whether a string begins with a specified substring.
+s = "Computer Science"
+
+print(s.startswith("Computer"))
+Output:
+True
+
+TOPIC 30 — endswith()
+Checks whether a string ends with a specified substring.
+s = "Computer Science"
+
+print(s.endswith("Science"))
+Output:
+True
+
+TOPIC 31 — isalpha()
+Returns True if all characters are alphabetic.
+print("Python".isalpha())
+Output:
+True
+print("Python123".isalpha())
+Output:
+False
+
+TOPIC 32 — isdigit()
+Checks whether all characters are digits.
+print("12345".isdigit())
+Output:
+True
+print("123A".isdigit())
+Output:
+False
+
+TOPIC 33 — isalnum()
+Returns True when all characters are alphabets or digits.
+print("Python123".isalnum())
+Output:
+True
+But:
+print("Python 123".isalnum())
+Output:
+False
+because the space is neither an alphabet nor a digit.
+
+TOPIC 34 — islower()
+print("python".islower())
+Output:
+True
+
+TOPIC 35 — isupper()
+print("PYTHON".isupper())
+Output:
+True
+
+TOPIC 36 — isspace()
+Checks whether all characters are whitespace.
+print("   ".isspace())
+Output:
+True
+
+TOPIC 37 — strip()
+Removes spaces from both ends.
+s = "   Python   "
+
+print(s.strip())
+Output:
+Python
+
+TOPIC 38 — lstrip()
+Removes spaces from the left side.
+s = "   Python"
+
+print(s.lstrip())
+Output:
+Python
+
+TOPIC 39 — rstrip()
+Removes spaces from the right side.
+s = "Python   "
+
+print(s.rstrip())
+Output:
+Python
+
+TOPIC 40 — replace()
+Replaces one substring with another.
+Syntax
+string.replace(old, new)
+Example:
+s = "I like Java"
+
+print(s.replace("Java", "Python"))
+Output:
+I like Python
+
+TOPIC 41 — split()
+split() divides a string into a list.
+s = "I love Python"
+
+print(s.split())
+Output:
+['I', 'love', 'Python']
+
+TOPIC 42 — split() WITH SEPARATOR
+s = "apple,banana,mango"
+
+print(s.split(","))
+Output:
+['apple', 'banana', 'mango']
+
+TOPIC 43 — split() WITH maxsplit
+Syntax
+string.split(separator, maxsplit)
+Example:
+s = "A::B::C::D"
+
+print(s.split("::", 2))
+Output:
+['A', 'B', 'C::D']
+Important rule
+maxsplit = 2
+means:
+Maximum number of splits = 2
+Maximum number of resulting pieces = 3
+
+TOPIC 44 — split() vs partition()
+This is an important theory question.
+split()
+s = "A-B-C"
+
+print(s.split("-"))
+Output:
+['A', 'B', 'C']
+partition()
+s = "A-B-C"
+
+print(s.partition("-"))
+Output:
+('A', '-', 'B-C')
+Difference
+split()	partition()
+Returns a list	Returns a tuple
+Can produce multiple parts	Always produces 3 parts
+Separator is removed	Separator is retained
+Supports maxsplit	Divides at first occurrence
+
+TOPIC 45 — join()
+join() combines elements using a separator.
+words = ["I", "love", "Python"]
+
+print(" ".join(words))
+Output:
+I love Python
+Another example:
+numbers = ["2026", "09", "30"]
+
+print("-".join(numbers))
+Output:
+2026-09-30
+Relationship
+split() → String → List
+join()  → List → String
+
+TOPIC 46 — partition()
+partition() divides a string into exactly three parts:
+Before separator
+Separator
+After separator
+Example:
+s = "Name:Python"
+
+print(s.partition(":"))
+Output:
+('Name', ':', 'Python')
+
+TOPIC 47 — CONVERTING A STRING INTO A LIST
+The list() function converts a string into a list of individual characters.
+print(list("hello"))
+Output:
+['h', 'e', 'l', 'l', 'o']
+Important
+list("hello")
+does not produce:
+['hello']
+It produces individual characters.
+
+TOPIC 48 — STRING + LIST INDEXING
+Consider:
+L = ["COMPUTER", "SCIENCE"]
+Then:
+L[0]
+gives:
+COMPUTER
+and:
+L[1]
+gives:
+SCIENCE
+Now:
+L[1][::-1]
+First:
+L[1] → SCIENCE
+Then reverse:
+ECNEICS
+This type of nested indexing is important for advanced output questions.
+
+TOPIC 49 — ASCII
+ASCII stands for:
+American Standard Code for Information Interchange
+ASCII assigns numeric values to characters.
+Important examples:
+A → 65
+B → 66
+C → 67
+
+a → 97
+b → 98
+c → 99
+
+0 → 48
+1 → 49
+2 → 50
+
+TOPIC 50 — ord()
+ord() returns the Unicode code point of a character.
+For basic English characters, these correspond to ASCII values.
+print(ord('A'))
+Output:
+65
+print(ord('a'))
+Output:
+97
+
+TOPIC 51 — chr()
+chr() returns the character corresponding to a numeric Unicode code point.
+print(chr(65))
+Output:
+A
+print(chr(97))
+Output:
+a
+Relationship
+Character → ord() → Number
+
+Number → chr() → Character
+
+TOPIC 52 — ASCII PROGRAM
+Question
+Accept a character and display its ASCII value.
+Solution
+ch = input("Enter a character: ")
+
+print("ASCII value:", ord(ch))
+
+TOPIC 53 — NEXT THREE CHARACTERS
+Question
+Accept a character and print the next three characters along with their ASCII values.
+Solution
+ch = input("Enter a character: ")
+
+n = ord(ch)
+
+for i in range(1, 4):
+    print(chr(n + i), n + i)
+
+TOPIC 54 — CHARACTER CLASSIFICATION
+A character can be classified using:
+isalpha()
+isdigit()
+Example:
+ch = input("Enter a character: ")
+
+if ch.isalpha():
+    print("Alphabet")
+elif ch.isdigit():
+    print("Digit")
+else:
+    print("Special character")
+
+TOPIC 55 — CHANGE ALPHABET TO OTHER CASE
+ch = input("Enter a character: ")
+
+if ch.isupper():
+    print(ch.lower())
+elif ch.islower():
+    print(ch.upper())
+else:
+    print("Not an alphabet")
+
+TOPIC 56 — COUNT VOWELS
+s = input("Enter a string: ")
+
+count = 0
+
+for ch in s:
+    if ch.lower() in "aeiou":
+        count += 1
+
+print("Vowels:", count)
+
+TOPIC 57 — COUNT CONSONANTS
+s = input("Enter a string: ")
+
+count = 0
+
+for ch in s:
+    if ch.isalpha() and ch.lower() not in "aeiou":
+        count += 1
+
+print("Consonants:", count)
+
+TOPIC 58 — COUNT UPPERCASE AND LOWERCASE
+s = input("Enter a string: ")
+
+upper = 0
+lower = 0
+
+for ch in s:
+
+    if ch.isupper():
+        upper += 1
+
+    elif ch.islower():
+        lower += 1
+
+print("Uppercase:", upper)
+print("Lowercase:", lower)
+
+TOPIC 59 — COUNT ALPHABETS, DIGITS AND SPECIAL CHARACTERS
+s = input("Enter a string: ")
+
+alphabets = 0
+digits = 0
+special = 0
+
+for ch in s:
+
+    if ch.isalpha():
+        alphabets += 1
+
+    elif ch.isdigit():
+        digits += 1
+
+    else:
+        special += 1
+
+print("Alphabets:", alphabets)
+print("Digits:", digits)
+print("Special characters:", special)
+
+TOPIC 60 — REVERSE A STRING
+Method 1 — slicing
+s = input("Enter a string: ")
+
+print(s[::-1])
+Method 2 — loop
+s = input("Enter a string: ")
+
+rev = ""
+
+for ch in s:
+    rev = ch + rev
+
+print(rev)
+
+TOPIC 61 — PALINDROME
+A palindrome reads the same forward and backward.
+Examples:
+madam
+level
+radar
+Using slicing
+s = input("Enter a string: ")
+
+if s == s[::-1]:
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+
+
+
+
+
+
+TOPIC 62 — PALINDROME WITHOUT BUILT-IN REVERSE
+s = input("Enter a string: ")
+
+rev = ""
+
+for ch in s:
+    rev = ch + rev
+
+if s == rev:
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+This is important because school questions may explicitly say:
+without using a built-in function.
+
+TOPIC 63 — CHARACTER FREQUENCY
+Question
+Count the occurrence of a given character.
+s = input("Enter a string: ")
+ch = input("Enter character: ")
+
+count = 0
+
+for c in s:
+
+    if c == ch:
+        count += 1
+
+print("Frequency:", count)
+
+TOPIC 64 — WORD COUNT
+s = input("Enter a sentence: ")
+
+words = s.split()
+
+print("Number of words:", len(words))
+Important expression
+len(S.split())
+This directly prepares for expression-framing questions.
+
+TOPIC 65 — CHECK FIRST AND LAST CHARACTER
+Question
+Check whether the first and last characters are equal, ignoring case.
+Expression
+S[0].lower() == S[-1].lower()
+Example:
+S = "Pythonp"
+
+print(S[0].lower() == S[-1].lower())
+Output:
+True
+
+TOPIC 66 — ALTERNATE CHARACTERS
+To display alternate characters:
+s[::2]
+Example:
+s = "ABCDEFG"
+
+print(s[::2])
+Output:
+ACEG
+
+TOPIC 67 — ALTERNATE CHARACTERS STARTING FROM A PARTICULAR CHARACTER
+Suppose:
+s = "Digital India"
+Find the index of 'g':
+s.index('g')
+Then start slicing from that position:
+s[s.index('g')::2]
+This is exactly the kind of expression-framing skill required for advanced school questions.
+
+TOPIC 68 — ROTATING A STRING
+Given:
+Python
+Required:
+Python
+ythonP
+thonPy
+honPyt
+onPyth
+nPytho
+Program
+s = input("Enter a string: ")
+
+for i in range(len(s)):
+    print(s[i:] + s[:i])
+Logic
+For:
+i = 0
+s[0:] + s[:0]
+→ Python
+For:
+i = 1
+s[1:] + s[:1]
+→ ythonP
+
+TOPIC 69 — FIND FIRST OCCURRENCE AND COUNT OCCURRENCES
+sentence = input("Enter sentence: ")
+word = input("Enter word: ")
+
+print("First occurrence:", sentence.find(word))
+print("Number of occurrences:", sentence.count(word))
+
+TOPIC 70 — CONVERT SENTENCE INTO WORD LIST
+sentence = input("Enter sentence: ")
+
+words = sentence.split()
+
+print(words)
+Example:
+Input:
+Python is very easy
+Output:
+['Python', 'is', 'very', 'easy']
+
+TOPIC 71 — DISPLAY WORDS ENDING WITH est
+paragraph = input("Enter paragraph: ")
+
+words = paragraph.split()
+
+for word in words:
+
+    if word.endswith("est"):
+        print(word)
+Example:
+Input:
+This is the fastest and easiest way
+Output:
+fastest
+easiest
+
+TOPIC 72 — STRING + ASCII + CONDITIONS
+Question pattern
+If:
+
+alphabet → convert to opposite case
+
+
+digit → add 1
+
+
+special character → display ASCII-related result
+
+Example
+ch = input("Enter a character: ")
+
+if ch.isupper():
+    print(ch.lower())
+
+elif ch.islower():
+    print(ch.upper())
+
+elif ch.isdigit():
+    print(int(ch) + 1)
+
+else:
+    print(ord(ch))
+This combines:
+String methods
++
+conditions
++
+ASCII
+
+TOPIC 73 — ASCII TO BINARY
+For a character:
+ch = 'C'
+ASCII value:
+ord(ch)
+Binary representation:
+bin(ord(ch))
+Example:
+print(ord('C'))
+print(bin(ord('C')))
+Output:
+67
+0b1000011
+If an exam specifically requires 8-bit binary, format it appropriately:
+print(format(ord('C'), '08b'))
+Output:
+01000011
+
+TOPIC 74 — ASCII vs ISCII vs Unicode
+ASCII
+
+American Standard Code for Information Interchange
+
+
+Originally 7-bit
+
+
+Represents 128 characters
+
+
+Mainly designed around English text
+
+ISCII
+
+Indian Script Code for Information Interchange
+
+
+Developed for representing Indian language scripts.
+
+Unicode
+Unicode is a universal character encoding standard designed to represent characters from many writing systems.
+UTF-8
+Variable-length encoding.
+UTF-16
+Uses 16-bit code units.
+UTF-32
+Uses 32-bit code units.
+Exam preparation
+Remember:
+ASCII → mainly basic English characters
+ISCII → Indian scripts
+Unicode → worldwide character representation
+UTF-8/16/32 → Unicode encoding forms
+
+TOPIC 75 — IMPORTANT DIFFERENCES
+find() vs index()
+find()	index()
+Finds first occurrence	Finds first occurrence
+Returns -1 if absent	Raises ValueError if absent
+
+find() vs rfind()
+find()	rfind()
+First occurrence	Last occurrence
+
+split() vs partition()
+split()	partition()
+Returns list	Returns tuple
+Can create many parts	Always 3 parts
+Separator removed	Separator retained
+Supports maxsplit	No maxsplit argument
+
+upper() vs capitalize() vs title()
+Method	Result
+upper()	All letters uppercase
+capitalize()	First character uppercase
+title()	First character of each word uppercase
+
+strip() vs lstrip() vs rstrip()
+Method	Removes
+strip()	Both sides
+lstrip()	Left side
+rstrip()	Right side
+
+TOPIC 76 — SCHOOL-LEVEL OUTPUT PRACTICE
+Question 1
+s = "Python"
+
+print(s[0])
+print(s[-1])
+print(len(s))
+Answer
+P
+n
+6
+
+Question 2
+s = "COMPUTER"
+
+print(s[1:5])
+print(s[-3:])
+print(s[::-1])
+Answer
+OMPU
+TER
+RETUPMOC
+
+Question 3
+s = "banana"
+
+print(s.count("a"))
+print(s.find("na"))
+print(s.rfind("na"))
+Answer
+3
+2
+4
+
+Question 4
+s = "Python123"
+
+print(s.isalpha())
+print(s.isdigit())
+print(s.isalnum())
+Answer
+False
+False
+True
+
+Question 5
+s = "A::B::C::D"
+
+print(s.split("::", 2))
+Answer
+['A', 'B', 'C::D']
+
+TOPIC 77 — ADVANCED OUTPUT PRACTICE
+s = "COMPUTER SCIENCE"
+
+print(s[0:15:2])
+print(s[15:1:-3])
+print(s[-1:-15:-2])
+print(s[-15:15:2])
+Required approach
+Do not calculate directly.
+Create:
+Character
+Positive index
+Negative index
+Then calculate each slice separately.
+This exact style should be practiced repeatedly because the school has already asked complex slicing questions.
+
+TOPIC 78 — ERROR FINDING PRACTICE
+Identify the error:
+1
+s = "Python"
+s[0] = "J"
+Answer: TypeError
+
+2
+s = "Python"
+print(s[10])
+Answer: IndexError
+
+3
+print("Age: " + 20)
+Answer: TypeError
+
+4
+s = "Python"
+print(s.index("Java"))
+Answer: ValueError
+
+5
+print("Python" * 3)
+Answer: Valid.
+
+TOPIC 79 — EXPRESSION FRAMING QUESTIONS
+Q1
+Display the last character of S.
+S[-1]
+Q2
+Display the first three characters.
+S[:3]
+Q3
+Reverse S.
+S[::-1]
+Q4
+Count the words.
+len(S.split())
+Q5
+Check whether first and last characters are equal ignoring case.
+S[0].lower() == S[-1].lower()
+Q6
+Check whether "Python" occurs in S.
+"Python" in S
+Q7
+Find first occurrence of "abc".
+S.find("abc")
+Q8
+Find last occurrence of "abc".
+S.rfind("abc")
+Q9
+Display alternate characters.
+S[::2]
+Q10
+Display alternate characters starting from the index of 'g'.
+S[S.index('g')::2]
+
+TOPIC 80 — EXAM PROGRAMS TO MASTER
+The following program types should be practiced thoroughly:
+Basic
+
+Length of string
+
+
+First/last character
+
+
+Reverse
+
+
+Concatenation
+
+
+Repetition
+
+
+Substring checking
+
+
+Character counting
+
+
+Case conversion
+
+Intermediate
+
+Vowel count
+
+
+Consonant count
+
+
+Uppercase count
+
+
+Lowercase count
+
+
+Digit count
+
+
+Special-character count
+
+
+Alphabet count
+
+
+Palindrome
+
+
+Word count
+
+
+First occurrence
+
+
+Number of occurrences
+
+
+Replace vowels
+
+
+Remove spaces
+
+Advanced
+
+Character frequency
+
+
+Remove duplicate characters
+
+
+Longest word
+
+
+Shortest word
+
+
+Words ending with "est"
+
+
+String rotation
+
+
+First and last character comparison ignoring case
+
+
+Character classification
+
+
+ASCII conversion
+
+
+ASCII to binary
+
+
+Menu-driven String program
+
+
+String + list program
+
+
+String + tuple program
+
+
+String + random/output tracing
+
+
