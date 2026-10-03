@@ -1,0 +1,94 @@
+
+GETTING STARTED WITH PYTHON - QUESTION BANK
+1. MCQs
+Identify invalid variable name out of the following. a. _123 b. el_if c. from d. For
+Which is the invalid non-graphic character a. \ b. ' c. \ab d. \h
+ Identify the valid boolean literal a. True b. Yes c. No d. false
+ print(2*5, 6+5, sep='+', end='%') — What will be the output? a. 10,11+% b. 10+% 11% c. 10+11% d. 21%
+25-5*(4/2-10**2**3) — What will be the final result? a. -290000002.5 b. 500000015.0 c. 500000015 d. 500000014.0
+Identify invalid operator out of the following: a. between b. is c. // d. -=
+[CROSS-TOPIC: Getting Started with Python + Strings]
+ Which of the following are not valid strings in Python? i) "Hello" ii) 'Hello' iii) "Hello' iv) 'Hello"
+What will be the output of print(2**3 + (5+6)**(1+1))? i) 129 ii) 8 iii) 121 iv) None of the above
+Which of the following is not a valid identifier? i) Mybook ii) 23book iii) _book iv) book23
+Which of the following are keyword(s)? i) name ii) Print iii) print iv) input
+
+What will be the output of print(type(int))? i) type 'int' ii) <class 'int'> iii) <class 'type'> iv) None of the above
+
+Which symbol is used in Python for comments? i) @ ii) $ iii) # iv) ^
+
+ Evaluate: 16 - (4 + 2) * 5 + 2**2 **3 i) 50 ii) 242 iii) 252 iv) 142
+i) Which operator is used for exponentiation in Python? (^, **, exp(), %) ii) Which escape sequence is used for a new line? (\, \n, \t, \r) iii) Which keyword is used to assign a null value in Python? (Nil, Null, None, Empty) iv) What will be the output of print("Hello" + "World")?
+
+What is a NameError in Python? a. Syntax error raised when a local name in a python code is not found b. Syntax error raised when a global name in a python code is not found c. Syntax error raised when a local or global name in a python code is not found d. runtime error raised when a local or global name in a python code is not found
+
+Identify invalid operator out of the following: a. between b. is c. // d. -=
+
+Identify the valid literal(s) from the following: a. 11.0 b. 29C c. 'seema's pen' d. 0.17E2.3
+
+Assertion (A): Interactive mode allows execution of individual statement instantaneously. Reason (R): Script mode allows us to write more than one instruction in a file called Python source code file that can be executed. (A. Both true, R correct explanation B. Both true, R not correct explanation C. A true, R false D. A false, R true)
+
+Assertion (A): The end argument is used to join individual pieces of values when applied with print statement. Reason (R): It will append all individual pieces of values and display the list of values after appending the string specified in end argument.
+
+2. Theory / Concept Questions
+Differentiate and give suitable example: (e) syntax error and run time error (f) implicit type casting and explicit type casting
+Explain mutable and immutable data types by giving a suitable example.
+What are literals? How many types of literals are available in Python?
+What do you mean by augmented assignment operators? Mention any two and explain.
+What is a token? Discuss the various tokens of Python and give 2 examples of each.
+Python is a Dynamic Typing Language. Prove this by giving an example.
+Give short notes on syntax, logical and run-time errors. Support your answer with a suitable example.
+Categorise the following as syntax error, logical error or runtime error: i) 25 / 0 ii) num1 = 25; num2 = 0; num1/num2
+ Give short notes with a suitable example: Dynamic typing nature of python.
+Give short notes with a suitable example: escape character sequence.
+
+3. Output-Based Questions
+ Show hierarchy of evaluation and evaluate: 10 - 6 * 2 ** 2 != 9 / 4 - 3 and 29 >= 29 / 9 Mention what type of literal you will get as the result.
+ What will be the sizes of following constants: '\a', "\a ", "it\'s", "xy\yz"
+
+
+4. Error Finding
+ When Mr.X executed the following code, he didn't get the expected output. When an integer 15 is inputted, the expected output is 151515. Rewrite the correct code to help Mr.X.
+a = int(input("enter num,ber"))
+print (a+a+a)
+
+ Find out the error and write the error messages. Write the correct version for the same.
+x = x**0.5(x=4)
+c = 0o78
+x,y = 7
+Text1 = 'hello"
+
+[CROSS-TOPIC: Getting Started with Python + Flow of Control] Underline error(s) if any, rewrite the correct version. Underline wherever the corrections are made.
+x = 10
+y == 5
+if x > y
+print("x is greater")
+
+Rewrite the correct code and underline all corrections wherever you have made them. In case correction is not possible, write the error message.
+L1=[1,0.5]
+print(L1.sort())
+L1.append("H",2)
+print(L1.sort(),end='$')
+a=(5)
+a.append(10)
+print(a)
+
+
+[CROSS-TOPIC: Getting Started with Python + Flow of Control] Underline errors and rewrite the correct code and find output.
+num1,num2,num3=2,3
+num1 **= num1 + num2
+x=[i**2 - (i-1)*(i+1) if i%2==0 else i for i in range((int)(num1/2))]
+print(x)
+
+5. Expressions / Evaluation of Expressions
+ Mention the order of evaluation based on operator hierarchy: Y%4==0 and Y%100 != 0 or Y%400==0
+
+ Given that i=4, j=5, k=4, what will be the result of the following expressions? A) i<k and i<j B) (i+j)<=k and (j!=i) C) i==k or i<=k D) j>=k and not(j<=i)
+
+ Which type of literal will be suitable for representing the below? Justify. i) Number of months in a year ii) Resident of Delhi or not iii) Mobile number iv) Pocket money v) Volume of a sphere vi) Perimeter of a square vii) Name of the student viii) Address of the student
+ [CROSS-TOPIC: Getting Started with Python + Modules] Find out the resultant data type and result by showing the order of hierarchy. Where a = 5 and b = 9: a * b < math.pow(a,2) and a / b * math.sqrt(b) or a
+
+6. Programming / Application Questions
+Write a program to swap two numbers using a third variable.
+
+(41 questions total in this lesson.)
