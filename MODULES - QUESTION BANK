@@ -1,0 +1,88 @@
+
+MODULES - QUESTION BANK
+1. MCQs
+MOD-10 (Original: AE(25-26) Q9, 2 marks) In Python, random() is used to return a number randomly between the range of two numbers. It is available in the random module of Python language. Based on the above discussion, pick the right option(s) from the given options: i. random.random() function will return: a. 10 b. 8 c. 0.43543546677672 d. 12 ii. random.randint(5,75) function will return: a. 75 b. 4 c. 5.75 d. 74 iii. random.randrange(13,100,5) function may return: a. 15 b. 18 c. 100 d. 24 e. error iv. random.randrange(-5,50,-5) may return: a. -10 b. error c. -5 d. 50
+
+2. Theory / Concept Questions
+MOD-04 (Original: MT2(24-25) Q2, 3 marks) State the importance of the import statement and list the various forms of import statement, and differentiate them by giving suitable examples.
+
+3. Output-Based Questions
+MOD-01 (Original: UT3(25-26) Q14, 2 marks) Predict the output of line 3 in the below code snippet and correct the errors in Line 4 and 5.
+
+import statistics as stat                                              #line1
+QtyList = [100,300,200,300,400,500,200,600,650,200,100,400]            #line2
+print(stat.mode(QtyList))                                              #line3
+print(mean(QtyList))                                                   #line4
+print(statistics.median(QtyList))                                      #line5
+MOD-02 (Original: UT3(25-26) Q18, 3 marks) Find output.
+
+p,q,r=2,-5,8
+x,y,z=8.2,4.2,5.5
+from math import *
+print(pow(ceil(x),p)+floor(y+1))
+print(sqrt(r+1)*pow(abs(q+1),2)+q+1%p)
+MOD-07 (Original: QE(24-25) Q16, 3 marks — also appears as GSP-35) — [CROSS-TOPIC: Modules + Getting Started with Python] Find out the resultant data type and result by showing the order of hierarchy. Where a = 5 and b = 9: a * b < math.pow(a,2) and a / b * math.sqrt(b) or a
+
+MOD-08 (Original: QE(24-25) Q28, 2 marks — also appears as FC-20) — [CROSS-TOPIC: Modules + Flow of Control] What possible output(s) are expected? Justify. Specify the maximum values for Lower and Upper. Assume the required module is imported.
+
+AR=[20,30,40,50,60,70]
+Lower, Upper = random.randint(1,3), random.randint(2,4)
+for K in range(Lower, Upper +1):
+    print (AR[K],end="#")
+MOD-09 (Original: QE(24-25) Q29, 2 marks — also appears as FC-21) — [CROSS-TOPIC: Modules + Flow of Control + Strings] Find the output and assume necessary modules are imported.
+
+Name,R="PythoN3@1",""
+x=random.randint(0, len(Name[::2])+1)
+if Name[x].isupper():
+    R=R+Name[:x]+Name[x].lower()+Name[x+1:]
+elif Name[x].islower():
+    R=R+Name[:x]+Name[x].upper()+Name[x+1:]
+elif Name[x].isdigit():
+    R=R+Name[:x]+str(int(Name[x])+1)+Name[x+1:]
+else:
+    R=R+Name[:x-1]+ "#"+Name[x+1:]
+print(R)
+MOD-14 (Original: AE(25-26) Q16, 4 marks — also appears as FC-30) — [CROSS-TOPIC: Modules + Flow of Control] Based on the following code answer the questions:
+
+_______________  # blank 1
+AR=[20,30,40,50,60,70]
+FROM=randint(1,3)
+TO=randint(2,4)
+for K in range(FROM,TO+1):
+    print (AR[K],end="#")
+What will be the maximum value of the variables FROM & TO?
+What possible output(s) are expected?
+Fill Blank1 with a suitable statement to run the given code.
+4. Error Finding
+MOD-01 (see Output-Based section above — error correction in lines 4 and 5)
+
+MOD-06 (Original: MT2(24-25) Q6b, part of 10 marks — also appears as FUN-05b) — [CROSS-TOPIC: Modules + Functions]
+
+from math import sqrt, ceil
+def calc():
+    print(cos(0))
+calc()
+5. import
+MOD-04 (see Theory section above)
+
+6. from...import
+MOD-02 (see Output-Based section above — from math import *) MOD-06 (see Error Finding section above — from math import sqrt, ceil) MOD-14 (see Output-Based section above — fill-in-the-blank for from random import randint)
+
+7. math Module
+MOD-02 (see Output-Based section above) MOD-05 (Original: MT2(24-25) Q5e, part of 12 marks — also appears as FUN-04e) — [CROSS-TOPIC: Modules + Functions] Differentiate between pow(x,y) and pow(x,y,z), giving an example each. MOD-07 (see Output-Based section above) MOD-12 (Original: AE(25-26) Q14a, part of 3 marks) Write the name of the module to import, and write the statement to: get the natural logarithm of a number n.
+
+8. random Module
+MOD-08 (see Output-Based section above) MOD-09 (see Output-Based section above) MOD-10 (see MCQs section above) MOD-11 (Original: AE(25-26) Q12, 2 marks — also appears as FUN-11) — [CROSS-TOPIC: Modules + Functions] Lalit is a game programmer simulating a dice using random number generation. i) Which module can be used? MOD-13 (Original: AE(25-26) Q14c, part of 3 marks) Write the name of the module to import, and write the statement to: get a float real number in the range 5 to 15. MOD-14 (see Output-Based section above)
+
+9. Module-Based Expressions
+MOD-03 (Original: UT3(25-26) Q19, 2 marks) Write statements in Python:
+
+Store a random float number in the range 15-50 in a variable called random_value.
+To store the sum of the square roots of 10 and 100 in variable X.
+MOD-07 (see Output-Based section above)
+
+10. Module-Based Programs
+MOD-02 (see Output-Based section above)
+
+(14 questions total in this lesson.)
+
