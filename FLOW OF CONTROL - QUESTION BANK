@@ -1,0 +1,192 @@
+
+FLOW OF CONTROL - QUESTION BANK
+1. MCQs
+What is the output of the following code?
+if (4 + 5 == 10):
+    print ("TRUE")
+else:
+    print ("FALSE")
+print ("TRUE")
+
+Assertion/Reason) Assertion (A): The while statement executes a block of code repeatedly as long as the control condition of the loop is false. Reason (R): If the condition of the while loop is initially false, the body is not executed even once.
+
+2. Theory / Concept Questions
+What is the significance of the break and continue statement?
+Give short notes with a suitable example: for...else statement.
+
+3. Output-Based Questions
+
+What is the output for the following code?
+if (4 + 5 == 10):
+    print ("TRUE")
+else:
+    print ("FALSE")
+print ("TRUE")
+
+What is the output for the following code?
+for i in range(1, 6):
+    if i % 2 == 0:
+        print(i, "is even")
+    else:
+        print(i, "is odd")
+
+
+[CROSS-TOPIC: Flow of Control + Strings] Find output.
+T=('a','e','I','o','u','A','E','I','O','U')
+wd= "COMPUTER SCIENCE"
+L1,t1=str(),len(tuple(wd))+len(list(wd))
+for I in T:
+    L1+=I
+print(max(T), L1[5::2].capitalize(), t1)
+a,b=(2),(3,4,5)
+a,b=a*a,b*a
+print(a,b)
+ [CROSS-TOPIC: Flow of Control + Modules] What possible output(s) are expected to be displayed at the time of execution? Justify. Specify the maximum values that can be assigned to each of the variables Lower and Upper. Assume the required module is imported.
+AR=[20,30,40,50,60,70]
+Lower, Upper = random.randint(1,3), random.randint(2,4)
+for K in range(Lower, Upper +1):
+    print (AR[K],end="#")
+Options: (i) 20#30#40# (ii) 30#40#50# (iii) 50#60#70# (iv) 40#50#70# (v) 40#
+
+
+[CROSS-TOPIC: Flow of Control + Modules + Strings] Find the output and assume necessary modules are imported.
+Name,R="PythoN3@1",""
+x=random.randint(0, len(Name[::2])+1)
+if Name[x].isupper():
+    R=R+Name[:x]+Name[x].lower()+Name[x+1:]
+elif Name[x].islower():
+    R=R+Name[:x]+Name[x].upper()+Name[x+1:]
+elif Name[x].isdigit():
+    R=R+Name[:x]+str(int(Name[x])+1)+Name[x+1:]
+else:
+    R=R+Name[:x-1]+ "#"+Name[x+1:]
+print(R)
+a. PythoN3@1 b. pYTHOnN#@ c. PythoN4@1 d. pYTHOnN
+
+
+What will be the output of the following code fragment if the input given is (i) 2000 (ii) 1900 (iii) 1971?
+year = int(input("Enter 4-digit year"))
+if(year%100==0):
+    if(year%400==0):
+        print("LEAP century year")
+    else:
+        print("Not century year")
+
+
+What will be the value of A and B after execution of the following code?
+A = 100
+for B in range(10,13):
+    A += B
+print("A:",A,"B:",B)
+a. A:133 B:12 b. A:133,B:12 c. A: 133 B: 12 d. A:100 B:12
+
+
+[CROSS-TOPIC: Flow of Control + Getting Started with Python] Underline errors and rewrite the correct code and find output.
+num1,num2,num3=2,3
+num1 **= num1 + num2
+x=[i**2 - (i-1)*(i+1) if i%2==0 else i for i in range((int)(num1/2))]
+print(x)
+
+
+[CROSS-TOPIC: Flow of Control + Modules] Based on the following code answer the questions:
+_______________  # blank 1
+AR=[20,30,40,50,60,70]
+FROM=randint(1,3)
+TO=randint(2,4)
+for K in range(FROM,TO+1):
+    print (AR[K],end="#")
+What will be the maximum value of the variables FROM & TO? (1)
+What possible output(s) are expected to be displayed on screen at the time of execution of the program? Justify. (2) A. 10#40#70# B. 30#40#50# C. 50#60#70# D. 40#50#70#
+Fill Blank1 with a suitable statement to run the given code. (1)
+
+4. Error Finding
+[CROSS-TOPIC: Flow of Control + Getting Started with Python] Underline error(s) if any, rewrite the correct version. Underline wherever corrections are made.
+x = 10
+y == 5
+if x > y
+print("x is greater")
+
+
+Consider the following Python, intended to calculate factorials:
+number = int(input("Enter number"))
+n, result = number, 1
+while True or n:
+    result = result * n
+    n = n - 1
+factorial = result
+print("factorial of", number, "is", factorial)
+(i) What happens when the user enters a value of 5? (ii) How would you fix this program?
+
+5. Application-Based Questions
+A point on the 2-D plane can be represented by two coordinates called X and Y. Accept values of two end points of a line segment. Find out whether the line segment lies in one quadrant or not. Display the output neatly.
+
+
+Write a program to calculate and display the roots of a quadratic equation along with its type.
+
+
+
+6. Case-Based Questions
+[CROSS-TOPIC: Flow of Control + Strings] Write a menu driven program to do the following according to user's choice.
+i)Accepts a main string and 2nd string. Checks whether the 2nd string is a substring of the main string or not.
+ii)Accepts a word and checks whether it is a palindrome or not — WITHOUT using a built-in function.
+Iii)Accepts two strings and appends the smaller string with the larger string. This concatenation process is done only if the two strings are unequal in size, else displays the error message.
+
+
+ABC School has allotted unique token IDs from (1 to 600) to all the parents for facilitating a lucky draw on the day of their Annual day function. Two winners are chosen and both of them would receive a special prize. Write a program in Python to computerize the above.
+
+7. Programming Questions
+[CROSS-TOPIC: Flow of Control + Strings] Write a program that accepts a character and prints as follows: use if
+If it is alphabet, display it in the other case
+If it is a digit, print the sum by adding 1 to that number, eg. if it is 7, add starting from 1 to 7
+If it is a special character, print the square value of its ASCII number
+
+
+Write a program to input three integers and check whether they can form the sides of a triangle. If they can, determine whether the triangle is an obtuse-angled, right-angled, or acute-angled triangle.
+
+
+[CROSS-TOPIC: Flow of Control + Strings] Write a program that accepts a character from the user. If the entered value is not an alphabet or not a digit, print the ASCII value of the character; if the entered value is an alphabet, print the next 3 characters to it; and if the entered value is a digit, find its factorial value. Print the choice made by the user and the result.
+
+
+[CROSS-TOPIC: Flow of Control + Strings] Write a Python code that accepts a string and displays the string by following the pattern explained below. Use a loop for completing the task. For example, if the accepted string is 'Python', then the expected output is:
+'Python'
+'ythonP'
+'thonPy'
+'honPyt'
+'onPyth'
+'nPytho'
+
+
+Write a program to find the sum of the series: s = 1 + x + x² + x³ + ... + xⁿ
+[CROSS-TOPIC: Flow of Control + Strings] Write a program that accepts a character from the user and prints the next 3 characters along with its ASCII value.
+
+
+[CROSS-TOPIC: Flow of Control + Strings] Write a program that accepts words one by one and frames a line by concatenating all those words. The input process is terminated according to the user's choice. Use while.
+
+
+Write a program to display perfect numbers up to the number entered, or display all prime numbers between the starting and ending limit accepted from the user, according to the user's choice.
+
+Write a program to check if a given number is a perfect number or not. (Note: A perfect number is a positive integer which is equal to the sum of its factors, except the number given.)
+
+Write a program to generate the sequence: -5, 10, -15, 20, -25, ... n, where n is an integer input by the user.
+
+
+Write a program to find the sum of the given series: X²/2 – X³/3 + X⁵/5 – X⁸/8 + X¹²/12 – .... N terms
+
+Write a program to find the sum of the following series: x + x²/2! + x³/3! + x⁴/4! + ... + xⁿ/n!
+Write a program to find the sum of the series: X¹/1! – X⁴/4! + X⁹/9! – X¹⁶/16! + ... n terms
+
+
+
+
+
+[CROSS-TOPIC: Flow of Control + Functions + Strings] Write a program that accepts characters one by one and checks:
+i)Whether it is an alphabet. If so, checks for its case (upper case and lower case) and counts the same.
+ii) If it is not alphabet, checks for digit. If so, checks whether it is even or odd and counts the same. If odd, print its square, else print its square root.
+Iii) If it is not an alphabet or digit, then checks for arithmetic operators or other special characters and counts the same. Display the output in a neat format. Use functions wherever possible.
+
+[CROSS-TOPIC: Flow of Control + Strings] Write a program in Python that accepts a paragraph and displays all words if it ends with 'est'. Each word must be displayed in a separate line.
+
+
+[CROSS-TOPIC: Flow of Control + Strings] Write a program to read a sentence and a word. The program should find the index of the first occurrence of the word in the sentence and also it should find the number of occurrences of the word in the sentence. Convert the sentence into a list of words and display the list in descending order.
+
+(34 questions total in this lesson.)
