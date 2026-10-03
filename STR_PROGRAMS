@@ -1,0 +1,2135 @@
+
+LEVEL 1 — BASIC STRING PROGRAMS
+
+PROGRAM 1 — ACCEPT AND DISPLAY A STRING
+Question
+Write a Python program to accept a string from the user and display it.
+Solution
+S = input("Enter a string: ")
+
+print("String:", S)
+Example
+Input:
+Python Programming
+
+Output:
+String: Python Programming
+Concepts
+input()
+string variable
+print()
+
+
+
+
+PROGRAM 2 — FIND THE LENGTH OF A STRING
+Question
+Write a Python program to accept a string and display its length.
+Solution
+S = input("Enter a string: ")
+
+print("Length:", len(S))
+Example
+Input:
+Computer
+
+Output:
+Length: 8
+Important
+Spaces are also counted.
+S = "Hello World"
+Length:
+11
+
+PROGRAM 3 — DISPLAY FIRST CHARACTER
+Question
+Display the first character of a string.
+Solution
+S = input("Enter a string: ")
+
+print("First character:", S[0])
+Important
+The first index is always:
+0
+
+PROGRAM 4 — DISPLAY LAST CHARACTER
+Question
+Display the last character of a string.
+Solution
+S = input("Enter a string: ")
+
+print("Last character:", S[-1])
+Alternative:
+print(S[len(S) - 1])
+
+PROGRAM 5 — DISPLAY FIRST AND LAST CHARACTER
+Question
+Accept a string and display its first and last characters.
+Solution
+S = input("Enter a string: ") 
+
+print("First character:", S[0])
+print("Last character:", S[-1])
+
+PROGRAM 6 — DISPLAY EACH CHARACTER
+Question
+Accept a string and display every character on a separate line.
+Solution
+S = input("Enter a string: ")
+
+for ch in S:
+    print(ch)
+Example
+Input:
+Python
+
+Output:
+P
+y
+t
+h
+o
+n
+Concept
+This is called string traversal.
+
+PROGRAM 7 — DISPLAY EACH CHARACTER WITH INDEX
+Question
+Accept a string and display each character along with its index.
+Solution
+S = input("Enter a string: ")
+
+for i in range(len(S)):
+    print(i, S[i])
+Example
+Input:
+Python
+
+Output:
+0 P
+1 y
+2 t
+3 h
+4 o
+5 n
+
+PROGRAM 8 — DISPLAY STRING IN REVERSE ORDER
+Question
+Accept a string and display it in reverse order.
+Method 1 — Slicing
+S = input("Enter a string: ")
+
+print(S[::-1])
+Method 2 — Loop
+S = input("Enter a string: ")
+
+for i in range(len(S) - 1, -1, -1):
+    print(S[i], end="")
+
+PROGRAM 9 — CONCATENATE TWO STRINGS
+Question
+Accept two strings and concatenate them.
+Solution
+S1 = input("Enter first string: ")
+S2 = input("Enter second string: ")
+
+print(S1 + S2)
+With a space
+print(S1 + " " + S2)
+
+PROGRAM 10 — REPEAT A STRING
+Question
+Accept a string and a number. Display the string that many times.
+Solution
+S = input("Enter a string: ")
+n = int(input("Enter number of repetitions: "))
+
+print(S * n)
+
+PROGRAM 11 — CHECK WHETHER A SUBSTRING EXISTS
+Question
+Accept a string and a substring. Check whether the substring exists.
+Solution
+S = input("Enter main string: ")
+sub = input("Enter substring: ")
+
+if sub in S:
+    print("Substring found")
+else:
+    print("Substring not found")
+
+PROGRAM 12 — FIND FIRST OCCURRENCE
+Question
+Accept a string and a substring. Display the index of its first occurrence.
+Solution
+S = input("Enter string: ")
+sub = input("Enter substring: ")
+
+print("First occurrence:", S.find(sub))
+Important
+If not found:
+find() → -1
+
+PROGRAM 13 — FIND LAST OCCURRENCE
+Question
+Find the index of the last occurrence of a substring.
+Solution
+S = input("Enter string: ")
+sub = input("Enter substring: ")
+
+print("Last occurrence:", S.rfind(sub))
+
+PROGRAM 14 — COUNT OCCURRENCES
+Question
+Accept a string and a substring. Find how many times the substring occurs.
+Solution
+S = input("Enter string: ")
+sub = input("Enter substring: ")
+
+print("Number of occurrences:", S.count(sub))
+
+PROGRAM 15 — CONVERT TO UPPERCASE
+Question
+Accept a string and display it in uppercase.
+Solution
+S = input("Enter string: ")
+
+print(S.upper())
+
+PROGRAM 16 — CONVERT TO LOWERCASE
+Question
+Accept a string and display it in lowercase.
+Solution
+S = input("Enter string: ")
+
+print(S.lower())
+
+PROGRAM 17 — CAPITALIZE A STRING
+Question
+Accept a string and capitalize it.
+Solution
+S = input("Enter string: ")
+
+print(S.capitalize())
+
+PROGRAM 18 — CONVERT TO TITLE CASE
+Question
+Accept a sentence and display every word with its first letter capitalized.
+Solution
+S = input("Enter sentence: ")
+
+print(S.title())
+
+LEVEL 2 — CHARACTER-BASED PROGRAMS
+
+PROGRAM 19 — COUNT ALPHABETS
+Question
+Accept a string and count the number of alphabetic characters.
+Solution
+S = input("Enter string: ")
+
+count = 0
+
+for ch in S:
+    if ch.isalpha():
+        count += 1
+
+print("Number of alphabets:", count)
+
+PROGRAM 20 — COUNT DIGITS
+Question
+Count the number of digits present in a string.
+Solution
+S = input("Enter string: ")
+
+count = 0
+
+for ch in S:
+    if ch.isdigit():
+        count += 1
+
+print("Number of digits:", count)
+
+PROGRAM 21 — COUNT SPECIAL CHARACTERS
+Question
+Count the number of special characters.
+Solution
+S = input("Enter string: ")
+
+count = 0
+
+for ch in S:
+    if not ch.isalnum() and not ch.isspace():
+        count += 1
+
+print("Special characters:", count)
+
+PROGRAM 22 — COUNT SPACES
+Question
+Count the number of spaces in a sentence.
+Solution
+S = input("Enter sentence: ")
+
+count = 0
+
+for ch in S:
+    if ch == " ":
+        count += 1
+
+print("Number of spaces:", count)
+
+PROGRAM 23 — COUNT VOWELS
+Question
+Count the number of vowels in a string.
+Solution
+S = input("Enter string: ")
+
+count = 0
+
+for ch in S:
+    if ch.lower() in "aeiou":
+        count += 1
+
+print("Number of vowels:", count)
+Why lower()?
+It allows both:
+A E I O U
+a e i o u
+to be handled.
+
+PROGRAM 24 — COUNT CONSONANTS
+Question
+Count the number of consonants.
+Solution
+S = input("Enter string: ")
+
+count = 0
+
+for ch in S:
+
+    if ch.isalpha() and ch.lower() not in "aeiou":
+        count += 1
+
+print("Number of consonants:", count)
+
+PROGRAM 25 — COUNT UPPERCASE AND LOWERCASE
+Solution
+S = input("Enter string: ")
+
+upper = 0
+lower = 0
+
+for ch in S:
+
+    if ch.isupper():
+        upper += 1
+
+    elif ch.islower():
+        lower += 1
+
+print("Uppercase:", upper)
+print("Lowercase:", lower)
+
+PROGRAM 26 — COUNT ALPHABETS, DIGITS, SPACES AND SPECIAL CHARACTERS
+Question
+Accept a string and count:
+
+alphabets
+
+
+digits
+
+
+spaces
+
+
+special characters
+
+Solution
+S = input("Enter string: ")
+
+alphabets = 0
+digits = 0
+spaces = 0
+special = 0
+
+for ch in S:
+
+    if ch.isalpha():
+        alphabets += 1
+
+    elif ch.isdigit():
+        digits += 1
+
+    elif ch.isspace():
+        spaces += 1
+
+    else:
+        special += 1
+
+print("Alphabets:", alphabets)
+print("Digits:", digits)
+print("Spaces:", spaces)
+print("Special characters:", special)
+
+PROGRAM 27 — CHANGE UPPERCASE TO LOWERCASE AND LOWERCASE TO UPPERCASE
+Question
+Accept a string and change the case of every alphabet.
+Solution
+S = input("Enter string: ")
+
+result = ""
+
+for ch in S:
+
+    if ch.isupper():
+        result += ch.lower()
+
+    elif ch.islower():
+        result += ch.upper()
+
+    else:
+        result += ch
+
+print(result)
+Example
+Input:
+PyThOn123
+
+Output:
+pYtHoN123
+
+PROGRAM 28 — COUNT VOWELS, CONSONANTS AND DIGITS
+Solution
+S = input("Enter string: ")
+
+vowels = 0
+consonants = 0
+digits = 0
+
+for ch in S:
+
+    if ch.isdigit():
+        digits += 1
+
+    elif ch.isalpha():
+
+        if ch.lower() in "aeiou":
+            vowels += 1
+        else:
+            consonants += 1
+
+print("Vowels:", vowels)
+print("Consonants:", consonants)
+print("Digits:", digits)
+
+LEVEL 3 — STRING SLICING PROGRAMS
+
+PROGRAM 29 — DISPLAY FIRST HALF
+Question
+Display the first half of a string.
+Solution
+S = input("Enter string: ")
+
+n = len(S)
+
+print(S[:n // 2])
+
+PROGRAM 30 — DISPLAY SECOND HALF
+S = input("Enter string: ")
+
+n = len(S)
+
+print(S[n // 2:])
+
+PROGRAM 31 — DISPLAY ALTERNATE CHARACTERS
+Solution
+S = input("Enter string: ")
+
+print(S[::2])
+
+PROGRAM 32 — DISPLAY ALTERNATE CHARACTERS STARTING FROM INDEX 1
+S = input("Enter string: ")
+
+print(S[1::2])
+
+PROGRAM 33 — DISPLAY EVERY THIRD CHARACTER
+S = input("Enter string: ")
+
+print(S[::3])
+
+PROGRAM 34 — DISPLAY STRING WITHOUT FIRST AND LAST CHARACTER
+S = input("Enter string: ")
+
+print(S[1:-1])
+
+PROGRAM 35 — DISPLAY LAST THREE CHARACTERS
+S = input("Enter string: ")
+
+print(S[-3:])
+
+PROGRAM 36 — DISPLAY FIRST THREE CHARACTERS IN REVERSE
+S = input("Enter string: ")
+
+print(S[2::-1])
+
+PROGRAM 37 — REVERSE EVERY CHARACTER USING INDEX
+S = input("Enter string: ")
+
+for i in range(len(S) - 1, -1, -1):
+    print(S[i], end="")
+
+LEVEL 4 — PALINDROME PROGRAMS
+
+PROGRAM 38 — CHECK STRING PALINDROME USING SLICING
+Question
+Check whether a string is a palindrome.
+Solution
+S = input("Enter string: ")
+
+if S == S[::-1]:
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+
+PROGRAM 39 — PALINDROME WITHOUT SLICING
+Question
+Check whether a string is a palindrome without using reverse slicing.
+Solution
+S = input("Enter string: ")
+
+reverse = ""
+
+for ch in S:
+    reverse = ch + reverse
+
+if S == reverse:
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+
+PROGRAM 40 — PALINDROME IGNORING CASE
+S = input("Enter string: ")
+
+S = S.lower()
+
+if S == S[::-1]:
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+
+PROGRAM 41 — PALINDROME IGNORING SPACES
+Example
+madam
+or
+nurses run
+Solution
+S = input("Enter string: ")
+
+S = S.replace(" ", "").lower()
+
+if S == S[::-1]:
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+
+LEVEL 5 — FREQUENCY PROGRAMS
+
+PROGRAM 42 — FREQUENCY OF A CHARACTER
+Question
+Accept a string and a character. Find its frequency.
+Solution
+S = input("Enter string: ")
+ch = input("Enter character: ")
+
+count = 0
+
+for c in S:
+
+    if c == ch:
+        count += 1
+
+print("Frequency:", count)
+
+PROGRAM 43 — FREQUENCY USING count()
+S = input("Enter string: ")
+ch = input("Enter character: ")
+
+print("Frequency:", S.count(ch))
+
+PROGRAM 44 — DISPLAY FREQUENCY OF EACH CHARACTER
+Question
+Display the frequency of every character.
+Solution
+S = input("Enter string: ")
+
+for ch in S:
+
+    if S.index(ch) == S.find(ch):
+        print(ch, ":", S.count(ch))
+A more straightforward school-level approach:
+S = input("Enter string: ")
+
+checked = ""
+
+for ch in S:
+
+    if ch not in checked:
+        print(ch, ":", S.count(ch))
+        checked += ch
+
+PROGRAM 45 — FIND MOST FREQUENT CHARACTER
+Solution
+S = input("Enter string: ")
+
+maximum = 0
+result = ""
+
+for ch in S:
+
+    if ch != " ":
+        frequency = S.count(ch)
+
+        if frequency > maximum:
+            maximum = frequency
+            result = ch
+
+print("Most frequent character:", result)
+print("Frequency:", maximum)
+
+PROGRAM 46 — REMOVE DUPLICATE CHARACTERS
+Question
+Remove repeated characters while keeping the first occurrence.
+Solution
+S = input("Enter string: ")
+
+result = ""
+
+for ch in S:
+
+    if ch not in result:
+        result += ch
+
+print(result)
+Example
+Input:
+banana
+
+Output:
+ban
+
+LEVEL 6 — WORD-BASED PROGRAMS
+
+PROGRAM 47 — COUNT NUMBER OF WORDS
+Solution
+S = input("Enter sentence: ")
+
+words = S.split()
+
+print("Number of words:", len(words))
+
+PROGRAM 48 — DISPLAY EACH WORD ON A SEPARATE LINE
+S = input("Enter sentence: ")
+
+words = S.split()
+
+for word in words:
+    print(word)
+
+PROGRAM 49 — DISPLAY WORDS IN REVERSE ORDER
+S = input("Enter sentence: ")
+
+words = S.split()
+
+for i in range(len(words) - 1, -1, -1):
+    print(words[i], end=" ")
+
+PROGRAM 50 — REVERSE EACH WORD
+Question
+Reverse every word without changing the order of words.
+Solution
+S = input("Enter sentence: ")
+
+words = S.split()
+
+for word in words:
+    print(word[::-1], end=" ")
+Example
+Input:
+Python is easy
+
+Output:
+nohtyP si ysae
+
+PROGRAM 51 — FIND LONGEST WORD
+Solution
+S = input("Enter sentence: ")
+
+words = S.split()
+
+longest = words[0]
+
+for word in words:
+
+    if len(word) > len(longest):
+        longest = word
+
+print("Longest word:", longest)
+
+PROGRAM 52 — FIND SHORTEST WORD
+S = input("Enter sentence: ")
+
+words = S.split()
+
+shortest = words[0]
+
+for word in words:
+
+    if len(word) < len(shortest):
+        shortest = word
+
+print("Shortest word:", shortest)
+
+PROGRAM 53 — FIND LONGEST WORD LENGTH
+S = input("Enter sentence: ")
+
+words = S.split()
+
+maximum = 0
+
+for word in words:
+
+    if len(word) > maximum:
+        maximum = len(word)
+
+print("Longest word length:", maximum)
+
+PROGRAM 54 — COUNT WORDS STARTING WITH A PARTICULAR CHARACTER
+Question
+Count words beginning with 'a'.
+Solution
+S = input("Enter sentence: ")
+
+count = 0
+
+for word in S.split():
+
+    if word.lower().startswith("a"):
+        count += 1
+
+print("Count:", count)
+
+PROGRAM 55 — DISPLAY WORDS ENDING WITH est
+Solution
+S = input("Enter paragraph: ")
+
+for word in S.split():
+
+    if word.endswith("est"):
+        print(word)
+This directly prepares for a school-style 3-mark program.
+
+PROGRAM 56 — COUNT WORDS ENDING WITH ing
+S = input("Enter paragraph: ")
+
+count = 0
+
+for word in S.split():
+
+    if word.endswith("ing"):
+        count += 1
+
+print("Number of words:", count)
+
+PROGRAM 57 — FIND THE NUMBER OF WORDS CONTAINING A PARTICULAR LETTER
+S = input("Enter sentence: ")
+ch = input("Enter character: ")
+
+count = 0
+
+for word in S.split():
+
+    if ch in word:
+        count += 1
+
+print("Number of words:", count)
+
+LEVEL 7 — STRING + LIST PROGRAMS
+
+PROGRAM 58 — CONVERT SENTENCE INTO LIST
+S = input("Enter sentence: ")
+
+L = S.split()
+
+print(L)
+
+PROGRAM 59 — SORT WORDS IN ASCENDING ORDER
+S = input("Enter sentence: ")
+
+L = S.split()
+
+L.sort()
+
+print(L)
+
+PROGRAM 60 — SORT WORDS IN DESCENDING ORDER
+S = input("Enter sentence: ")
+
+L = S.split()
+
+L.sort(reverse=True)
+
+print(L)
+This directly prepares for the school question:
+Convert the sentence into a list of words and display the list in descending order.
+
+PROGRAM 61 — FIND FIRST OCCURRENCE, COUNT AND SORT WORDS
+Question
+Accept a sentence and a word. Display:
+
+Index of first occurrence
+
+
+Number of occurrences
+
+
+List of words in descending order
+
+Solution
+sentence = input("Enter sentence: ")
+word = input("Enter word: ")
+
+print("First occurrence:", sentence.find(word))
+
+print("Number of occurrences:", sentence.count(word))
+
+words = sentence.split()
+
+words.sort(reverse=True)
+
+print("Descending order:", words)
+
+LEVEL 8 — STRING + CONDITIONS
+
+PROGRAM 62 — CHARACTER CLASSIFICATION
+Question
+Accept a character.
+If it is:
+
+alphabet → display alphabet
+
+
+digit → display digit
+
+
+special character → display special character
+
+Solution
+ch = input("Enter a character: ")
+
+if ch.isalpha():
+    print("Alphabet")
+
+elif ch.isdigit():
+    print("Digit")
+
+else:
+    print("Special character")
+
+PROGRAM 63 — ALPHABET → OTHER CASE
+Question
+If the character is uppercase, convert it to lowercase. If lowercase, convert it to uppercase.
+Solution
+ch = input("Enter a character: ")
+
+if ch.isupper():
+    print(ch.lower())
+
+elif ch.islower():
+    print(ch.upper())
+
+else:
+    print("Not an alphabet")
+
+PROGRAM 64 — DIGIT → ADD 1
+Question
+If the character is a digit, add 1 to its numeric value.
+Solution
+ch = input("Enter a character: ")
+
+if ch.isdigit():
+    print(int(ch) + 1)
+else:
+    print("Not a digit")
+
+PROGRAM 65 — CHARACTER + ASCII
+Question
+If the character is:
+
+alphabet → convert to opposite case
+
+
+digit → add 1
+
+
+special character → display its ASCII value
+
+Solution
+ch = input("Enter a character: ")
+
+if ch.isalpha():
+
+    if ch.isupper():
+        print(ch.lower())
+    else:
+        print(ch.upper())
+
+elif ch.isdigit():
+
+    print(int(ch) + 1)
+
+else:
+
+    print(ord(ch))
+
+PROGRAM 66 — NEXT THREE CHARACTERS
+Question
+Accept a character and print the next three characters with their ASCII values.
+Solution
+ch = input("Enter a character: ")
+
+value = ord(ch)
+
+for i in range(1, 4):
+
+    new_value = value + i
+
+    print(chr(new_value), new_value)
+
+LEVEL 9 — STRING MANIPULATION PROGRAMS
+
+PROGRAM 67 — SWAP TWO HALVES
+Question
+Accept a string and divide it into two halves. Interchange the two halves.
+If the length is odd, the first half should contain one extra character.
+Solution
+S = input("Enter string: ")
+
+n = len(S)
+
+mid = (n + 1) // 2
+
+first = S[:mid]
+second = S[mid:]
+
+print(second + first)
+Example
+Input:
+ABCDE
+
+First half:
+ABC
+
+Second half:
+DE
+
+Output:
+DEABC
+
+PROGRAM 68 — ROTATE STRING LEFT
+Question
+Rotate a string one position to the left repeatedly.
+Solution
+S = input("Enter string: ")
+
+for i in range(len(S)):
+
+    print(S[i:] + S[:i])
+Example
+Python
+ythonP
+thonPy
+honPyt
+onPyth
+nPytho
+
+PROGRAM 69 — ROTATE STRING RIGHT
+Solution
+S = input("Enter string: ")
+
+for i in range(len(S)):
+
+    print(S[-i:] + S[:-i])
+For i = 0, special handling is clearer:
+S = input("Enter string: ")
+
+for i in range(len(S)):
+
+    if i == 0:
+        print(S)
+    else:
+        print(S[-i:] + S[:-i])
+
+PROGRAM 70 — REMOVE ALL SPACES
+S = input("Enter string: ")
+
+result = ""
+
+for ch in S:
+
+    if ch != " ":
+        result += ch
+
+print(result)
+Alternative:
+print(S.replace(" ", ""))
+
+PROGRAM 71 — REPLACE ALL VOWELS WITH *
+S = input("Enter string: ")
+
+result = ""
+
+for ch in S:
+
+    if ch.lower() in "aeiou":
+        result += "*"
+    else:
+        result += ch
+
+print(result)
+
+PROGRAM 72 — REMOVE VOWELS
+S = input("Enter string: ")
+
+result = ""
+
+for ch in S:
+
+    if ch.lower() not in "aeiou":
+        result += ch
+
+print(result)
+
+PROGRAM 73 — REMOVE ALL DIGITS
+S = input("Enter string: ")
+
+result = ""
+
+for ch in S:
+
+    if not ch.isdigit():
+        result += ch
+
+print(result)
+
+PROGRAM 74 — KEEP ONLY DIGITS
+S = input("Enter string: ")
+
+result = ""
+
+for ch in S:
+
+    if ch.isdigit():
+        result += ch
+
+print(result)
+
+LEVEL 10 — STRING + ASCII PROGRAMS
+
+PROGRAM 75 — DISPLAY ASCII VALUE OF EVERY CHARACTER
+S = input("Enter string: ")
+
+for ch in S:
+    print(ch, ord(ch))
+
+PROGRAM 76 — CONVERT ASCII VALUES INTO CHARACTERS
+Question
+Accept numbers and display their corresponding characters.
+Solution
+n = int(input("Enter ASCII value: "))
+
+print(chr(n))
+
+PROGRAM 77 — DISPLAY ASCII VALUES OF A-Z
+for value in range(65, 91):
+    print(chr(value), value)
+
+PROGRAM 78 — DISPLAY ASCII VALUES OF a-z
+for value in range(97, 123):
+    print(chr(value), value)
+
+PROGRAM 79 — DISPLAY NEXT THREE CHARACTERS
+ch = input("Enter character: ")
+
+value = ord(ch)
+
+for i in range(1, 4):
+    print(chr(value + i))
+
+PROGRAM 80 — ASCII ENCODING OF A WORD
+Question
+Encode the word COMPUTER using ASCII values.
+Solution
+S = "COMPUTER"
+
+for ch in S:
+    print(ch, ord(ch))
+Expected values:
+C → 67
+O → 79
+M → 77
+P → 80
+U → 85
+T → 84
+E → 69
+R → 82
+
+PROGRAM 81 — ASCII TO 8-BIT BINARY
+Question
+Display each character of a string along with its ASCII value and 8-bit binary representation.
+Solution
+S = input("Enter string: ")
+
+for ch in S:
+
+    value = ord(ch)
+
+    print(ch, value, format(value, "08b"))
+
+LEVEL 11 — STRING + LOOPS
+
+PROGRAM 82 — DISPLAY STRING IN PATTERN
+Question
+For:
+Python
+display:
+Python
+ythonP
+thonPy
+honPyt
+onPyth
+nPytho
+Solution
+S = input("Enter string: ")
+
+for i in range(len(S)):
+
+    print(S[i:] + S[:i])
+
+PROGRAM 83 — DISPLAY INCREASING PREFIXES
+Question
+For Python, display:
+P
+Py
+Pyt
+Pyth
+Pytho
+Python
+Solution
+S = input("Enter string: ")
+
+for i in range(1, len(S) + 1):
+    print(S[:i])
+
+PROGRAM 84 — DISPLAY DECREASING PREFIXES
+For:
+Python
+display:
+Python
+Pytho
+Pyth
+Pyt
+Py
+P
+Solution
+S = input("Enter string: ")
+
+for i in range(len(S), 0, -1):
+    print(S[:i])
+
+PROGRAM 85 — DISPLAY INCREASING SUFFIXES
+Expected:
+n
+on
+hon
+thon
+ython
+Python
+Solution
+S = input("Enter string: ")
+
+for i in range(len(S) - 1, -1, -1):
+    print(S[i:])
+
+LEVEL 12 — APPLICATION-BASED PROGRAMS
+
+PROGRAM 86 — CHECK FIRST AND LAST CHARACTER
+Question
+Check whether the first and last characters are equal, ignoring case.
+Solution
+S = input("Enter string: ")
+
+if S[0].lower() == S[-1].lower():
+    print("Equal")
+else:
+    print("Not equal")
+
+PROGRAM 87 — CHECK WHETHER STRING STARTS AND ENDS WITH SAME CHARACTER
+S = input("Enter string: ")
+
+if S[0].lower() == S[-1].lower():
+    print("Starts and ends with same character")
+else:
+    print("Different")
+
+PROGRAM 88 — CHECK VALID IDENTIFIER
+Question
+Check whether a string can be considered a simple Python identifier.
+Solution
+S = input("Enter identifier: ")
+
+if S.isidentifier():
+    print("Valid identifier")
+else:
+    print("Invalid identifier")
+
+PROGRAM 89 — CHECK WHETHER A STRING CONTAINS ONLY ALPHABETS
+S = input("Enter string: ")
+
+if S.isalpha():
+    print("Contains only alphabets")
+else:
+    print("Contains other characters")
+
+PROGRAM 90 — CHECK WHETHER A STRING CONTAINS ONLY DIGITS
+S = input("Enter string: ")
+
+if S.isdigit():
+    print("Contains only digits")
+else:
+    print("Contains other characters")
+
+PROGRAM 91 — CHECK PASSWORD FORMAT
+Question
+Accept a password and check whether it contains:
+
+at least one alphabet
+
+
+at least one digit
+
+Solution
+S = input("Enter password: ")
+
+has_alpha = False
+has_digit = False
+
+for ch in S:
+
+    if ch.isalpha():
+        has_alpha = True
+
+    elif ch.isdigit():
+        has_digit = True
+
+if has_alpha and has_digit:
+    print("Valid format")
+else:
+    print("Invalid format")
+
+LEVEL 13 — MENU-DRIVEN STRING PROGRAM
+PROGRAM 92 — MENU-DRIVEN STRING OPERATIONS
+Question
+Write a menu-driven program to perform:
+
+Find substring
+
+
+Check palindrome
+
+
+Compare two strings
+
+
+Reverse string
+
+
+Exit
+
+Solution
+while True:
+
+    print("\n1. Find substring")
+    print("2. Check palindrome")
+    print("3. Compare two strings")
+    print("4. Reverse string")
+    print("5. Exit")
+
+    choice = int(input("Enter choice: "))
+
+    if choice == 1:
+
+        S = input("Enter main string: ")
+        sub = input("Enter substring: ")
+
+        if sub in S:
+            print("Substring found")
+        else:
+            print("Substring not found")
+
+    elif choice == 2:
+
+        S = input("Enter string: ")
+
+        if S == S[::-1]:
+            print("Palindrome")
+        else:
+            print("Not palindrome")
+
+    elif choice == 3:
+
+        S1 = input("Enter first string: ")
+        S2 = input("Enter second string: ")
+
+        if S1 == S2:
+            print("Strings are equal")
+        else:
+            print("Strings are not equal")
+
+    elif choice == 4:
+
+        S = input("Enter string: ")
+
+        print(S[::-1])
+
+    elif choice == 5:
+
+        break
+
+    else:
+
+        print("Invalid choice")
+
+PROGRAM 93 — MENU-DRIVEN PROGRAM BASED ON SCHOOL PATTERN
+Question
+Write a menu-driven program:
+
+Accept main string and second string and check whether the second string is a substring.
+
+
+Accept a word and check whether it is a palindrome without using a built-in reverse function.
+
+
+Accept two strings and append the smaller string with the larger string if they are unequal in size; otherwise display an error.
+
+Solution
+while True:
+
+    print("\n1. Check substring")
+    print("2. Check palindrome")
+    print("3. Append strings")
+    print("4. Exit")
+
+    choice = int(input("Enter choice: "))
+
+    if choice == 1:
+
+        main = input("Enter main string: ")
+        sub = input("Enter second string: ")
+
+        if sub in main:
+            print("Substring")
+        else:
+            print("Not a substring")
+
+    elif choice == 2:
+
+        word = input("Enter word: ")
+
+        reverse = ""
+
+        for ch in word:
+            reverse = ch + reverse
+
+        if word == reverse:
+            print("Palindrome")
+        else:
+            print("Not a palindrome")
+
+    elif choice == 3:
+
+        S1 = input("Enter first string: ")
+        S2 = input("Enter second string: ")
+
+        if len(S1) == len(S2):
+
+            print("Error: Both strings have equal size")
+
+        elif len(S1) < len(S2):
+
+            print(S1 + S2)
+
+        else:
+
+            print(S2 + S1)
+
+    elif choice == 4:
+
+        break
+
+    else:
+
+        print("Invalid choice")
+
+LEVEL 14 — WHILE LOOP STRING PROGRAMS
+PROGRAM 94 — ACCEPT WORDS UNTIL STOP
+Question
+Accept words one by one and create a sentence. Stop when the user enters STOP.
+Solution
+sentence = ""
+
+while True:
+
+    word = input("Enter word: ")
+
+    if word == "STOP":
+        break
+
+    sentence += word + " "
+
+print(sentence)
+This directly prepares for the school-style question involving:
+while loop
++
+string concatenation
+
+PROGRAM 95 — BUILD A SENTENCE USING WHILE
+sentence = ""
+word = input("Enter word: ")
+
+while word != "STOP":
+
+    sentence += word + " "
+
+    word = input("Enter word: ")
+
+print(sentence)
+
+LEVEL 15 — ADVANCED SCHOOL PROGRAMS
+PROGRAM 96 — WORD WITH MAXIMUM LENGTH
+Question
+Accept a sentence and display the longest word.
+Solution
+sentence = input("Enter sentence: ")
+
+words = sentence.split()
+
+largest = words[0]
+
+for word in words:
+
+    if len(word) > len(largest):
+        largest = word
+
+print("Longest word:", largest)
+
+PROGRAM 97 — WORD WITH MINIMUM LENGTH
+sentence = input("Enter sentence: ")
+
+words = sentence.split()
+
+smallest = words[0]
+
+for word in words:
+
+    if len(word) < len(smallest):
+        smallest = word
+
+print("Shortest word:", smallest)
+
+PROGRAM 98 — COUNT PALINDROME WORDS
+Question
+Count the palindrome words in a sentence.
+Solution
+sentence = input("Enter sentence: ")
+
+count = 0
+
+for word in sentence.split():
+
+    if word.lower() == word.lower()[::-1]:
+        count += 1
+
+print("Palindrome words:", count)
+
+PROGRAM 99 — DISPLAY PALINDROME WORDS
+sentence = input("Enter sentence: ")
+
+for word in sentence.split():
+
+    if word.lower() == word.lower()[::-1]:
+        print(word)
+
+PROGRAM 100 — DISPLAY WORDS HAVING MORE THAN 5 CHARACTERS
+sentence = input("Enter sentence: ")
+
+for word in sentence.split():
+
+    if len(word) > 5:
+        print(word)
+
+PROGRAM 101 — COUNT WORDS HAVING MORE THAN 5 CHARACTERS
+sentence = input("Enter sentence: ")
+
+count = 0
+
+for word in sentence.split():
+
+    if len(word) > 5:
+        count += 1
+
+print("Count:", count)
+
+PROGRAM 102 — FIND WORD WITH MAXIMUM VOWELS
+Solution
+sentence = input("Enter sentence: ")
+
+best_word = ""
+maximum = 0
+
+for word in sentence.split():
+
+    count = 0
+
+    for ch in word:
+
+        if ch.lower() in "aeiou":
+            count += 1
+
+    if count > maximum:
+        maximum = count
+        best_word = word
+
+print("Word:", best_word)
+print("Vowels:", maximum)
+
+PROGRAM 103 — COUNT EACH VOWEL SEPARATELY
+Question
+Count:
+a
+e
+i
+o
+u
+Solution
+S = input("Enter string: ")
+
+a = 0
+e = 0
+i = 0
+o = 0
+u = 0
+
+for ch in S.lower():
+
+    if ch == 'a':
+        a += 1
+
+    elif ch == 'e':
+        e += 1
+
+    elif ch == 'i':
+        i += 1
+
+    elif ch == 'o':
+        o += 1
+
+    elif ch == 'u':
+        u += 1
+
+print("a:", a)
+print("e:", e)
+print("i:", i)
+print("o:", o)
+print("u:", u)
+
+LEVEL 16 — IMPORTANT EXAM PROGRAMS
+PROGRAM 104 — FIND AND COUNT A WORD
+Question
+Accept a sentence and a word. Find the index of the first occurrence and number of occurrences.
+Solution
+sentence = input("Enter sentence: ")
+word = input("Enter word: ")
+
+position = sentence.find(word)
+frequency = sentence.count(word)
+
+print("First occurrence:", position)
+print("Number of occurrences:", frequency)
+
+PROGRAM 105 — WORDS IN DESCENDING ORDER
+sentence = input("Enter sentence: ")
+
+words = sentence.split()
+
+words.sort(reverse=True)
+
+print(words)
+
+PROGRAM 106 — COMPLETE COMBINED QUESTION
+Question
+Write a program to:
+
+Accept a sentence.
+
+
+Accept a word.
+
+
+Find the first occurrence of the word.
+
+
+Find the number of occurrences.
+
+
+Convert the sentence into a list.
+
+
+Display the list in descending order.
+
+Solution
+sentence = input("Enter sentence: ")
+word = input("Enter word: ")
+
+position = sentence.find(word)
+
+count = sentence.count(word)
+
+words = sentence.split()
+
+words.sort(reverse=True)
+
+print("First occurrence:", position)
+print("Number of occurrences:", count)
+print("Words:", words)
+
+PROGRAM 107 — STRING ROTATION
+Question
+Display all left rotations of a string.
+Solution
+S = input("Enter string: ")
+
+for i in range(len(S)):
+
+    rotated = S[i:] + S[:i]
+
+    print(rotated)
+
+PROGRAM 108 — SPLIT STRING INTO TWO EQUAL PARTS
+Question
+If the length is even, divide equally.
+If odd, first part gets one extra character.
+Solution
+S = input("Enter string: ")
+
+mid = (len(S) + 1) // 2
+
+first = S[:mid]
+second = S[mid:]
+
+print("First part:", first)
+print("Second part:", second)
+
+PROGRAM 109 — INTERCHANGE TWO HALVES
+S = input("Enter string: ")
+
+mid = (len(S) + 1) // 2
+
+first = S[:mid]
+second = S[mid:]
+
+print(second + first)
+
+LEVEL 17 — STRING + FUNCTIONS
+These are useful for stronger programming preparation.
+PROGRAM 110 — FUNCTION TO CHECK PALINDROME
+def isPalindrome(S):
+
+    return S == S[::-1]
+
+
+S = input("Enter string: ")
+
+if isPalindrome(S):
+    print("Palindrome")
+else:
+    print("Not palindrome")
+
+PROGRAM 111 — FUNCTION TO COUNT VOWELS
+def countVowels(S):
+
+    count = 0
+
+    for ch in S:
+
+        if ch.lower() in "aeiou":
+            count += 1
+
+    return count
+
+
+S = input("Enter string: ")
+
+print("Vowels:", countVowels(S))
+
+PROGRAM 112 — FUNCTION TO REVERSE STRING
+def reverseString(S):
+
+    reverse = ""
+
+    for ch in S:
+        reverse = ch + reverse
+
+    return reverse
+
+
+S = input("Enter string: ")
+
+print(reverseString(S))
+
+LEVEL 18 — HIGHER-LEVEL SCHOOL APPLICATION QUESTIONS
+PROGRAM 113 — FIRST NON-REPEATING CHARACTER
+Question
+Display the first character that occurs only once.
+Solution
+S = input("Enter string: ")
+
+found = False
+
+for ch in S:
+
+    if S.count(ch) == 1:
+
+        print("First non-repeating character:", ch)
+
+        found = True
+
+        break
+
+if not found:
+    print("No non-repeating character")
+
+PROGRAM 114 — FIRST REPEATING CHARACTER
+S = input("Enter string: ")
+
+found = False
+
+for ch in S:
+
+    if S.count(ch) > 1:
+
+        print("First repeating character:", ch)
+
+        found = True
+
+        break
+
+if not found:
+    print("No repeating character")
+
+PROGRAM 115 — CHECK ANAGRAM
+Question
+Check whether two strings contain the same characters in different order.
+Solution
+S1 = input("Enter first string: ")
+S2 = input("Enter second string: ")
+
+S1 = S1.replace(" ", "").lower()
+S2 = S2.replace(" ", "").lower()
+
+if sorted(S1) == sorted(S2):
+    print("Anagrams")
+else:
+    print("Not anagrams")
+Note
+This is a useful advanced program, although it may be beyond the minimum NCERT requirement.
+
+PROGRAM 116 — COUNT WORD OCCURRENCE
+Question
+Count how many times a word occurs in a sentence.
+Solution
+sentence = input("Enter sentence: ")
+word = input("Enter word: ")
+
+words = sentence.split()
+
+count = 0
+
+for w in words:
+
+    if w == word:
+        count += 1
+
+print("Frequency:", count)
+
+PROGRAM 117 — DISPLAY WORDS STARTING WITH VOWELS
+sentence = input("Enter sentence: ")
+
+for word in sentence.split():
+
+    if word[0].lower() in "aeiou":
+        print(word)
+
+PROGRAM 118 — DISPLAY WORDS STARTING AND ENDING WITH SAME CHARACTER
+sentence = input("Enter sentence: ")
+
+for word in sentence.split():
+
+    if word[0].lower() == word[-1].lower():
+        print(word)
+
+LEVEL 19 — CASE-BASED EXAM QUESTIONS
+PROGRAM 119 — STUDENT NAME PROCESSING
+Question
+Accept a student's full name and display:
+
+Name in uppercase
+
+
+Name in lowercase
+
+
+Number of words
+
+
+First character
+
+
+Last character
+
+Solution
+name = input("Enter full name: ")
+
+print("Uppercase:", name.upper())
+print("Lowercase:", name.lower())
+print("Number of words:", len(name.split()))
+print("First character:", name[0])
+print("Last character:", name[-1])
+
+PROGRAM 120 — EMAIL CHECKING
+Question
+Accept an email address and check whether it contains @ and ..
+Solution
+email = input("Enter email: ")
+
+if "@" in email and "." in email:
+    print("Valid format")
+else:
+    print("Invalid format")
+
+PROGRAM 121 — PHONE NUMBER CHECK
+Question
+Accept a phone number and check whether it contains only digits.
+Solution
+number = input("Enter phone number: ")
+
+if number.isdigit():
+    print("Valid numeric input")
+else:
+    print("Invalid input")
+
+LEVEL 20 — SCHOOL EXAM CHALLENGE PROGRAMS
+These should be attempted without looking at the solution first.
+
+CHALLENGE 1
+Accept a string and count:
+
+vowels
+
+
+consonants
+
+
+digits
+
+
+spaces
+
+
+special characters
+
+
+CHALLENGE 2
+Accept a sentence and display:
+
+longest word
+
+
+shortest word
+
+
+number of words
+
+
+number of words ending in ing
+
+
+CHALLENGE 3
+Accept a string and display all characters occurring exactly once.
+
+CHALLENGE 4
+Accept a paragraph and display every word ending with:
+est
+Each word should appear on a separate line.
+
+CHALLENGE 5
+Accept a character.
+If:
+alphabet → opposite case
+digit → factorial
+special character → ASCII value
+Write the program.
+
+CHALLENGE 6
+Accept two strings.
+If their lengths are different:
+smaller string + larger string
+If equal:
+display error
+
+CHALLENGE 7
+Accept a sentence and a word.
+Display:
+first occurrence
+number of occurrences
+words in descending order
+
+CHALLENGE 8
+Accept a string and display all its rotations.
+Example:
+ABC
+BCA
+CAB
+
+CHALLENGE 9
+Accept a string and determine whether the first and last characters are equal, ignoring case.
+
+CHALLENGE 10
+Accept a string and display its characters at:
+even indexes
+odd indexes
+
+PROGRAM-WRITING PATTERNS TO MEMORIZE
+Do NOT memorize 100 complete programs separately.
+Instead, learn these patterns.
+
+PATTERN 1 — TRAVERSE A STRING
+for ch in S:
+    # process ch
+
+PATTERN 2 — TRAVERSE USING INDEX
+for i in range(len(S)):
+    # process S[i]
+
+PATTERN 3 — COUNT SOMETHING
+count = 0
+
+for ch in S:
+
+    if condition:
+        count += 1
+
+print(count)
+
+PATTERN 4 — BUILD A NEW STRING
+result = ""
+
+for ch in S:
+
+    if condition:
+        result += ch
+
+PATTERN 5 — REVERSE
+reverse = ""
+
+for ch in S:
+    reverse = ch + reverse
+
+PATTERN 6 — FIND MAXIMUM
+maximum = 0
+
+for ch in S:
+
+    if condition:
+        value = ...
+
+        if value > maximum:
+            maximum = value
+
+PATTERN 7 — WORD PROCESSING
+words = S.split()
+
+for word in words:
+    # process word
+
+PATTERN 8 — BUILD SENTENCE
+result = ""
+
+for word in words:
+    result += word + " "
+
+PATTERN 9 — CHARACTER CLASSIFICATION
+if ch.isalpha():
+    ...
+elif ch.isdigit():
+    ...
+else:
+    ...
+
+PATTERN 10 — CASE CHECKING
+if ch.isupper():
+    ...
+elif ch.islower():
+    ...
+
+MOST IMPORTANT PROGRAM TYPES FOR SCHOOL EXAM
+These should receive the highest amount of practice:
+VERY IMPORTANT
+1. Reverse a string
+2. Palindrome
+3. Count vowels
+4. Count consonants
+5. Count alphabets/digits/special characters
+6. Character frequency
+7. Find substring
+8. Count substring
+9. Find first occurrence
+10. Find last occurrence
+11. String slicing
+12. Alternate characters
+13. String rotation
+14. Split string into words
+15. Count words
+16. Sort words
+17. Display words based on condition
+18. ASCII programs
+19. Character classification
+20. Case conversion
+HIGH-VALUE COMBINED QUESTIONS
+21. String + loops
+22. String + if/elif/else
+23. String + list
+24. String + tuple
+25. String + split()
+26. String + find()
+27. String + count()
+28. String + slicing
+29. String + ASCII
+30. String + menu-driven program
+
+FINAL STRING PROGRAMMING MASTERY CHECK
+A strong preparation level means being able to write a program for a new question by recognizing its pattern.
+For example:
+"Count the number of vowels"
+Recognize:
+TRAVERSAL
++
+CONDITION
++
+COUNTER
+Therefore:
+count = 0
+
+for ch in S:
+
+    if ch.lower() in "aeiou":
+        count += 1
+
+Another question:
+"Display words ending with est"
+Recognize:
+split()
++
+TRAVERSAL
++
+endswith()
+Therefore:
+for word in S.split():
+
+    if word.endswith("est"):
+        print(word)
+Another:
+"Display the string after rotating each character"
+Recognize:
+LOOP
++
+SLICING
++
+CONCATENATION
+Therefore:
+for i in range(len(S)):
+    print(S[i:] + S[:i])
+This recognition of question pattern → programming technique is more important than memorizing individual programs.
+STRING PROGRAMMING ROADMAP
+STRING BASICS
+      ↓
+INDEXING
+      ↓
+SLICING
+      ↓
+STRING OPERATORS
+      ↓
+STRING METHODS
+      ↓
+CHARACTER TRAVERSAL
+      ↓
+COUNTER PROGRAMS
+      ↓
+STRING BUILDING
+      ↓
+WORD PROCESSING
+      ↓
+STRING + LIST
+      ↓
+STRING + CONDITIONS
+      ↓
+STRING + ASCII
+      ↓
+STRING + LOOPS
+      ↓
+PALINDROME / FREQUENCY / ROTATION
+      ↓
+MENU-DRIVEN PROGRAMS
+      ↓
+CASE-BASED QUESTIONS
+      ↓
+COMPLEX OUTPUT QUESTIONS
+      ↓
+PREVIOUS-YEAR QUESTIONS
+      ↓
+UNSEEN EXAM QUESTIONS
+EXAM RULE
+For every program, practice three versions:
+VERSION 1 — BUILT-IN METHOD
+Use methods such as:
+count()
+find()
+replace()
+split()
+upper()
+lower()
+VERSION 2 — LOOP LOGIC
+Solve the same problem using:
+for ch in S:
+VERSION 3 — COMBINED
+Solve using:
+String
++
+Loop
++
+Condition
++
+Slicing
++
+String methods
+This prepares for questions where the wording changes but the underlying programming pattern remains the same.
