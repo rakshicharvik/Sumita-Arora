@@ -1,0 +1,375 @@
+
+CLASS 11 COMPUTER SCIENCE - QUESTION BANK
+SECTION A — NUMBER SYSTEM
+Convert (101101)₂ to its decimal equivalent.
+Convert (87)₁₀ to its binary equivalent.
+Convert (254)₁₀ to its hexadecimal equivalent.
+Convert (1A3)₁₆ to its decimal equivalent.
+Convert (637)₈ to its binary and hexadecimal equivalents.
+Convert (11001010)₂ to its octal equivalent.
+Convert (295.625)₁₀ to its binary, octal and hexadecimal equivalents.
+Which number system uses the digits 0 to 7 only?
+State the base (radix) of the hexadecimal number system.
+Convert the hexadecimal number (2F)₁₆ to its octal equivalent, showing the binary as an intermediate step.
+A device's address is noted as two 8-bit binary groups: (11000000) and (10101000). Convert each group to its decimal equivalent.
+Convert (10110.101)₂ to its equivalent decimal, octal and hexadecimal number systems.
+What is the decimal equivalent of the largest 4-bit binary number?
+Differentiate between the binary and hexadecimal number systems, giving one example of each.
+Which of the digits 2, 8, 9 cannot appear in an octal number? Justify briefly.
+Convert (3B)₁₆ to its binary equivalent, and from that binary value find the equivalent octal number.
+
+SECTION B — MCQs
+01. Which of the following is a valid Python identifier? (A) 1total (B) total_1 (C) total-1 (D) total 1
+02. Which of these is NOT a core data type in Python? (A) int (B) float (C) char (D) bool
+03. What is the output of print(type(5.0))? (A) <class 'int'> (B) <class 'float'> (C) <class 'double'> (D) <class 'number'>
+04. Which of these is a mutable data type in Python? (A) tuple (B) string (C) list (D) int
+05. Which statement correctly assigns the value 0 to three variables a, b, c in a single line? (A) a=b=c=0 (B) a,b,c=0 (C) a=0;b=0;c (D) a-b-c=0
+06. Identify the invalid literal. (A) 0b101 (B) 0o17 (C) 0x1G (D) 1_000
+07. What is the output of print(bool(0), bool(" "), bool(""))? (A) False True False (B) True True False (C) False False True (D) False True True
+08. Which of the following correctly represents a complex number literal in Python? (A) 3+4j (B) 3+4i (C) complex(3,4,) (D) 3j+4
+09. What is the output of print(7 + 3 * 2 ** 2)? (A) 40 (B) 19 (C) 25 (D) 20
+10. What is the result of 17 // 5 in Python? (A) 3.4 (B) 3 (C) 2 (D) 3.0
+11. What is the output of print(5 != 5.0)? (A) True (B) False (C) Error (D) None
+12. Evaluate: not(10 > 5) or (3 == 3) (A) True (B) False (C) Error (D) 0
+13. Which operator has the highest precedence in Python? 
+(A) +  (B) and  (C) ** (D) ==
+14. What is the output of print(10 % -3)? (A) 1 (B) -1 (C) -2 (D) 1.0
+15. Which of these is the correct way to take an integer input from the user? (A) x = input() (B) x = int(input()) (C) x = eval(input) (D) x = integer(input())
+16. What is the output of print(str(25) + str(5))? (A) 30 (B) 255 (C) "30" (D) Error
+17. What happens when int("12.5") is executed? (A) Returns 12 (B) Returns 12.5 (C) Raises a ValueError (D) Returns "12"
+18. What is the output of print(5, 10, sep='-', end='!')? 
+(A) 5-10! (B) 5 10! (C) 5-10 (D) 5,10!
+19. What is the output of the following code?
+x = 15
+if x > 10:
+    print("A")
+elif x > 20:
+    print("B")
+else:
+    print("C")
+(A) A (B) B (C) C (D) A and B both
+20. What is the output of the following code?
+for i in range(3, 0, -1):
+    print(i, end=" ")
+(A) 3 2 1 (B) 1 2 3 (C) 3 2 1 0 (D) No output
+
+
+21. How many times will the following loop execute?
+i = 0
+while i < 15:
+    i += 4
+(A) 3 (B) 4 (C) 5 (D) 15
+22. What is the output of the following code?
+for i in range(5):
+    if i == 2:
+        continue
+    print(i, end=" ")
+(A) 0 1 3 4 (B) 0 1 2 3 4 (C) 0 1 (D) 0 1 3 4 5
+23. Which statement is used to exit a loop before its normal completion? (A) exit (B) continue (C) break (D) stop
+24. What is the output of the following code?
+x = 5
+y = 2
+if x > 3 and y > 3:
+    print("P")
+elif x > 3 or y > 3:
+    print("Q")
+else:
+    print("R")
+(A) P (B) Q (C) R (D) Error
+25. Given def calc(a, b=5, c=10):, which call is invalid? (A) calc(1) (B) calc(1,2) (C) calc(a=1,c=2) (D) calc(c=1,2)
+26. What does a function return if it has no explicit return statement? (A) 0 (B) None (C) Error (D) Empty string
+27. Which of these correctly describes a local variable? (A) Accessible anywhere in the program (B) Created inside a function and accessible only within it (C) Must be declared with the keyword 'local' (D) Automatically becomes global once the function ends
+28. What is the output of the following code?
+def square(n):
+    return n * n
+print(square(4) + square(2))
+(A) 20 (B) 16 (C) 12 (D) 36
+29. What is the output of print(len("Hello World"))? (A) 10 (B) 11 (C) 12 (D) Error
+30. What does "Python".find("y") return? (A) 0 (B) 1 (C) -1 (D) True
+31. What is the output of print("abc" * 2)? (A) abcabc (B) abc2 (C) Error (D) a2b2c2
+32. Which of these correctly reverses a string s? (A) s.reverse() (B) reverse(s) (C) s[::-1] (D) s[-1:]
+33. Which module must be imported to generate random numbers in Python? (A) maths (B) random (C) numpy (D) statistics
+34. Which statement correctly imports only the sqrt function from the math module? (A) import sqrt from math (B) from math import sqrt (C) import math.sqrt (D) include math(sqrt)
+35. (1011)₂ in decimal is: (A) 9 (B) 10 (C) 11 (D) 13
+36. Which of these hexadecimal digits is invalid? (A) A (B) F (C) G (D) 9
+37. (25)₁₀ in binary is: (A) 11001 (B) 11011 (C) 10101 (D) 11101
+38. What is the output of print(10 == 10.0)? (A) True (B) False (C) Error (D) None
+39. What is the output of the following code?
+x = "25"
+y = 5
+print(x + str(y))
+(A) 30 (B) 255 (C) Error (D) 25+5
+40. What is the output of the following code?
+count = 0
+for i in range(1, 10):
+    if i % 3 == 0:
+        count += 1
+print(count)
+(A) 2 (B) 3 (C) 4 (D) 9
+41. Which of the following expressions evaluates to a boolean value? (A) 5 + 3 (B) 5 > 3 (C) "5" + "3" (D) 5 ** 3
+42. What is the output of print(type([1,2,3]))? (A) <class 'array'> (B) <class 'tuple'> (C) <class 'list'> (D) <class 'set'>
+
+OUTPUT BASED QUESTIONS:
+WHAT IS THE OUTPUT OF THE FOLLOWING QUESTIONS CODE . 
+43.
+for i in range(1, 6):
+    if i % 2 == 0:
+        print(i, "is even")
+    else:
+        print(i, "is odd")
+
+44.
+T=('a','e','I','o','u','A','E','I','O','U')
+wd= "COMPUTER SCIENCE"
+L1,t1=str(),len(tuple(wd))+len(list(wd))
+for I in T:
+    L1+=I
+print(max(T), L1[5::2].capitalize(), t1)
+a,b=(2),(3,4,5)
+a,b=a*a,b*a
+print(a,b)
+SECTION C — THEORY
+01. What is an interpreter? 
+02. Define a variable in Python. 
+03. What is the purpose of the input() function? 
+04. Name any two mutable data types in Python. 
+05. What is a module in Python? 
+06. What is the purpose of the range() function?
+07. Differentiate between a compiler and an interpreter. 
+08. Explain the difference between = and == operators with an example. 
+09. What is type conversion? Differentiate between implicit and explicit type conversion. 
+10.Explain the difference between a while loop and a for loop. 
+11. What is the role of indentation in Python? Give an example. 
+12. Differentiate between break and pass statements. 
+13. Explain the concept of a default argument in a function, with an example.
+14. What is the difference between a local variable and a global variable?
+15. Explain any three features of Python that make it a popular programming language. 
+16. With the help of an example, explain how Python supports dynamic typing. 
+17. Explain the significance of the import statement. Describe any two forms of writing it. 
+18. Explain string indexing and slicing with a suitable example. 
+19. A beginner programmer keeps confusing split() and partition() and join() . Explain the difference with an example. 
+20. Explain the difference between actual parameters and formal parameters with a suitable example.
+21. A student wants to understand why Python is described as a "high-level" and "interpreted" language. Explain both terms with suitable justification. 
+22. Differentiate between the following pairs, giving one example for each: (a) Keyword argument vs Positional argument (b) Syntax error vs Logical error
+
+SECTION D — ERROR FINDING
+(Identify and correct the error(s) in each snippet. 2 marks each.)
+01)
+x = 10
+If x > 5
+print("Big")
+
+02)
+for i in range(1,5)
+    print(i)
+
+03)
+def add(a, b)
+    return a+b
+print(add(2,3))
+
+04)
+x = input("Enter a number: ")
+y = x + 5
+print(y)
+
+
+
+
+05)
+total = 0
+for i in range(1, 10):
+total = total + i
+print(total)
+
+06)
+num = 7
+if num % 2 = 0:
+    print("Even")
+else:
+    print("Odd")
+07)
+name = 'Rahul"
+print(name)
+
+08)
+count = 0
+while count < 5
+    print(count)
+    count += 1
+
+
+
+09)
+def greet(name):
+    print("Hello", Name)
+greet("Asha")
+
+10)
+x, y = 5
+print(x, y)
+
+11)
+import Math
+print(Math.sqrt(16))
+
+12)
+s = "Hello"
+s[0] = 'J'
+print(s)
+
+13)
+def square(n):
+    result = n * n
+print(square(5))
+
+
+14)
+marks = 85
+if marks >= 90
+    print("A grade")
+elif marks >= 75:
+    print("B grade")
+
+15)
+L = [1,2,3]
+L.append(4,5)
+print(L)
+
+SECTION E — FRAMING EXPRESSIONS
+(Write the equivalent Python expression. 1–2 marks each.)
+01. The square root of the sum of the squares of p and q.
+02. The average of three numbers a, b and c.
+03. The absolute value of (x − y), divided by (x + y).
+04. The cube of (a + b).
+05. 2 raised to the power (m + n).
+06. The remainder when p is divided by q, added to the integer quotient of p divided by q.
+07. The sine of an angle theta (in radians), plus the cosine of the same angle.
+08. Twice the natural logarithm of x.
+09. A real random number between 1 and 100.
+10. The absolute value of (a − b), raised to the power 3.
+11. The larger of two numbers x and y, without using the built-in max() function.
+12. The ceiling value of (a divided by b).
+13. The square root of x, added to the cube root of y.
+14. Whether a number n is divisible by both 3 and 5.
+15. The floor value of the square root of n.
+
+SECTION F — VALID / INVALID
+(State whether each statement/expression is Valid or Invalid. Give a brief reason where invalid. 1 mark each.)
+01. 2nd_value = 10
+02. result = (5 + 3 
+03. x = y = z = 0 
+04. if x = 5: 
+05. my-name = "Asha" 
+06. total += 1
+07. print "Hello" 
+08. x = 10; y = 20; print(x,y) 
+09. del = 5
+10. a, b = 10, 20 
+11. x == 10 
+12. 3x = 15 
+13. while(True): 
+14. x = 5 ** ** 2 
+15. def func(x, y=5, z):
+
+
+SECTION G — EVALUATING EXPRESSIONS
+(Evaluate the following manually. Marks as indicated.)
+01. 5 + 3 * 2 
+02. (5 + 3) * 2 
+03. 17 % 4 + 2 
+04. 2 ** 3 ** 2 
+05. 10 / 4
+06. 10 // 4 
+07. 15 > 10 and 5 < 3 
+08. not(5 == 5) or (3 != 3) 
+09. 4 + 5 == 9 and 10 / 2 == 5 
+10. (10 - 2) * 3 // 4 + 5 % 2 
+11. 3 < 5 < 10 
+12.True + True + False 
+13. 25 - 3 * (4 + 2) ** 2 // 6 
+14. 10 + 20 > 25 and not(5 == 5) or 3 < 10 
+15. (8 % 3) ** 2 + (15 // 4) * 2 
+16. 5 != 5.0 EE-17 (2m) "10" == 10 
+18. Show the hierarchy of evaluation and evaluate: 20 - 4 ** 2 / 2 + 6 % 4 * 3
+19. bool(0) or bool(-1) 
+20. Show the hierarchy of evaluation and evaluate: (12 > 6 and 6 > 3) or (10 == 9 + 1)
+
+SECTION H — PROGRAMS
+01. Write a program to accept the length and breadth of a rectangle and display its area and perimeter.
+02. Write a program to accept a temperature in Celsius and convert it to Fahrenheit.
+03. Write a program to accept a student's marks in 5 subjects and display the total and percentage.
+04. Write a program to accept the radius of a circle and display its area and circumference.
+05.Write a program to accept a person's birth year and the current year, and determine whether the person is eligible to vote (18 years of age or older).
+06. Write a program to accept three numbers and display the largest among them using if-elif-else.
+07. A telecom company charges Rs. 1 per minute for the first 100 minutes of calls, Rs. 0.75 per minute for the next 100 minutes, and Rs. 0.50 per minute beyond that. Write a program that accepts the total minutes used and displays the bill amount.
+08. Write a program to accept a number and check whether it is positive, negative, or zero, and also whether it is even or odd.
+09. Write a program to accept a 4-digit number and display it in reverse.
+10. Write a program to check whether a given number is a Strong Number. 
+
+11. Write a program to count the number of even digits and odd digits in a given number.
+12. Write a program to swap the value of two variables without using third variable.
+13. Write a program to display the multiplication table of a number entered by the user, up to n terms.
+14. Write a program to find the sum of all multiples of 3 or 5 below a number entered by the user.
+15. Write a program to accept numbers from the user repeatedly until the user enters 0, and display the sum and average of all the numbers entered.
+16. Write a program to display the first n terms of the Fibonacci series.
+
+
+17. Write a program to display the following pattern for n rows (shown here for n=4):
+D
+C D
+B C D
+A B C D
+18. Write a program to display an inverted number pyramid for a given n (shown here for n=5):
+5 4 3 2 1
+4 3 2 1
+3 2 1
+2 1
+1
+19.Write a program to display the following pattern for a given n (shown here for n=5):
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+20. Write a program to display a hollow square pattern of stars for a given side length n (border made of *, interior left blank).
+21. A bookstore wants a menu-driven billing system with the following options: 1) Calculate the bill for a book purchase (with a 10% discount if the quantity purchased is 5 or more), 2) Check whether a book (by ISBN) is available, from a predefined list, 3) Exit. Write a Python program to implement this menu.
+22. Write a menu-driven program for a simple calculator that performs addition, subtraction, multiplication, and division based on the user's choice, and handles division by zero appropriately.
+23. Write a menu-driven program for a parking lot system that: 1) calculates the parking fee based on hours parked (Rs. 20 for the first hour, Rs. 10 for each additional hour), 2) checks whether a given vehicle number is already parked (against a predefined list), 3) exits the program.
+24. A fitness tracker records the number of steps walked by a user each day for a week. Write a program that accepts the steps for 7 days and displays the day with the maximum steps and the average steps per day.
+25. A bank offers a fixed deposit scheme. Write a program that accepts the principal amount, rate of interest, and number of years, and calculates the maturity amount using simple interest.
+26. A library charges a fine for late return of books: Rs. 2 per day for the first 7 days of delay, and Rs. 5 per day for each day beyond that. Write a program that accepts the number of days a book is late and calculates the fine.
+27. A weather station records the minimum and maximum temperature for 5 days. Write a program that accepts these values and displays the day with the highest temperature variation (max − min).
+28. Write a user-defined function is_prime(n) that returns True if n is prime and False otherwise. Use it in a program to display all prime numbers between 1 and 50.
+29. Write a function compound_interest(principal, rate, time) that calculates and returns the compound interest. Call this function from the main program with user-supplied values.
+30. Write a function count_vowels(s) that accepts a string and returns the number of vowels present in it.
+9. Strings
+31. Write a program that accepts a sentence and counts the number of words that start with a capital letter.
+32. Write a program that accepts a string and checks whether it is a palindrome, ignoring spaces and case.
+33. Write a program to accept a string and display it with every alternate character converted to uppercase.
+
+34. Write a program using the random module to simulate rolling two dice and display their sum.
+35. Write a program using the math module to calculate the area of a triangle given its three sides (using Heron's formula).
+36. Write a program that uses the math module to display the floor and ceiling values of a floating-point number entered by the user.
+37. Write a program that accepts a character and prints as follows: use if
+If it is alphabet, display it in the other case
+If it is a digit, print the sum by adding 1 to that number, eg. if it is 7, add starting from 1 to 7
+If it is a special character, print the square value of its ASCII number
+
+38.Write a program to input three integers and check whether they can form the sides of a triangle. If they can, determine whether the triangle is an obtuse-angled, right-angled, or acute-angled triangle.
+
+39.Write a program that accepts a character from the user. If the entered value is not an alphabet or not a digit, print the ASCII value of the character; if the entered value is an alphabet, print the next 3 characters to it; and if the entered value is a digit, find its factorial value. Print the choice made by the user and the result.
+
+40.Write a program that accepts words one by one and frames a line by concatenating all those words. The input process is terminated according to the user's choice. Use while.
+
+41. Write a program to find the sum of the given series: X²/2 – X³/3 + X⁵/5 – X⁸/8 + X¹²/12 – .... N terms
+42.Write a program to find the sum of the following series: x + x²/2! + x³/3! + x⁴/4! + ... + xⁿ/n!
+
+43. Write a program to find the sum of the series: X¹/1! – X⁴/4! + X⁹/9! – X¹⁶/16! + ... n terms
+
+44. Write a program that accepts characters one by one and checks:
+               i) Whether it is an alphabet. If so, checks for its case (upper case and lower case) and counts the same.
+               ii) If it is not alphabet, checks for digit. If so, checks whether it is even or odd and counts the same. If odd, print its square, else print its square root.
+                iii) If it is not an alphabet or digit, then checks for arithmetic operators or other special characters and counts the same. Display the output in a neat format. Use functions wherever possible.
+
+45. Write a program to read a sentence and a word. The program should find the index of the first occurrence of the word in the sentence and also it should find the number of occurrences of the word in the sentence. Convert the sentence into a list of words and display the list in descending order.
